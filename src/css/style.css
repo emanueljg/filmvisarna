@@ -1,0 +1,13 @@
+/* change to your own choice of fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@400;700&display=swap');
+
+@import 'normalize.css';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arima';
+  font-size: 20px;
+}
