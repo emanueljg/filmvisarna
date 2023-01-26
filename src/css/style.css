@@ -15,9 +15,10 @@ body {
 header {
   background-color: darkred;
   color: lightgray;
-  padding: 30px 40px;
+  padding: 20px 30px;
 }
 
 header h1 {
+  font-size: 30px;
   margin: 0;
 }
