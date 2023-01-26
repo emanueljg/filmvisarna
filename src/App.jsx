@@ -14,8 +14,8 @@ export default function App() {
     menu: [
         // no components are here yet so I'm setting them
         // as null as placeholders
-        { label: 'Start page', path: '/', Component: null },
-        { label: 'About', path: '/tickets', Components: null },
+        { label: 'Tickets', path: '/tickets', Component: null },
+        { label: 'Movies', path: '/movies', Components: null },
         { label: 'Theatres', path: '/theatres', Components: null },
         { label: 'Snacks', path: '/snacks', Components: null },
     ]
@@ -24,7 +24,9 @@ export default function App() {
   return <BrowserRouter>
     <header>
       <h1>Ironboy films</h1>
-      <Menu/>
+      <div className="menubar">
+        <Menu/>
+      </div>
     </header>
   </BrowserRouter>;
 }
