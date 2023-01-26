@@ -16,9 +16,22 @@ header {
   background-color: darkred;
   color: lightgray;
   padding: 20px 30px;
+  display: flex;
+  align-items: center;
 }
 
 header h1 {
   font-size: 30px;
   margin: 0;
+}
+
+header .menubar {
+  margin-left: 20px;
+}
+
+header .menubar a {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: lightgray; 
 }
