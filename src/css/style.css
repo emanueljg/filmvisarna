@@ -1,5 +1,5 @@
 /* change to your own choice of fonts */
-@import url('https://fonts.googleapis.com/css2?family=Arima:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
 @import 'normalize.css';
 
@@ -8,6 +8,16 @@
 }
 
 body {
-  font-family: 'Arima';
+  font-family: 'Raleway';
   font-size: 20px;
+}
+
+header {
+  background-color: darkred;
+  color: lightgray;
+  padding: 30px 40px;
+}
+
+header h1 {
+  margin: 0;
 }
