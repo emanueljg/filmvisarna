@@ -7,6 +7,7 @@ import {
   Route
 } from 'react-router-dom';
 import Menu from './Menu.jsx';
+import Footer from './Footer.jsx';
 
 export default function App() {
 
@@ -28,5 +29,8 @@ export default function App() {
         <Menu/>
       </div>
     </header>
+    <footer>
+      <Footer />
+    </footer>
   </BrowserRouter>;
 }
