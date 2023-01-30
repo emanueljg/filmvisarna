@@ -47,7 +47,7 @@ export default function MovieDetail() {
     }</>)
     }
     <div className="dropdown">
-      <button>Click me!</button>
+      <button>'Click' me!</button>
     </div>
   </div>
 }
