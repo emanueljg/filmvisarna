@@ -9,6 +9,7 @@ export default function Home() {
   const s = useStates('main');
 
   return <>
+    <div className="featuredMovieOverlay"></div>
     <div className="wrapper-featuredMovie">
       <img src="/images/batman_background.jpg" alt="2" />
     </div>
