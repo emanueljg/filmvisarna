@@ -10,12 +10,14 @@
 body {
   font-family: 'Raleway';
   font-size: 20px;
+  background-color: #3e3e3e;
 }
 
 
 header {
-  background-color: darkred;
-  color: lightgray;
+  background: rgba(11, 12, 23, 0.32);
+  backdrop-filter: blur(17px);
+  color: rgb(161, 0, 0,1);
   padding: 20px 30px;
   display: flex;
   align-items: center;
