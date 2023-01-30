@@ -12,6 +12,7 @@ import AboutUs from './AboutUs';
 import Navbar from './Navbar';
 import MovieDetail from './MovieDetail';
 import Tickets from './Tickets';
+import Footer from './Footer';
 
 export default function App() {
 
@@ -52,6 +53,8 @@ export default function App() {
         )}
       </Routes>
     </main>
-    <footer></footer>
+    <footer>
+      <Footer />
+    </footer>
   </BrowserRouter>;
 }
