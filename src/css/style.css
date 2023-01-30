@@ -255,7 +255,7 @@ p {
                      */
 
 .footer-container {
-  background-color: #141414;
+  background-color: rgba(11, 12, 23, 1);;
   padding: 1rem 0;
   display: flex;
   flex-direction: column;
