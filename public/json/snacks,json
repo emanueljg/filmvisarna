@@ -1,0 +1,77 @@
+[
+  {
+    "snack1": "Liten popcorn",
+    "snack2": "Mellan popcorn",
+    "snack3": "Stor popcorn",
+    "snack4": "Liten baconsnacks",
+    "snack5": "Mellan baconsnacks",
+    "snack6": "Stor baconsnacks",
+    "candy1": "Snickers",
+    "candy2": "Mars",
+    "candy3": "Kexchoklad",
+    "candy4": "Twix",
+    "candy5": "Bounty",
+    "candy6": "Kit kat",
+    "drink1": "Coca-Cola",
+    "drink2": "Pepsi-Cola",
+    "drink3": "Sprite",
+    "drink4": "Fanta",
+    "drink5": "7-Up",
+    "drink6": "Zingo",
+    "drink7": "Ye Olde Water",
+    "popcorn": [
+      "Liten popcorn",
+      "Mellan popcorn",
+      "Stor popcorn"
+    ],
+    "popcorn_price": [
+      0,
+      0,
+      0
+    ],
+    "bacon_snacks": [
+      "Liten baconsnacks",
+      "Mellan baconsnacks",
+      "Stor baconsnacks"
+    ],
+    "bacon_snacks_price": [
+      0,
+      0,
+      0
+    ],
+    "candy": [
+      "Snickers",
+      "Mars",
+      "Kexchoklad",
+      "Twix",
+      "Bounty",
+      "Kit kat"
+    ],
+    "candy_price": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "drinks": [
+      "Coca-Cola",
+      "Pepsi-Cola",
+      "Sprite",
+      "Fanta",
+      "7-Up",
+      "Zingo",
+      "Ye Olde Water"
+    ],
+    "drinks_price": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+]
