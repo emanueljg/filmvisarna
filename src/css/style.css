@@ -5,9 +5,6 @@
 
 @import 'normalize.css';
 
-* {
-  box-sizing: border-box;
-}
 
 .headerAboutUs {
   position: sticky;
@@ -82,7 +79,7 @@ h2 {
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
 
   header {
-    z-index: 2;
+    z-index: 100;
     background-color: rgba(11, 12, 23, 0.5);
     padding: 10px 40px;
     position: fixed;
@@ -126,19 +123,19 @@ header h1 {
 }
 
 .topMovies img {
-  border-radius: 10px;
+  border-radius: 15px;
   max-width: 90%;
-  padding: 5px 10px 0px 0px;
   margin-bottom: 20px;
 }
 
 .wrapper-featuredMovieCTA img {
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   top: 100px;
   left: 40px;
   width: 250px;
 }
+
 
 .wrapper-topplistan {
   position: absolute;
@@ -154,7 +151,6 @@ header h1 {
   max-width: 100%;
   border-radius: 10px;
   max-width: 90%;
-  padding: 5px 10px 0px 0px;
   margin-bottom: 20px;
 }
 
@@ -216,15 +212,20 @@ p {
   text-align: center;
 }
 
-.movie img {
-  border: 1px solid black;
-}
-
-.wrapper-featuredMovie img {
+.wrapper-featuredMovie {
   position: absolute;
-  z-index: 0;
+  z-index: 1;
   width: 100%;
   height: auto;
+}
+
+.featuredMovieOverlay {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 854px;
+  top: 0;
+  background: linear-gradient(180deg, rgba(11, 12, 23, 0) 0%, #0B0C17 100%);
 }
 
 .wrapper-featuredMovieInfo {
@@ -260,14 +261,13 @@ p {
   width: 40%;
   margin-left: 20px;
   margin-right: 40px;
-  border: 1px solid black;
 }
 
 .movieList h3 {
   color: white;
 }
 
-Tickets-h1 {
+.Tickets-h1 {
   font-family: 'Poppins';
   font-style: normal;
   font-size: 28px;
