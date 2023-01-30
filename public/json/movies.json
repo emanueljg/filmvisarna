@@ -1,285 +1,290 @@
 [
-{
-  "title": "The Batman",
-  "productionCountries": "USA",
-  "release": 2022,
-  "rated": "PG 13",
-  "length": "2h 56m",
-  "genre": ["Action", "Brott", "Drama"],
-  "language": "Engelska",
-  "subtitles": "Svenska",
-  "director": "Matt Reeves",
-  "stars" : 7.8,
-  "actors": [
-    "Robert Pattinson",
-    "Zoe Kravitz",
-    "Jeffrey Wright",
-    "Colin Farrel",
-    "Paul Dano",
-    "John Turturro",
-    "Andy Serkis"
-  ],
-  "description": "<p>När en sadistisk seriemördare börjar mörda viktiga politiska personer i Gotham, tvingas Batman undersöka stadens dolda korruption och ifrågasätta hans familjs inblandning.</p>",
-  "images": [
-    "the-batman-poster.jpg"
-  ]
-},
-
-{
-  "title": "The Thing",
-  "productionCountries": "USA",
-  "release": 1982,
-  "rated": "R",
-  "length": "1h 49m",
-  "genre": ["Skräck", "Mystisk", "Sci-Fi"],
-  "language": "Engelska",
-  "subtitles": "Svenska",
-  "director": "Matt Reeves",
-  "stars" : 8.2,
-  "actors": [
-    "Kurt Russell",
-    "Wilford Brimley",
-    "Keith David",
-    "Richard Masur",
-    "T.K. Carter",
-    "David Clennon",
-    "Richard Dysart"
-  ],
-  "description": "<p>Ett forskarlag i Antarktis jagas av en formskiftande utomjording som antar utseendet som sina offer.</p>",
-  "images": [
-    "the-thing-poster.jpg"
-  ]
-},
-
-{
-  "title": "Soul",
-  "productionCountries": "USA",
-  "release": 2020,
-  "rated": "PG",
-  "length": "1h 40m",
-  "genre": ["Animerad", "Äventyr", "Komedi"],
-  "language": "Svenska",
-  "director": ["Peter Docter", "Kemp Powers"],
-  "stars" : 8.0,
-  "actors": [
-    "Jamie Foxx",
-    "Tina Fey",
-    "Graham Norton",
-    "Rachel House"
-  ],
-  "description": "<p>Efter att ha landat sitt livs spelning, befinner sig en jazzpianist i New York plötsligt instängd i ett främmande land mellan jorden och livet efter detta.</p>",
-  "images": [
-    "soul-poster.jpg"
-  ]
-},
-
-{
-  "title": "Pulp Fiction",
-  "productionCountries": "USA",
-  "release": 1994,
-  "rated": "R",
-  "length": "2h 34m",
-  "genre": ["Brott", "Drama"],
-  "language": "Engelska",
-  "subtitles": "Svenska",
-  "director": "Quentin Tarantino",
-  "stars" : 8.9,
-  "actors": [
-    "John Travolta",
-    "Uma Thurman",
-    "Samuel L. Jackson",
-    "Bruce Willis",
-    "Tim Roth"
-  ],
-  "description": "<p>Livet för två maffiamördare, en boxare, en gangster och hans fru och ett par middagsbanditer flätas samman i fyra berättelser om våld och försoning.</p>",
-  "images": [
-    "pulp-fiction-poster.jpg"
-  ]
-},
-
-{
-  "title": "Fight Club",
-  "productionCountries": "USA",
-  "release": 1999,
-  "rated": "R",
-  "length": "2h 19m",
-  "genre": ["Drama"],
-  "language": "Engelska",
-  "subtitles": "Svenska",
-  "director": "David Fincher",
-  "stars" : 8.8,
-  "actors": [
-    "Brad Pitt",
-    "Edward Norton",
-    "Meat Loaf",
-    "Zach Grenier"
-  ],
-  "description": "<p>En sömnlös kontorsarbetare och en tvåltillverkare bildar en underjordisk kampklubb som utvecklas till mycket mer.</p>",
-  "images": [
-    "fight-club-poster.jpg"
-  ]
-},
-
-{
-  "title": "Doctor Strange in the Multiverse of Madness",
-  "productionCountries": "USA",
-  "release": 2022,
-  "rated": "PG-13",
-  "length": "2h 6m",
-  "genre": ["Action", "Äventyr", "Fantasi"],
-  "language": "Engelska",
-  "subtitles": "Svenska",
-  "director": "Sam Raimi",
-  "stars" : 6.9,
-  "actors": [
-    "Benedict Cumberbatch",
-    "Elizabeth Olsen",
-    "Chiwetel Ejiofor",
-    "Benedict Wong",
-    "Xochitl Gomez",
-    "Rachel McAdams"
-  ],
-  "description": "<p>Doctor Strange slår sig ihop med en mystisk tonårsflicka från sina drömmar som kan resa över multiversum, för att bekämpa flera hot, inklusive andra universums versioner av honom själv, som hotar att utplåna miljoner över multiversum. De söker hjälp från Wanda the Scarlet Witch, Wong och andra.</p>",
-  "images": [
-    "doctor-strange-in-the-multiverse-of-madness-poster.jpg"
-  ]
-},
-
-{
-  "title": "Red Notice",
-  "productionCountries": "USA",
-  "release": 2021,
-  "rated": "PG-13",
-  "length": "1h 58m",
-  "genre": ["Action", "Komedi", "Thriller"],
-  "language": "Engelska",
-  "subtitles": "Svenska",
-  "director": "Rawson Marshall Thurber",
-  "stars" : 6.3,
-  "actors": [
-    "Dwayne Johnson",
-    "Ryan Reynolds",
-    "Gal Gadot",
-    "Ritu Arya",
-    "Chris Diamantopoulos"
-  ],
-  "description": "<p>En Interpol-agent lyckas spåra upp världens mest eftersökta konsttjuv, med hjälp av en rivaliserande tjuv. Men ingenting är som det verkar, eftersom en serie dubbelkorsningar uppstår.</p>",
-  "images": [
-    "red-notice-poster.jpg"
-  ]
-},
-
-{
-  "title": "Spirited Away",
-  "productionCountries": "Japan",
-  "release": 2001,
-  "rated": "PG",
-  "length": "2h 5m",
-  "genre": ["Tecknad", "Äventyr", "Familj"],
-  "language": "Engelska",
-  "subtitles": "Svenska",
-  "director": "Hayao Miyazaki",
-  "stars" : 8.6,
-  "actors": [
-    "Daveigh Chase",
-    "Suzanne Pleshette",
-    "Miyu Irino"
-  ],
-  "description": "<p>Under familjens flytt till förorten vandrar en surmulen 10-årig flicka in i en värld som styrs av gudar, häxor och andar, och där människor förvandlas till odjur.</p>",
-  "images": [
-    "spirited-away-poster.jpg"
-  ]
-},
-
-{
-  "title": "Enter the Dragon",
-  "productionCountries": "Hong Kong",
-  "release": 1973,
-  "rated": "R",
-  "length": "1h 42m",
-  "genre": ["Action", "Brott", "Drama"],
-  "language": "Engelska",
-  "subtitles": "Svenska",
-  "director": "Robert Clouse",
-  "stars" : 7.6,
-  "actors": [
-    "Bruce Lee",
-    "John Saxon",
-    "Jim Kelly"
-  ],
-  "description": "<p>En kampsportare från Shaolin reser till en fästning på ön för att spionera på en opiumherre - som också är en före detta munk från sitt tempel - under sken av att delta i en kampturnering.</p>",
-  "images": [
-    "enter-the-dragon-poster.jpg"
-  ]
-},
-
-{
-  "title": "Spider-Man: Across the Spider-Verse",
-  "productionCountries": "USA",
-  "release": 2023,
-  "rated": "PG",
-  "length": "N/A",
-  "genre": ["Animerad", "Action", "Äventyr"],
-  "language": "Engelska",
-  "subtitles": "Svenska",
-  "director": ["Joaquim Dos Santos", "Kemp Powers", "Justin K. Thompson"],
-  "stars" : "N/A",
-  "actors": [
-    "Shameik Moore",
-    "Hailee Steinfeld",
-    "Oscar Isaac",
-    "Jake Johnson"
-  ],
-  "description": "<p>Miles, Gwen, Peter B. Och fler spindlar måste arbeta sida vid sida för att stoppa Spot, en skurk med portaler på kroppen.</p>",
-  "images": [
-    "across-the-spider-verse-poster.jpg"
-  ]
-},
-
-{
-  "title": "The Unbearable Weight of Massive Talent",
-  "productionCountries": "Ungern",
-  "release": 2022,
-  "rated": "R",
-  "length": "1h 47m",
-  "genre": ["Action", "Komedi", "Brott"],
-  "language": "Engelska",
-  "subtitles": "Svenska",
-  "director": "Tom Gormican",
-  "stars" : 7.0,
-  "actors": [
-    "Nicolas Cage",
-    "Pedro Pascal",
-    "Tiffany Haddish",
-    "Sharon Horgan",
-    "Neil Patrick Harris"
-  ],
-  "description": "<p>I denna actionfyllda komedi spelar Nicolas Cage Nick Cage, och kanaliserar sina ikoniska karaktärer när han hamnar i kontakt mellan en superfan (Pedro Pascal) och en CIA-agent (Tiffany Haddish).</p>",
-  "images": [
-    "the-unbearable-weight-of-massive-talent-poster.jpg"
-  ]
-},
-
-{
-  "title": "Up",
-  "productionCountries": "USA",
-  "release": 2009,
-  "rated": "PG",
-  "length": "1h 36m",
-  "genre": ["Animerad", "Komedi", "Äventyr"],
-  "language": "Svenska",
-  "director": ["Pete Docter", "Bob Peterson"],
-  "stars" : 8.3,
-  "actors": [
-    "Edward Asner",
-    "Jordan Nagai",
-    "John Ratzenberger",
-    "Christopher Plummer"
-  ],
-  "description": "<p>78-årige Carl Fredricksen reser till Paradise Falls i sitt hus utrustat med ballonger och tar oavsiktligt med sig en ung fripassagerare.<p>",
-  "images": [
-    "up-poster.jpg"
-  ]
-}
-
+  {
+    "title": "Call me by your name",
+    "productionCountries": [
+      "Italien",
+      "USA"
+    ],
+    "productionYear": 2017,
+    "length": 132,
+    "genre": "Drama",
+    "distributor": "UIP",
+    "language": "engelska",
+    "subtitles": "svenska",
+    "director": "Luca Guadagnino",
+    "actors": [
+      "Armie Hammer",
+      "Timothée Chalamet",
+      "Michael Stuhlbarg"
+    ],
+    "description": "<p>Filmen utspelas i norra Italien sommaren 1983. En ung amerikansk-italienare blir förälskad i en amerikansk student som kommer för att studera och bo hos hans familj.</p><p>Tillsammans upplever de en oförglömlig sommar - full av musik, mat och kärlek - som för evigt kommer att förändra dem.</p>",
+    "images": [
+      "call-me-by-your-name-poster.jpg"
+    ],
+    "youtubeTrailers": [
+      "Z9AYPxH5NTM"
+    ],
+    "reviews": [
+      {
+        "source": "Sydsvenskan",
+        "quote": "ett drama berättat med stor ömhet",
+        "stars": 4,
+        "max": 5
+      },
+      {
+        "source": "Svenska Dagbladet",
+        "quote": "en film att förälska sig i",
+        "stars": 5,
+        "max": 5
+      },
+      {
+        "source": "DN",
+        "quote": "en het romans i åttiotalskostym",
+        "stars": 4,
+        "max": 5
+      }
+    ]
+  },
+  {
+    "title": "Avatar - The Way of Water",
+    "productionCountries": [
+      "USA"
+    ],
+    "productionYear": 2022,
+    "length": 192,
+    "genre": "Drama",
+    "distributor": "UIP",
+    "language": "engelska",
+    "subtitles": "svenska",
+    "director": "James Cameron",
+    "actors": [
+      "Michelle Yeoh", 
+      "Zoe Saldana",
+      "Kate Winslet",
+      "Sigourney Weaver",
+      "Oona Chaplin",
+      "Sam Worthington",
+      "Jemaine Clement",
+      "Stephen Lang"
+    ],
+    "description": "<p>Mer än tio år efter händelserna i den första filmen berättar ”Avatar The Way of Water” historien om familjen Sully (Jake, Neytiri och deras barn), problemen som följer dem, allt de gör för att leva i säkerhet, slagen de utkämpar för att hålla sig levande och tragedierna de måste utstå.</p>",
+    "images": [
+      "avatar-the-way-of-water-poster.jpg"
+    ],
+    "youtubeTrailers": [
+      "d9MyW72ELq0"
+    ],
+    "reviews": [
+      {
+        "source": "Sydsvenskan",
+        "quote": "ett drama berättat med stor ömhet",
+        "stars": 4,
+        "max": 5
+      },
+      {
+        "source": "Svenska Dagbladet",
+        "quote": "en film att förälska sig i",
+        "stars": 5,
+        "max": 5
+      },
+      {
+        "source": "DN",
+        "quote": "en het romans i åttiotalskostym",
+        "stars": 4,
+        "max": 5
+      }
+    ]
+  },
+  {
+    "title": "The Thing",
+    "productionCountries": [
+      "USA"
+    ],
+    "productionYear": 1982,
+    "length": 109,
+    "genre": "Sci-fi, horror",
+    "distributor": "Universal Pictures",
+    "language": "engelska",
+    "subtitles": "svenska",
+    "director": "John Carpenter",
+    "actors": [
+      "Kurt Russell",
+      "Keith David",
+      "Wilford Brimley",
+      "David Clennon",
+      "T.K Carter",
+      "Richard Masur"
+    ],
+    "description": "<p>Vintern 1982. En grupp bestående av 12 forskare befinner sig på en avsides belägen station på Antarktis, när de upptäcker att rymdväsen som begravts i snön för mer än 100 000 år sedan. Det upptinade monstret förvandlar sig till en av dem.</p>",
+    "images": [
+      "the-thing-poster.jpg"
+    ],
+    "youtubeTrailers": [
+      "Z9AYPxH5NTM"
+    ],
+    "reviews": [
+      {
+        "source": "Sydsvenskan",
+        "quote": "ett drama berättat med stor ömhet",
+        "stars": 4,
+        "max": 5
+      },
+      {
+        "source": "Svenska Dagbladet",
+        "quote": "en film att förälska sig i",
+        "stars": 5,
+        "max": 5
+      },
+      {
+        "source": "DN",
+        "quote": "en het romans i åttiotalskostym",
+        "stars": 4,
+        "max": 5
+      }
+    ]
+  },
+  {
+    "title": "The Batman",
+    "productionCountries": [
+      "USA"
+    ],
+    "productionYear": 2022,
+    "length": 176,
+    "genre": "Drama, Action",
+    "distributor": "Warner Bros. Pictures",
+    "language": "engelska",
+    "subtitles": "svenska",
+    "director": "Matt Reeves",
+    "actors": [
+      "Robert Pattinson",
+      "Zoë Kravitz",
+      "Paul Dano",
+      "Colin Farrell",
+      "Jeffrey Wright",
+      "Andy Serkis"
+    ],
+    "description": "<p>En seriemördare försöker locka in Gothams brottsbekämpare i ett spel att slå ursinnigt mot orättvisorna där de uppstår. Men i Batmans mörka siluett finns en genomträngande blick som metodiskt förstör leken för den undre världen.</p>",
+    "images": [
+      "the-batman.jpg"
+    ],
+    "youtubeTrailers": [
+      "mqqft2x_Aa4"
+    ],
+    "reviews": [
+      {
+        "source": "Sydsvenskan",
+        "quote": "ett drama berättat med stor ömhet",
+        "stars": 4,
+        "max": 5
+      },
+      {
+        "source": "Svenska Dagbladet",
+        "quote": "en film att förälska sig i",
+        "stars": 5,
+        "max": 5
+      },
+      {
+        "source": "DN",
+        "quote": "en het romans i åttiotalskostym",
+        "stars": 4,
+        "max": 5
+      }
+    ]
+  },
+  {
+    "title": "The Batman",
+    "productionCountries": [
+      "USA"
+    ],
+    "productionYear": 2022,
+    "length": 176,
+    "genre": "Drama, Action",
+    "distributor": "Warner Bros. Pictures",
+    "language": "engelska",
+    "subtitles": "svenska",
+    "director": "Matt Reeves",
+    "actors": [
+      "Robert Pattinson",
+      "Zoë Kravitz",
+      "Paul Dano",
+      "Colin Farrell",
+      "Jeffrey Wright",
+      "Andy Serkis"
+    ],
+    "description": "<p>En seriemördare försöker locka in Gothams brottsbekämpare i ett spel att slå ursinnigt mot orättvisorna där de uppstår. Men i Batmans mörka siluett finns en genomträngande blick som metodiskt förstör leken för den undre världen.</p>",
+    "images": [
+      "the-batman.jpg"
+    ],
+    "youtubeTrailers": [
+      "mqqft2x_Aa4"
+    ],
+    "reviews": [
+      {
+        "source": "Sydsvenskan",
+        "quote": "ett drama berättat med stor ömhet",
+        "stars": 4,
+        "max": 5
+      },
+      {
+        "source": "Svenska Dagbladet",
+        "quote": "en film att förälska sig i",
+        "stars": 5,
+        "max": 5
+      },
+      {
+        "source": "DN",
+        "quote": "en het romans i åttiotalskostym",
+        "stars": 4,
+        "max": 5
+      }
+    ]
+  },
+  {
+    "title": "The Batman",
+    "productionCountries": [
+      "USA"
+    ],
+    "productionYear": 2022,
+    "length": 176,
+    "genre": "Drama, Action",
+    "distributor": "Warner Bros. Pictures",
+    "language": "engelska",
+    "subtitles": "svenska",
+    "director": "Matt Reeves",
+    "actors": [
+      "Robert Pattinson",
+      "Zoë Kravitz",
+      "Paul Dano",
+      "Colin Farrell",
+      "Jeffrey Wright",
+      "Andy Serkis"
+    ],
+    "description": "<p>En seriemördare försöker locka in Gothams brottsbekämpare i ett spel att slå ursinnigt mot orättvisorna där de uppstår. Men i Batmans mörka siluett finns en genomträngande blick som metodiskt förstör leken för den undre världen.</p>",
+    "images": [
+      "the-batman.jpg"
+    ],
+    "youtubeTrailers": [
+      "mqqft2x_Aa4"
+    ],
+    "reviews": [
+      {
+        "source": "Sydsvenskan",
+        "quote": "ett drama berättat med stor ömhet",
+        "stars": 4,
+        "max": 5
+      },
+      {
+        "source": "Svenska Dagbladet",
+        "quote": "en film att förälska sig i",
+        "stars": 5,
+        "max": 5
+      },
+      {
+        "source": "DN",
+        "quote": "en het romans i åttiotalskostym",
+        "stars": 4,
+        "max": 5
+      }
+    ]
+  }
 ]
