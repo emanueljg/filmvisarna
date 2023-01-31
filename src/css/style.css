@@ -1,51 +1,353 @@
 /* change to your own choice of fonts */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway:wght@400;500&display=swap');
+
 
 @import 'normalize.css';
 
-* {
-  box-sizing: border-box;
+
+.headerAboutUs {
+  position: sticky;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 24px;
+  color: #FFFFFF;
 }
 
 body {
   font-family: 'Raleway';
-  font-size: 20px;
-  background-color: #3e3e3e;
+  font-size: 14px;
+  background-color: rgba(11, 12, 23, 1);
+  height: 1900px;
+}
+
+img {
+  width: 100%;
 }
 
 
-header {
-  background: rgba(11, 12, 23, 0.32);
-  backdrop-filter: blur(17px);
-  color: rgb(161, 0, 0,1);
-  padding: 20px 30px;
-  display: flex;
-  align-items: center;
+main {
+  max-width: 750;
+  height: 1900px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: 'Poppins';
+}
+
+.topplistan {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 18px;
+  line-height: 26px;
+  padding-top: 50px;
+  margin-left: 45px;
+  margin-left: 0;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+}
+
+/*h2 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 18px;
+  line-height: 26px;
+  padding-top: 50px;
+  margin-left: 45px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+}*/
+
+.movieTitleFrontPage {
+  font-family: 'Raleway';
+  font-size: 12px;
+  margin-left: 0;
+}
+
+.movieLength {
+  margin-left: 0;
+}
+
+/*För frosted glass effekt på headern*/
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+
+  header {
+    z-index: 100;
+    background-color: rgba(11, 12, 23, 0.5);
+    padding: 10px 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    -webkit-backdrop-filter: blur(2em);
+    backdrop-filter: blur(2em);
+  }
 }
 
 header h1 {
-  font-size: 30px;
   margin: 0;
 }
 
-header .menubar {
-  margin-left: 20px;
+.topMovies {
+  display: flex;
+  margin-left: 40px;
 }
 
-header .menubar a {
-  padding-left: 10px;
-  padding-right: 10px;
+.comingSoon {
+  display: flex;
+  margin-left: 40px;
+}
+
+.title-comingSoon {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 18px;
+  line-height: 26px;
+  margin-left: 45px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+}
+
+.comingSoon img {
+  max-width: 100%;
+  border-radius: 10px;
+  max-width: 90%;
+  padding: 5px 10px 0px 0px;
+  margin-bottom: 20px;
+}
+
+.topMovies img {
+  border-radius: 15px;
+  max-width: 90%;
+  margin-bottom: 20px;
+}
+
+.wrapper-featuredMovieCTA img {
+  position: absolute;
+  z-index: 3;
+  top: 100px;
+  left: 40px;
+  width: 250px;
+}
+
+
+.wrapper-topplistan {
+  position: absolute;
+  top: 800px;
+}
+
+.wrapper-comingSoon {
+  position: absolute;
+  top: 1350px;
+}
+
+.wrapper-comingSoon img {
+  max-width: 100%;
+  border-radius: 10px;
+  max-width: 90%;
+  margin-bottom: 20px;
+}
+
+header a:nth-child(1) {
+  display: inline-block;
+  padding: 10px 20px;
   text-decoration: none;
-  color: lightgray; 
+  color: rgb(161, 0, 0);
+  margin-left: 5px;
 }
 
+header a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: rgb(209, 209, 232);
+}
 
+header a:first-of-type {
+  padding-left: 0;
+}
 
+header .active {
+  color: white;
+}
 
-/* -- FOOTER SECTION --*/
+header a:hover {
+  color: rgb(199, 202, 227);
+}
+
+p {
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 1);
+  margin-left: 40px;
+}
+
+.descriptorTitle {
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  margin-left: 40px;
+  color: rgba(152, 154, 173, 1);
+}
+
+.movie {
+  display: block;
+  padding: 10px 30px 0 0;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 20px;
+  width: 50%;
+  float: left;
+}
+
+.movie h3 {
+  text-align: center;
+}
+
+.wrapper-featuredMovie {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+}
+
+.featuredMovieOverlay {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 854px;
+  top: 0;
+  background: linear-gradient(180deg, rgba(11, 12, 23, 0) 0%, #0B0C17 100%);
+}
+
+.wrapper-featuredMovieInfo {
+  position: absolute;
+  z-index: 3;
+  margin-left: 5px;
+  top: 475px;
+  font-family: 'Raleway';
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.wrapper-featuredMovieInfo button {
+  margin-left: 40px;
+}
+
+.movieDescription {
+  width: 600px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: rgba(255, 255, 255, 1);
+}
+
+.movieDetail img {
+  display: block;
+  float: right;
+  margin-top: 50px;
+  max-width: 25%;
+  width: 40%;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+.movieList h3 {
+  color: white;
+}Tickets-h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 28px;
+  line-height: 36px;
+  padding-top: 30px;
+  padding-left: 20px;
+  margin-left: 0;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+}
+
+.Tickets-pic {
+  padding-left: 30px;
+}
+
+.Tickets-text {
+  padding-left: 50px;
+}
+
+.Tickets-h3 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 20px;
+  line-height: 10px;
+  padding-top: 10px;
+  margin-left: 20;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+}
+
+.Tickets-välj-dag {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 20px;
+  line-height: 10px;
+  padding-top: 10px;
+  margin-left: 20;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+}
+
+.Tickets-h4 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 15px;
+  line-height: 20px;
+  padding-top: 20px;
+  margin-left: 20;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+}
+
+.wrapper {
+  text-align: center;
+  display: inline-block;
+}
+
+#button2 {
+  margin-left: 200px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  padding: 10px 20px;
+  width: 200px;
+}
+
+.Tickets-pic {
+  width: 50%;
+}
+
+/*
+  - FOOTER SECTION -
+                     */
 
 .footer-container {
-  background-color: #141414;
+  background-color: rgba(11, 12, 23, 1);
+  ;
   padding: 1rem 0;
   display: flex;
   flex-direction: column;
@@ -62,7 +364,7 @@ header .menubar a {
   align-items: center;
   cursor: pointer;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 .footer-logo :hover {
@@ -76,7 +378,6 @@ header .menubar a {
   max-width: 1000px;
   display: flex;
   justify-content: center;
-  font-size: 15px;
 }
 
 .footer-link-wrapper {
@@ -159,7 +460,6 @@ header .menubar a {
 
 .website-rights {
   color: #fff;
-  font-size: 15px;
 }
 
 @media screen and (max-width: 820px) {

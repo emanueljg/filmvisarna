@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Stora Salongen",
+    "seats": 81,
+    "seatsPerRow": [
+      8,
+      9,
+      10,
+      10,
+      10,
+      10,
+      12,
+      12
+    ]
+  },
+  {
+    "name": "Lilla Salongen",
+    "seats": 55,
+    "seatsPerRow": [
+      6,
+      8,
+      9,
+      10,
+      10,
+      12
+    ]
+  }
+]
