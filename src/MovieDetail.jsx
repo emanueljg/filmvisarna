@@ -1,5 +1,10 @@
 import { useStates } from './utilities/states';
 import { useParams } from 'react-router-dom';
+import  React from 'react'; 
+
+
+
+
 
 export default function MovieDetail() {
 
@@ -31,6 +36,49 @@ export default function MovieDetail() {
   // loop through the properties of the movie
   // but: just for a fast preview - it is better to 'handcode'
   // your html/jsx for nice page design - instead of looping
+  const [open, setOpen] = React.useState(true);
+  const handleOpen = (event) => {
+      setValue(event.target.value);
+     setOpen(!open);
+  };
+const [value, setValue] = React.useState('1');
+  const handleMenuOne = () => {
+    // do something
+    setOpen(false);
+  };
+
+  const handleMenuTwo = () => {
+    // do something
+    setOpen(false);
+  };
+  const hours = [
+  '14:30 salong 1   ',
+  '15:00 salong 2   '
+  ];
+
+   const time = hours.map(hour =>
+    <li className='salong'>
+      
+        {hour}
+      
+      <button className='menu-item-button' onClick={handleOpen} > Välj platser</button>
+    </li>
+  );
+  const handleChange = (event) => {
+    setValue(event.target.value);
+    { handleOpen };
+  
+ };
+   const days = [
+  '28/2 lördag  ',
+  '29/2 söndag   '
+];
+  const date = days.map(day =>
+    <li>
+      <button onClick={handleOpen} >{day}</button>
+      
+    </li>
+  );
   return !movie ? null : <div className="movieDetail">
     {/* Display info about the movie - 
         but not the properties title, path, reviews (for now) */}
@@ -45,9 +93,34 @@ export default function MovieDetail() {
         <p>{value instanceof Array ? value.join(', ') : value}</p>
       </>
     }</>)
-    }
-    <div className="dropdown">
-      <button>'Click' me!</button>
-    </div>
+    };
+    
+    <h2 className='valj-dag'>Välj dag</h2>
+    <div>
+
+      <select value={value} onChange={handleOpen}>
+
+         <option value="1">28/2 lördag</option>
+
+         <option value="2">29/2 söndag</option>
+
+         <option value="3">25/2 onsdag</option>
+
+       </select>
+
+   </div>
+   {/*<button onClick={handleOpen}>{date}</button>*/}
+    <div className="dropdown-menu">
+      
+      {open ? (
+        <ul className="menu">
+          <li className="menu-item">
+              <div className='wrapper'>
+              {time}
+              </div>
+          </li>
+        </ul>
+      ) : null}
+      </div>
   </div>
 }
