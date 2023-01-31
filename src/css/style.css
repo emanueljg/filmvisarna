@@ -296,7 +296,7 @@ p {
   font-weight: 600;
 }
 
-.Tickets-välj-dag {
+.valj-dag {
   font-family: 'Poppins';
   font-style: normal;
   font-size: 20px;
@@ -322,19 +322,20 @@ p {
   text-align: center;
   display: inline-block;
 }
-
 #button2 {
   margin-left: 200px;
 }
+.menu-item-button{
+ margin-left: 70px;
+}
 
 .dropdown-menu {
-  position: absolute;
   top: 100px;
   right: 20px;
-  background-color: #fff;
+  background-color: rgba(11, 12, 23, 1);
   border-radius: var(--border-radius);
-  padding: 10px 20px;
-  width: 200px;
+  padding: 20px 30px;
+  width: 300px;
 }
 
 .Tickets-pic {
@@ -356,6 +357,9 @@ p {
   width: 100%;
   margin-bottom: 0;
   margin-top: 300px;
+}
+.salong{
+  color: #fff;
 }
 
 .footer-logo {
