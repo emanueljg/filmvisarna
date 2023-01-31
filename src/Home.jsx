@@ -9,11 +9,19 @@ export default function Home() {
   const s = useStates('main');
 
   return <>
-  
-    <div className="featuredMovie"><img src="/images/batman_background.jpg" alt="bat" />
-      <div className="featuredMovieCTA"> <img src="/images/batman-CTA.png" alt="batat" /></div>
-      <div className="gradientFeaturedMovie">   </div>
+ 
+    <div className="featuredMovie"> <img src="/images/batman_background.jpg" alt="bat" />      
+      <div className="gradientFeaturedMovie"> </div>
     </div>
+    <div className="featuredMovieCTA-container">
+      <div className="featuredMovieCTA-image">
+        <a href="/movie/the-batman" style={{textDecoration: 'none'}}>
+        <img src="/images/batman-CTA.png" alt="batat" />
+        <h1> The Batman (2022)</h1>
+        </a>
+      </div>
+    </div>
+
     <div className="body-movies">
       <div className="showingNow">
       <h1>På bio nu!</h1>

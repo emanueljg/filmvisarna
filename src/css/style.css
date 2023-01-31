@@ -47,10 +47,6 @@ body {
   height: 1900px;
 }
 
-img {
-  width: 100%;
-}
-
 main {
   max-width: 750;
   margin: 2rem auto;
@@ -78,7 +74,6 @@ main {
 @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
   header {
     z-index: 100;
-    background-color: rgba(11, 12, 23, 0.5);
     padding: 10px 40px;
     position: fixed;
     top: 0;
@@ -232,18 +227,44 @@ header a:hover {
   margin-top: 100px;
 } */
 
-
-.featuredMovieCTA {
-  z-index: 2;
+.featuredMovieCTA-container {
   position: absolute;
-  transform: translate(-110%, -400%);
-  scale: 0.3;
+  margin-top: -50%;
+  margin-left: 4%;
+  z-index: 3;
 }
 
-.featuredMovie {
-  z-index: -2;
+.featuredMovieCTA-image h1{
+  color: white;
+  font-size: 2vw;
   position: relative;
+}
 
+.featuredMovieCTA-image button{
+  font-size: 1vw;
+  box-sizing: border-box;
+  position: absolute;
+  border: 1px solid #989AAD;
+  border-radius: 8px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  display: flex;
+  padding-left: 5px;
+  padding-right: 5px;
+  align-items: center;
+  background: transparent;
+  color: #989AAD;
+}
+
+.featuredMovieCTA-image img{
+  border-radius: 15px;
+  max-width: 30%;
+}
+
+.featuredMovie img{
+  max-width: 100%;
 }
 
 .gradientFeaturedMovie {
@@ -251,7 +272,7 @@ header a:hover {
   transform: translate(-0%, -100%);
   z-index: 1;
   width: 100%;
-  height: 100%;
+  height: 1500px;
   background: linear-gradient(180deg, rgba(11, 12, 23, 0) 0%, #0B0C17 100%);
 
 }
@@ -291,8 +312,6 @@ header a:hover {
   box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
 }
 
-
-
 .movie div:nth-of-type(1) {
   position: absolute;
   padding: 16px;
@@ -312,7 +331,7 @@ header a:hover {
   height: 100%;
 }
 
-.movie div:nth-of-type(2) img {
+.movie div:nth-of-type(2) {
   height: 100%;
   width: 100%;
 }
