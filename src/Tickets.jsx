@@ -31,7 +31,7 @@ export default function Tickets() {
     <h2>Biljetter</h2>
     {Object.entries(s.sortedMovies).map(([letter, movies]) => <div className="movieList">
       <h3>{letter}</h3>
-      {movies.map(({ title }) => <div className="movie">
+      {movies.map(({ title }) => <div className="ticketsPage">
         <p>{title}</p>
       </div>)}
     </div>)}
