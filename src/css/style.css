@@ -184,18 +184,33 @@ header a:hover {
 p {
   font-family: 'Raleway';
   font-weight: 500;
-  font-size: 12px;
+  font-size: 18px;
   color: rgba(255, 255, 255, 1);
   margin-left: 40px;
+}
+
+
+.timelink {
+  display: block;
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 1);
+  margin-left: 40px;
+  padding: 20px 35px;
 }
 
 .descriptorTitle {
   font-family: 'Raleway';
   font-weight: 500;
-  font-size: 12px;
+  font-size: 30px;
   line-height: 20px;
   margin-left: 40px;
   color: rgba(152, 154, 173, 1);
+}
+
+.dagvaljare {
+  margin-left: 40px;
 }
 
 .movie {

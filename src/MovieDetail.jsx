@@ -49,7 +49,6 @@ export default function MovieDetail() {
     swedishTl[swedishTl.get(kv[0])] = kv[1];
   }
 
-
   // loop through the properties of the movie
   // but: just for a fast preview - it is better to 'handcode'
   // your html/jsx for nice page design - instead of looping
@@ -86,6 +85,11 @@ const [value, setValue] = React.useState('1');
     { handleOpen };
   
  };
+
+  function dateRead(date_str) {
+    return new Date(date_str).toLocaleString('sv-SE');
+  }
+
    const days = [
   '28/2 lördag  ',
   '29/2 söndag   '
@@ -111,33 +115,17 @@ const [value, setValue] = React.useState('1');
       </>
     }</>)
     };
-    
-    <h2 className='valj-dag'>Välj dag</h2>
-    <div>
 
-      <select value={value} onChange={handleOpen}>
-
-         <option value="1">28/2 lördag</option>
-
-         <option value="2">29/2 söndag</option>
-
-         <option value="3">25/2 onsdag</option>
-
-       </select>
-
-   </div>
-   {/*<button onClick={handleOpen}>{date}</button>*/}
-    <div className="dropdown-menu">
-      
-      {open ? (
-        <ul className="menu">
-          <li className="menu-item">
-              <div className='wrapper'>
-              {time}
-              </div>
-          </li>
-        </ul>
-      ) : null}
+    <div className='dagvaljare'>
+      <h2 className='valj-dag'>Välj tid</h2>
+      <div classname='dagar'>
+        {
+          movie.viewings.map((v)=>(
+            <a href="www.google.com" className="timelink">
+              {dateRead(v.start_date)} - {dateRead(v.end_date)} (Salong {v.room})
+            </a>))
+        }
       </div>
+    </div>
   </div>
 }
