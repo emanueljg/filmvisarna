@@ -20,7 +20,7 @@ export default function App() {
   const s = useStates('main', {
     // A menu used for the main menu and for routing
     menu: [
-      { label: 'FilmVisarna', path: '/home', Component: Home },
+      { label: 'Ironboy Films', path: '/home', Component: Home },
       { label: '', path: '/', Component: Home },
       { label: 'Biljetter', path: '/tickets', Component: Tickets },
       { label: 'Filmer & Trailer', path: '/films-and-trailers', Component: FilmsAndTrailers },

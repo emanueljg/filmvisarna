@@ -118,7 +118,7 @@ const [value, setValue] = React.useState('1');
 
     <div className='dagvaljare'>
       <h2 className='valj-dag'>Välj tid</h2>
-      <div classname='dagar'>
+      <div className='dagar'>
         {
           movie.viewings.map((v)=>(
             <a href="www.google.com" className="timelink">
