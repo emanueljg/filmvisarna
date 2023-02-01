@@ -17,7 +17,8 @@ export default function MovieDetail() {
 
   // get the correct movie depedning on the value of moviePath
   // (might be undefined initially before the movies have loaded)
-  const movie = s.movies.find(movie => movie.path === '/movie/' + moviePath);
+  const currentRoute = '/movie/' + moviePath;
+  const movie = s.movies.find(movie => movie.path === currentRoute);
 
   // fix description turn into jsx with p tags
   let description = movie && movie.description.split('<p>')
@@ -121,7 +122,8 @@ const [value, setValue] = React.useState('1');
       <div className='dagar'>
         {
           movie.viewings.map((v)=>(
-            <a href={"/" + v.start_date.replace(':', '-')} className="timelink">
+            <a href={currentRoute + '/' + v.start_date.replace(':', '-')} 
+               className="timelink">
               {dateRead(v.start_date)} - {dateRead(v.end_date)} (Salong {v.room})
             </a>))
         }
