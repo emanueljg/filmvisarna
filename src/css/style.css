@@ -403,6 +403,28 @@ header a:hover {
   width: fit-content;
 }
 
+/* TICKETS PAGE */
+
+.movieList h3 {
+  margin-top: 90px;
+  margin-left: 45px;
+  overflow: hidden;
+}
+
+
+.movieList p{
+  color:white;
+}
+.movieList {
+  display: block;
+  max-width: 20%;
+}
+
+
+.movieImages img{
+  max-width: 50%;
+  margin-left: 40px;
+}
 
 
 
