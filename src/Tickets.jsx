@@ -1,5 +1,7 @@
 import { useStates } from "./utilities/states";
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 
 export default function Tickets() {
 
@@ -27,14 +29,15 @@ export default function Tickets() {
 
 
 
-  return <div>
-    <h2>Biljetter</h2>
+  return <>
     {Object.entries(s.sortedMovies).map(([letter, movies]) => <div className="movieList">
       <h3>{letter}</h3>
-      {movies.map(({ title }) => <div className="movie">
-        <p>{title}</p>
+      {movies.map(({ path, title, images }) => <div className="movieImages">
+        <Link to={path} style={{ textDecoration: 'none' }} className="sortedMovies">
+          <img src={'/images/' + images[0]} />
+          <p>{title}</p>
+        </Link>
       </div>)}
     </div>)}
-  </div>;
-
+  </>
 }

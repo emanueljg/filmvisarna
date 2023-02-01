@@ -9,45 +9,40 @@ export default function Home() {
   const s = useStates('main');
 
   return <>
-    <div className="featuredMovieOverlay"></div>
-    <div className="wrapper-featuredMovie">
-      <img src="/images/batman_background.jpg" alt="2" />
+ 
+    <div className="featuredMovie"> <img src="/images/batman_background.jpg" alt="bat" />      
+      <div className="gradientFeaturedMovie"> </div>
     </div>
-    
-    <div className="wrapper-featuredMovieCTA"><img src="
-    /images/the-batman.jpg" alt="bat" />
-      <div className="wrapper-featuredMovieInfo">
-        <p>The Batman (2022)</p>
-        <p>176 min</p>
-        <button>Biljetter</button>
+    <div className="featuredMovieCTA-container">
+      <div className="featuredMovieCTA-image">
+        <a href="/movie/the-batman" style={{textDecoration: 'none'}}>
+        <img src="/images/batman-CTA.png" alt="batat" />
+        <h1> The Batman (2022)</h1>
+        </a>
       </div>
     </div>
 
-    <div className="wrapper-topplistan">
-    <h2 className="topplistan">Topplistan</h2>
-    <div className="topMovies">
-    {s.movies.map(({ path, images, title, length }) =>
-      <Link to={path} className="movie">
-        <img src={'/images/' + images[0]} />
-        <p className="movieTitleFrontPage">{title}</p>
-        <p className="movieLength">{length} min</p>
-      </Link>
-      )}
-      </div>
-    </div>
-
-    <div className="wrapper-comingSoon">
-      <h2 className="title-comingSoon">Kommer snart</h2>
-      <div className="comingSoon">
-      {s.movies.map(({ path, images, title, length }) =>
+    <div className="body-movies">
+      <div className="showingNow">
+      <h1>På bio nu!</h1>
+      {s.movies.slice(0, 6).map(({ path, images, title, length }) =>
         <Link to={path} className="movie">
           <img src={'/images/' + images[0]} />
-          <p className="movieTitleFrontPage">{title}</p>
-          <p className="movieLength">{length} min</p>
+          <h3>{title}</h3>
+          <h4>{length}</h4>
         </Link>
-      )}
+        )}
+      </div>
+      <div className="comingSoon">
+        <h1>Kommande</h1>
+        {s.movies.slice(6).map(({ path, images, title, length }) =>
+          <Link to={path} className="movie">
+            <img src={'/images/' + images[0]} />
+            <h3>{title}</h3>
+            <h4>{length}</h4>
+          </Link>
+        )}
+      </div>
     </div>
-    </div>
-
   </>;
 }
