@@ -31,7 +31,23 @@ export default function MovieDetail() {
   // description -> since we display it separately
   // path -> because it is not meant as human readable info
   // reviews -> since it is an object - requires extra parsing (should be done later)
-  const dontShow = ['title', 'images', 'description', 'path', 'reviews', 'viewings'];
+  const dontShow = ['images', 'description', 'path', 'reviews', 'stars', 'productionCountries',
+                    'viewings'];
+
+  const swedishTl = new Map();
+  swedishTl.set('title', 'Originaltitel');
+  swedishTl.set('release', 'Premiär');
+  swedishTl.set('rated', 'Åldersgräns');
+  swedishTl.set('length', 'Speltid');
+  swedishTl.set('genre', 'Genre');
+  swedishTl.set('language', 'Tal');
+  swedishTl.set('subtitles', 'Text');
+  swedishTl.set('director', 'Regi');
+  swedishTl.set('actors', 'Medverkande');
+  for (const kv of Object.entries(movie)) {
+    if(dontShow.some(x => x == kv[0])) continue; 
+    swedishTl[swedishTl.get(kv[0])] = kv[1];
+  }
 
   // loop through the properties of the movie
   // but: just for a fast preview - it is better to 'handcode'
@@ -92,7 +108,7 @@ const [value, setValue] = React.useState('1');
     <div className="movieDescription">
       {description}
     </div>
-    {Object.entries(movie).map(([key, value]) => <>{
+    {Object.entries(swedishTl).map(([key, value]) => <>{
       dontShow.includes(key) ? null : <>
         <h4 className="descriptorTitle">{key}</h4>
         <p>{value instanceof Array ? value.join(', ') : value}</p>
@@ -112,5 +128,4 @@ const [value, setValue] = React.useState('1');
       </div>
     </div>
   </div>
-
 }
