@@ -44,7 +44,7 @@ export default function MovieDetail() {
   swedishTl.set('subtitles', 'Text');
   swedishTl.set('director', 'Regi');
   swedishTl.set('actors', 'Medverkande');
-  for (const kv of Object.entries(movie)) {
+  for (const kv of Object.entries(movie || {})) {
     if(dontShow.some(x => x == kv[0])) continue; 
     swedishTl[swedishTl.get(kv[0])] = kv[1];
   }
