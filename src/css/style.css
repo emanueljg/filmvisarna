@@ -25,12 +25,10 @@
   max-width: 100%;
   height: auto;
   text-align: center;
-  margin-top: 30px;
+  margin: 50px;
   font-family: 'Poppins';
-  font-style: normal;
   font-weight: 400;
   font-size: 40px;
-  line-height: 24px;
   color: #FFFFFF;
 }
 
