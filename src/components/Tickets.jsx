@@ -1,4 +1,4 @@
-import { useStates } from "./utilities/states";
+import { useStates } from "../utilities/states";
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 

@@ -1,4 +1,4 @@
-import { useStates } from "./utilities/states";
+import { useStates } from "../utilities/states";
 import { NavLink } from "react-router-dom";
 
 export default function Menu() {

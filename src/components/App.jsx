@@ -1,6 +1,6 @@
-import { useStates } from './utilities/states';
+import { useStates } from '../utilities/states';
 import { useEffect } from 'react';
-import { kebabify } from './utilities/kebabify';
+import { kebabify } from '../utilities/kebabify';
 import {
   BrowserRouter,
   Routes,
