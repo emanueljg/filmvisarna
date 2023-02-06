@@ -1,4 +1,4 @@
-import { useStates } from './utilities/states';
+import { useStates } from '../utilities/states';
 import { Link } from 'react-router-dom';
 
 
