@@ -2,9 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway:wght@400;500&display=swap');
 
-
 @import 'normalize.css';
-
+@import 'grid-system.css';
 
 *::-webkit-scrollbar {
   width: 5px;
@@ -264,11 +263,13 @@ p {
   text-align: center;
   display: inline-block;
 }
+
 #button2 {
   margin-left: 200px;
 }
-.menu-item-button{
- margin-left: 70px;
+
+.menu-item-button {
+  margin-left: 70px;
 }
 
 .dropdown-menu {
@@ -302,13 +303,13 @@ p {
   z-index: 3;
 }
 
-.featuredMovieCTA-image h1{
+.featuredMovieCTA-image h1 {
   color: white;
   font-size: 2vw;
   position: relative;
 }
 
-.featuredMovieCTA-image button{
+.featuredMovieCTA-image button {
   font-size: 1vw;
   box-sizing: border-box;
   position: absolute;
@@ -326,12 +327,12 @@ p {
   color: #989AAD;
 }
 
-.featuredMovieCTA-image img{
+.featuredMovieCTA-image img {
   border-radius: 15px;
   max-width: 30%;
 }
 
-.featuredMovie img{
+.featuredMovie img {
   max-width: 100%;
 }
 
@@ -350,7 +351,7 @@ p {
 }
 
 .comingSoon {
-  margin-top: 450px; 
+  margin-top: 450px;
 }
 
 .body-movies h1 {
@@ -364,7 +365,7 @@ p {
 
 .movie {
   z-index: 2;
-  transform:scale(1);
+  transform: scale(1);
   display: inline-block;
   text-decoration: none;
   align-items: center;
@@ -480,16 +481,17 @@ p {
 }
 
 
-.movieList p{
-  color:white;
+.movieList p {
+  color: white;
 }
+
 .movieList {
   display: block;
   max-width: 20%;
 }
 
 
-.movieImages img{
+.movieImages img {
   max-width: 50%;
   margin-left: 40px;
 }
@@ -515,7 +517,8 @@ p {
   margin-bottom: 0;
   margin-top: 300px;
 }
-.salong{
+
+.salong {
   color: #fff;
 }
 
