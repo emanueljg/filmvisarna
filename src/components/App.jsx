@@ -4,15 +4,15 @@ import { kebabify } from '../utilities/kebabify';
 import {
   BrowserRouter,
   Routes,
-  Route
+  Route,
 } from 'react-router-dom';
 import Home from './Home';
 import FilmsAndTrailers from './FilmsAndTrailers';
 import AboutUs from './AboutUs';
-import Navbar from './Navbar';
 import MovieDetail from './MovieDetail';
 import Tickets from './Tickets';
 import Footer from './Footer';
+import Header from './Header';
 
 export default function App() {
 
@@ -20,8 +20,7 @@ export default function App() {
   const s = useStates('main', {
     // A menu used for the main menu and for routing
     menu: [
-      { label: 'Ironboy Films', path: '/home', Component: Home },
-      { label: '', path: '/', Component: Home },
+      { label: ' ', path: '/', Component: Home },
       { label: 'Biljetter', path: '/tickets', Component: Tickets },
       { label: 'Filmer & Trailer', path: '/films-and-trailers', Component: FilmsAndTrailers },
       { label: 'Om oss', path: '/about-us', Component: AboutUs },
@@ -43,7 +42,7 @@ export default function App() {
 
   return <BrowserRouter>
     <header>
-      <Navbar />
+      <Header/>
     </header>
     <main>
       {/* Routing - display the correct component */}
