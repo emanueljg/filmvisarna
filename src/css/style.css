@@ -7,8 +7,10 @@
 @import 'footer.css';
 @import 'header.css';
 @import 'featured-movie.css';
-@import 'movie.css';
+@import 'home.css';
 @import 'scrollbar.css';
+@import 'movieDetails.css';
+@import 'tickets.css';
 
 
 .headerAboutUs {
@@ -42,29 +44,6 @@ main {
   max-width: 750;
   margin: 2rem auto;
 }
-
-
-
-/*.topplistan {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-size: 18px;
-  line-height: 26px;
-  padding-top: 50px;
-  margin-left: 45px;
-  margin-left: 0;
-  color: rgba(255, 255, 255, 1);
-  font-weight: 600;
-} */
-
-p {
-  font-family: 'Raleway';
-  font-weight: 500;
-  font-size: 18px;
-  color: rgba(255, 255, 255, 1);
-  margin-left: 40px;
-}
-
 
 .timelink {
   display: block;
@@ -108,16 +87,6 @@ p {
   font-weight: 600;
 }
 
-.valj-dag {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-size: 20px;
-  line-height: 10px;
-  padding-top: 10px;
-  margin-left: 20;
-  color: rgba(255, 255, 255, 1);
-  font-weight: 600;
-}
 
 .Tickets-h4 {
   font-family: 'Poppins';
@@ -154,53 +123,3 @@ p {
   width: 50%;
 }
 
-
-/*
- - BODY SECTION -
-                  */
-/*.movie-container {
-  display: flex;
-  padding-left: 20px;
-  width: 100%;
-  margin-top: 100px;
-} */
-
-
-.showingNow {
-  margin: auto;
-}
-
-.comingSoon {
-  margin-top: 450px; 
-}
-
-.body-movies h1 {
-  margin-top: 75px;
-  z-index: 1;
-  color: white;
-  font-size: 1.8vw;
-  margin-left: 1.5rem;
-  margin-bottom: 20px;
-}
-
-
-/* TICKETS PAGE */
-
-.movieList h3 {
-  margin-top: 90px;
-  margin-left: 45px;
-  overflow: hidden;
-}
-
-.movieList p{
-  color:white;
-}
-.movieList {
-  display: block;
-  max-width: 20%;
-}
-
-.movieImages img{
-  max-width: 50%;
-  margin-left: 40px;
-}

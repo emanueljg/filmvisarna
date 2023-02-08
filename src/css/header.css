@@ -43,4 +43,5 @@ header .active {
 
 header a:hover {
   color: #e7a6a6;
+  transition: 0.3s ease-in-out;
 }
