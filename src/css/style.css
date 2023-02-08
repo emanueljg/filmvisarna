@@ -192,7 +192,6 @@ p {
   overflow: hidden;
 }
 
-
 .movieList p{
   color:white;
 }
@@ -200,7 +199,6 @@ p {
   display: block;
   max-width: 20%;
 }
-
 
 .movieImages img{
   max-width: 50%;

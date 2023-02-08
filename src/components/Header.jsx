@@ -3,13 +3,12 @@ import Navbar from './Navbar';
 
 export default function Home() {
 
-  return <>
+  return <nav>
     <Link to="/">
-      <div className='footer-logo'>
-        <a id='footer-logo'><i className='fa-solid fa-film'></i> IRONBOY FILMS</a>
-      </div>
+      <div className='header-logo'>
+        <i className='fa-solid fa-film'></i> IRONBOY FILMS</div>
     </Link>
     <Navbar />
-  </>
+  </nav>
 }
 
