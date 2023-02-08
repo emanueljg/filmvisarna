@@ -1,0 +1,41 @@
+/* HEADER STYLING */
+/*För frosted glass effekt på headern*/
+
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  header {
+    z-index: 100;
+    padding: 10px 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    -webkit-backdrop-filter: blur(2em);
+    backdrop-filter: blur(2em);
+  }
+}
+
+header a:nth-child(1) {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: rgb(161, 0, 0);
+  margin-left: 5px;
+}
+
+header a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: rgb(209, 209, 232);
+}
+
+header a:first-of-type {
+  padding-left: 0;
+}
+
+header .active {
+  color: white;
+}
+
+header a:hover {
+  color: rgb(199, 202, 227);
+}
