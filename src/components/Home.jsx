@@ -29,7 +29,6 @@ export default function Home() {
         <Link to={path} className="movie">
           <img src={'/images/' + images[0]} />
           <h3>{title}</h3>
-          <h4>{length}</h4>
         </Link>
         )}
       </div>
@@ -39,7 +38,6 @@ export default function Home() {
           <Link to={path} className="movie">
             <img src={'/images/' + images[0]} />
             <h3>{title}</h3>
-            <h4>{length}</h4>
           </Link>
         )}
       </div>
