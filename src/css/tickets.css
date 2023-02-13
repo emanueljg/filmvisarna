@@ -116,3 +116,12 @@ body {
 .wrapperImages {
   border-bottom: .0625rem solid #2d2d2d;
 }
+
+
+.search {
+  color:white;
+}
+
+.letter{
+  color: white;
+}

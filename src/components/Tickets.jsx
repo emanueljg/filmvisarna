@@ -1,4 +1,5 @@
 import { useStates } from "../utilities/states";
+import { useState } from "react";
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../css/tickets.css'
@@ -11,14 +12,16 @@ export default function Tickets() {
   const date = `${current.getDate()}/${current.getMonth() + 1} - ${" " + ('idag')}`;
 
   const s = useStates('main')
-  let movies = s.sortedMovies
+  let movies = s.sortedMovies;
+
+  let todayISO = new Date().toISOString().slice(0,10);
 
   const l = useStates({
     chosenCategory: 'Alla genrer',
     possibleSorts: ['Sort by name', 'Sort by length'],
     chosenSort: 'Sort by name',
     sortDone: '',
-    chosenViewing: { date },
+    chosenViewing: todayISO,
     // note: copying the movies array from main
     // - slice() copies an array
     // this means when we sort the copy in the local state
@@ -26,8 +29,24 @@ export default function Tickets() {
     // trigger a re-mount of the component
     // (which we otherwise would happen if changing
     // a higer level state variable)
-    movies: s.sortedMovies.slice(),
+    movies: Array.prototype.slice.call(s.sortedMovies),
   });
+
+  const handleSearch = (e) => {
+    const result = movies.filter(movie => {
+      if (e.target.value === "") return movies
+      return movie.title.toLowerCase().includes(e.target.value.toLowerCase())
+    })
+    setQueryState({
+      query: e.target.value,
+      listOfMovies: result
+    })
+  }
+
+  const [queryState, setQueryState] = useState({
+    query: "",
+    listOfMovies: []
+  })
 
 
   function filterByCategory(movie) {
@@ -35,94 +54,104 @@ export default function Tickets() {
   }
 
   function filterByViewing(movie) {
-    return l.chosenViewing === { date } || movie.viewings.includes(l.chosenViewing)
+    let startDates = movie.viewings.map(x => x.start_date.slice(0,10));
+    for (let startDate of startDates) {
+      if (l.chosenViewing === startDate) { return true; }
+    }
+    return false;
+  }
+
+  
+
+  function sortMoviesAlphabetically() {
+    if (l.movies.length === 0 || s.sortedMovies.length > 0) {
+      return;
+    }
+    let sorted = l.movies.slice().sort(function (a, b) {
+      return a.title[0].localeCompare(b.title[0])
+    });
+    let byAlpha = []
+    for (let i = 0; i < sorted.length; i++) {
+      let m = sorted[i].title.toUpperCase();
+      byAlpha[m] = byAlpha[m] || []
+      byAlpha[m].push(sorted[i])
+    }
+    s.sortedMovies = byAlpha;
   }
 
 
 
   useEffect(() => {
     // important: conditions so we don't get an endless loop to useEffects
-    if (movies.length === 0 || Object.keys(s.sortedMovies).length > 0) { return; }
-    // sort movies?
-    let sorted = movies.slice().sort(function (a, b) {
-      return a.title[0].localeCompare(b.title[0])
-    });
-    let byAlpha = {};
-    for (let i = 0; i < sorted.length; i++) {
-      let m = sorted[i].title[0].toUpperCase();
-      byAlpha[m] = byAlpha[m] || [];
-      byAlpha[m].push(sorted[i]);
-    }
-    s.sortedMovies = byAlpha;
   }, []);
 
-
-
-  return <div className="main">
-    <div className="filterInnerWrapper">
+  let currentLetter = ""
+  return <section className="main">
+    <section className="filterInnerWrapper">
       <ul className="filtersList">
         <li className="filterDay">
           <span className="pickDay">Välj dag</span>
-          <div className="selectDay">
+          <section className="selectDay">
             <select {...l.bind('chosenViewing')}>
-              <option>{date}</option>
+              <option value={todayISO}>{date}</option>
               {s.showing.map(viewings => <option>
-                {viewings.start_date}
+                {viewings.start_date.slice(0,10)}
               </option>)}
             </select>
-          </div>
+          </section>
         </li>
         <li className="filterGenre">
           <span className="pickGenre">Välj genre</span>
-          <div className="selectGenre">
+          <section className="selectGenre">
             <select {...l.bind('chosenCategory')}>
               <option>Alla genrer</option>
               {s.categories.map(category => <option>
                 {category}
               </option>)}
             </select>
-          </div>
+          </section>
         </li>
         <li className="filterFilm">
           <span className="pickFilm">Sök</span>
-          <div className="selectFilm">
-            <input type="text" placeholder="Sök.." />
-
-          </div>
+          <form className="selectFilm">
+            <input type="search" value={queryState.query} onChange={handleSearch}placeholder="Sök.." />
+          </form>
+          <ul>{(queryState.query === "" ? '' : queryState.listOfMovies.map(movie => { return <li className="search" >{movie.title}</li> }))}
+          </ul>
         </li>
       </ul>
 
-      <div className="moviesWrapper">
-
+      <section className="moviesWrapper">
         {
-          s.sortedMovies.filter(filterByCategory, filterByViewing).map(({ path, title, images, genre, length, rated, letter }) => <div className="wrapperImages">
-            <div className="letta">
-              <h3>{letter}</h3>
-            </div>
-            <div className="movieInfo clear-fix">
+          l.movies.filter(filterByCategory).filter(filterByViewing).map(({ path, title, images, genre, length, rated }) => <section className="wrapperImages">
+            {currentLetter !== title[0] && (currentLetter = title[0]) && null}
+             <section className="letter">
+              <h3>{currentLetter}</h3>
+            </section>
+            <section className="movieInfo clear-fix">
               <Link to={path} style={{ textDecoration: 'none' }}>
 
                 <img className="poster-50-percent" src={'/images/' + images[0]} />
 
-                <div className="movieText">
+                <section className="movieText">
                   <h3 className="movieTitle">{title}</h3>
                   <h4>
                     <span>{genre.join(', ')}</span>
                     <span className="length">{length}</span>
                     <span className="rated">{rated}</span>
                   </h4>
-                </div>
+                </section>
               </Link>
-            </div>
-          </div>)
+            </section>
+          </section>)
         }
 
 
 
-      </div>
-    </div>
+      </section>
+    </section>
 
-  </div>
+  </section>
 
 
 

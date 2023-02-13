@@ -1,5 +1,6 @@
 import { useStates } from '../utilities/states';
 import { createCategoryList } from '../utilities/createCategoryList';
+import {createShowingsList} from '../utilities/createShowingsList'
 import { useEffect } from 'react';
 import { kebabify } from '../utilities/kebabify';
 import {
@@ -14,7 +15,6 @@ import Navbar from './Navbar';
 import MovieDetail from './MovieDetail';
 import Tickets from './Tickets';
 import Footer from './Footer';
-import { createShowingsList } from '../utilities/createShowingsList';
 
 export default function App() {
 
@@ -30,7 +30,7 @@ export default function App() {
       { path: '/movie/:moviePath', Component: MovieDetail }
     ],
     movies: [],
-    sortedMovies: [],
+    sortedMovies: {},
     categories: [],
     showing: []
   });
