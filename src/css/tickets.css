@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway:wght@400;500&display=swap');
+
+
+div {
+  display: block;
+}
+
+body {
+  background-color: rgba(11, 12, 23, 1);
+
+}
+
+
+
+.main {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60.25rem;
+}
+
+
+.letters h3 {
+  color: white;
+  font-family: 'Poppins';
+  font-size: 25px;
+}
+
+.movieTitle {
+  font-family: 'Poppins';
+  font-size: 25px;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+
+
+.filterInnerWrapper span {
+  font-family: 'Poppins';
+}
+
+.filtersList {
+  display: flex;
+  margin: 2rem 0 0;
+  list-style: none;
+  margin-top: 20%;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.pickDay {
+  margin-bottom: .5rem;
+}
+
+.clear-fix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.genre {
+  display: inline-block;
+  padding-right: 2%;
+}
+
+
+.poster-50-percent {
+  display: block;
+  width: 6.25rem;
+  float: left;
+  border-top-left-radius: 3%;
+  border-bottom-left-radius: 3%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+
+.moviesWrapper {
+  margin-top: 10%;
+}
+
+
+.movieText {
+  margin-top: 2.5%;
+  float: left;
+  width: 50%;
+  color: white;
+}
+
+.movieText h3 {
+  margin-top: 7%;
+  line-height: 90%;
+  margin-left: 4%;
+}
+
+.movieText h4 {
+  margin-top: 4%;
+  line-height: 90%;
+  margin-left: 4%;
+  color: rgba(190, 192, 193, 0.525);
+}
+
+
+
+.length:before {
+  content: "|";
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.rated:before {
+  content: "|";
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.wrapperImages {
+  border-bottom: .0625rem solid #2d2d2d;
+}
