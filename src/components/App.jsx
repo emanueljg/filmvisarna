@@ -22,7 +22,7 @@ export default function App() {
     menu: [
       { path: '/', Component: Home },
       { label: 'Biljetter', path: '/tickets', Component: Tickets },
-      { label: 'Filmer & Trailer', path: '/films-and-trailers', Component: FilmsAndTrailers },
+      { label: 'Filmer & trailers', path: '/films-and-trailers', Component: FilmsAndTrailers },
       { label: 'Om oss', path: '/about-us', Component: AboutUs },
       { path: '/movie/:moviePath', Component: MovieDetail }
     ],
@@ -42,7 +42,7 @@ export default function App() {
 
   return <BrowserRouter>
     <header>
-      <Header/>
+      <Header />
     </header>
     <main>
       {/* Routing - display the correct component */}
