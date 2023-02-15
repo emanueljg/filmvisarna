@@ -83,7 +83,29 @@
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 1020px) { 
+
+@media screen and (max-width: 464px) {
+
+  .movie p {
+    font-size: 100%;
+  }
+
+  .movie h2 {
+    font-size: 100%;
+  }
+
+  .body-movies h1 {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 50%;
+    text-align: center;
+
+  }
+
+}
+
+
+@media screen and (max-width: 800px) { 
   
   .movie p {
     font-size: 100%;
@@ -103,7 +125,7 @@
 
 }
 
-@media screen and (max-width: 2040px) {
+@media screen and (max-width: 1024px) {
   
   .movie p {
     font-size: 100%;
@@ -111,6 +133,14 @@
 
   .movie h2 {
     font-size: 100%;
+  }
+
+  .body-movies h1 {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 50%;
+    text-align: center;
+
   }
 }
 
