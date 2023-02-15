@@ -25,10 +25,12 @@ export default function Home() {
     <div className="body-movies">
       <div className="showingNow">
       <h1>På bio nu!</h1>
-      {s.movies.map(({ path, images, title, length }) =>
+      {s.movies.slice(0,7).map(({ path, images, title, length, rated }) =>
         <Link to={path} className="movie">
           <img src={'/images/' + images[0]} />
-          <h3>{title}</h3>
+          <h2>{title}</h2>
+          <p>{length}</p>
+          <p className='rating'>{rated}</p>
         </Link>
         )}
       </div>
