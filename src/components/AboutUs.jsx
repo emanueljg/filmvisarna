@@ -41,7 +41,7 @@ export default function AboutUs() {
       <div className="popcorn1">
         <img src="/images/popcorn1.png" alt="popcorn1" />
       </div>
-      <h2 className="aboutus  h2">Sveriges överlägset bästa biografkedja!</h2>
+      <h2 className="aboutus">Sveriges överlägset bästa biografkedja!</h2>
       {el}
     </div>
   );
