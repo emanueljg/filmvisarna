@@ -39,7 +39,7 @@ export default function AboutUs() {
   return (
     <div className="table2">
       <div className="popcorn1">
-        <img src="/public/images/popcorn1.png" alt="popcorn1" />
+        <img src="/images/popcorn1.png" alt="popcorn1" />
       </div>
       <h2 className="aboutus  h2">Sveriges överlägset bästa biografkedja!</h2>
       {el}
