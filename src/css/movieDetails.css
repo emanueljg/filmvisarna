@@ -1,0 +1,67 @@
+.descriptorTitle {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 20px;
+    margin: 20px 30px;
+    color: rgba(152, 154, 173, 1);
+}
+
+.movieDescription p {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+    margin-left: 40px;
+}
+
+.movieDetail p {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+    margin-left: 40px;
+}
+
+.dagvaljare {
+    margin-left: 40px;
+}
+
+.valj-dag {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 10px;
+    padding-top: 10px;
+    margin-left: 20;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 600;
+}
+
+.movieDescription {
+    width: 600px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: rgba(255, 255, 255, 1);
+}
+
+.movieDetail img {
+    display: block;
+    float: right;
+    margin-top: 50px;
+    max-width: 25%;
+    width: 40%;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.movieDetail h2 {
+    margin-top: 110px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    color: white;
+}

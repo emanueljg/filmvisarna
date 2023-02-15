@@ -8,10 +8,10 @@ export default function Menu() {
   // (that has been declared in the App component)
   const s = useStates('main');
 
-  return  <nav>
+  return <>
     {/* Loop through the menu and display menu items */}
     {s.menu.map(({ label, path }) =>
       label ? <NavLink to={path}>{label}</NavLink> : null
     )}
-  </nav>;
+  </>;
 }
