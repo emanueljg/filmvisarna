@@ -1,19 +1,19 @@
 .movieList h3 {
-    margin-top: 90px;
-    margin-left: 45px;
-    overflow: hidden;
+  margin-top: 90px;
+  margin-left: 45px;
+  overflow: hidden;
 }
 
 .movieList p {
-    color: white;
+  color: white;
 }
 
 .movieList {
-    display: block;
-    max-width: 20%;
+  display: block;
+  max-width: 20%;
 }
 
 .movieImages img {
-    max-width: 50%;
-    margin-left: 40px;
+  max-width: 50%;
+  margin-left: 40px;
 }
