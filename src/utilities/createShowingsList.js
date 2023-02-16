@@ -3,7 +3,7 @@ export function createShowingsList(movies) {
   // loop through movies and add the movies
   // genres to the category list
   for (let movie of movies) {
-    showing = [...showing, ...movie.viewings.slice(0,2)];
+    showing = [...showing, ...movie.viewings.slice(0,1)];
   }
   // remove duplicates 
   //showing = [...new Set(showing)];

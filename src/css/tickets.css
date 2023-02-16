@@ -2,11 +2,6 @@
 
 
 
-body {
-  background-color: rgba(11, 12, 23, 1);
-
-}
-
 .main {
   position: relative;
   margin-left: auto;
@@ -21,6 +16,9 @@ body {
   font-size: 25px;
 }
 
+.letter h3 {
+  margin-bottom: 5px;
+}
 
 
 .movieTitle {
@@ -55,8 +53,6 @@ body {
     height: 2px;
     border-radius: 4px;
     background-color: #7c0204;
-    bottom: 0;
-    left: 0;
     transform-origin: right;
     transform: scaleX(0);
     transition: transform .3s ease-in-out;
@@ -66,9 +62,6 @@ body {
     transform-origin: left;
       transform: scaleX(1);
 }
-
-
-
 
 .poster-50-percent {
   display: block;
@@ -121,6 +114,10 @@ body {
   color:white;
 }
 
+.queryImages{
+  display: flex;
+  flex-direction: column;
+}
 
 .chosenViewing, .chosenCategory {
   width: 150px;
@@ -136,13 +133,52 @@ body {
 
 
 .searchBar {
-    width: 200px;
-      text-align: left;
-      background-color: white;
-      border: none;
-      border-radius: 10px;
-      font-size: 16px;
-      padding: 5px;
-      margin-top: 5px;
+  width: 175px;
+  text-align: left;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 5px;
+  margin-top: 5px;
 }
+
+
+/* //Queries for the filter list\\ */
+@media (min-width: 320px) and (max-width:500px) {
+#root {
+  overflow-x: hidden;
+}
+.moviesWrapper{
+  margin-left: 7px;
+}
+
+.movieInfo {
+  width: 100%;
+}
+.genre, .length, .rated {
+  font-size: 5px;
+
+}
+
+.poster-50-percent{
+  width: 20%;
+}
+.movieTitle {
+  font-size: 15px;
+  width: 100%;
+
+}
+  .chosenCategory,
+  .chosenViewing {
+    width: 120px;
+  
+  }
+  .searchBar {
+      width: 50px;
+    }
+}
+
+
+/* //Queries for the movie list\\ */
 
