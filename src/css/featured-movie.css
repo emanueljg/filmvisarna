@@ -44,6 +44,12 @@
   font-size: 0.85vw;
 }
 
+.feature-movie-span::after {
+  content: "|";
+  margin-left: 5px;
+  color: lightgray;
+}
+
 .feature-movie-span-rating {
   color: lightgray;
   border: lightgray solid 1px;

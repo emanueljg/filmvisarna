@@ -43,6 +43,7 @@ export default function MovieDetail() {
   return !movie ? null : (
     <div className="movieDetail">
       <img src={"/images/" + movie.images[0]} />
+      <img src={"/images/" + movie.background[0]} />
       <h2>{movie.title}</h2>
       <div className="movieDescription">{description}</div>
       {Object.entries(shownMovieAttrs).map(([key, value]) => (
