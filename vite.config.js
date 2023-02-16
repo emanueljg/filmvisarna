@@ -7,7 +7,9 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://127.0.0.1:5000',
+        target: 'https://emanueljg.com',
+        // TODO fråga thomas mer exakt vad dessa gör
+        changeOrigin: true,
         secure: false
       }
     }
