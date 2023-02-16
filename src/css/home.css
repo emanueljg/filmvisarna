@@ -12,7 +12,6 @@
   transition: all 0.5s ease-in-out;
 }
 
-
 .movie:hover {
   box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
   transform: scale(0.95, 0.95);
@@ -31,7 +30,7 @@
   text-overflow: ellipsis;
   font-weight: 500;
   font-size: 1.3vw;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   padding-bottom: 10px;
 }
@@ -54,7 +53,8 @@
   margin-left: 10px;
 }
 
-.length::before, .length::after {
+.length::before,
+.length::after {
   content: "|";
   margin: 0.5rem;
   opacity: 0.8;
@@ -78,14 +78,12 @@
   margin-top: 75px;
   z-index: 1;
   color: white;
-  
+
   margin-left: auto;
   margin-bottom: 20px;
 }
 
-
 @media screen and (max-width: 464px) {
-
   .movie p {
     font-size: 100%;
   }
@@ -99,14 +97,10 @@
     margin-bottom: 20px;
     width: 50%;
     text-align: center;
-
   }
-
 }
 
-
-@media screen and (max-width: 800px) { 
-  
+@media screen and (max-width: 800px) {
   .movie p {
     font-size: 100%;
   }
@@ -120,16 +114,13 @@
     margin-bottom: 20px;
     width: 50%;
     text-align: center;
-
   }
-
 }
 
 @media screen and (max-width: 1024px) {
-  
   .movie p {
     font-size: 100%;
-    }
+  }
 
   .movie h2 {
     font-size: 100%;
@@ -140,12 +131,10 @@
     margin-bottom: 20px;
     width: 50%;
     text-align: center;
-
   }
 }
 
 @media screen and (max-width: 3060px) {
-
   .movie p {
     font-size: 100%;
   }
@@ -153,11 +142,9 @@
   .movie h2 {
     font-size: 100%;
   }
-
 }
 
 @media screen and (max-width: 4080px) {
-
   .movie p {
     font-size: 100%;
   }
@@ -165,4 +152,3 @@
     font-size: 100%;
   }
 }
-
