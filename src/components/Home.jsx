@@ -49,28 +49,30 @@ export default function Home() {
       </div>
     </div>
 
+
+    
     <div className="body-movies">
       <div className="showingNow">
         <h1>På bio nu!</h1>
-        <Carousel responsive={responsive}>
+        <Carousel
+          keyBoardControl={true}
+          autoPlay={true}
+          autoPlaySpeed={5000}
+          transitionDuration={500}
+          infinite={true}
+          responsive={responsive}>
           {s.movies.map(({ path, images, title, length, rated }) =>
-        <Link to={path} className="movie">
-          <img className='movie-image' src={'/images/' + images[0]} />
-          <h2>{title}</h2>
-          <p className='length'>{length}</p>
-          <p className='rating'>{rated}</p>
-          <p>
-            <button>Mer info</button>
-          </p>
-        </Link>
+          <Link to={path} className="movie">
+            <img className='movie-image' src={'/images/' + images[0]} />
+            <h2>{title}</h2>
+            <p className='length'>{length}</p>
+            <p className='rating'>{rated}</p>
+            <p>
+              <button>Mer info</button>
+            </p>
+          </Link>
           )}
-          
         </Carousel>;
-
-
-
-
-      
       </div>
     </div>
   </>;

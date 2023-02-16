@@ -5,6 +5,7 @@ import {
   BrowserRouter,
   Routes,
   Route,
+  useLocation
 } from 'react-router-dom';
 import Home from './Home';
 import FilmsAndTrailers from './FilmsAndTrailers';
@@ -15,6 +16,16 @@ import Footer from './Footer';
 import Header from './Header';
 
 export default function App() {
+
+  function ScrollToTop( { children } ) {
+    let location = useLocation();
+
+    useEffect( () => {
+        window.scrollTo(0, 0);
+    }, [ location ] );
+
+    return children
+}
 
   // Declare a state "main" that we can use in as many components as we want
   const s = useStates('main', {
@@ -40,7 +51,13 @@ export default function App() {
     })();
   }, []);
 
+
+
+
+
+
   return <BrowserRouter>
+    <ScrollToTop>
     <header>
       <Header/>
     </header>
@@ -54,6 +71,7 @@ export default function App() {
     </main>
     <footer>
       <Footer />
-    </footer>
+      </footer>
+      </ScrollToTop>
   </BrowserRouter>;
 }
