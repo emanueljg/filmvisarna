@@ -37,6 +37,8 @@ export default function Tickets() {
     return query.toLowerCase() === 'Sök..' || movie.title.toLowerCase().includes(query)
   }
 
+  const [query, setQuery] = useState('');
+  
   //To remove duplicate letters when grouping movies alphabetically
   let currentLetter = "";
   function removeDuplicateLetters(currentLetter) {
@@ -50,7 +52,6 @@ export default function Tickets() {
   }
 
 
-  const [query, setQuery] = useState('');
 
 
   return <section className="main">
