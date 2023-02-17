@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://emanueljg.com',
+        target: 'https://filmvisarna-backend.emanueljg.com',
         // TODO fråga thomas mer exakt vad dessa gör
         changeOrigin: true,
         secure: false
