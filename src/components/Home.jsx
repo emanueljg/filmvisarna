@@ -2,6 +2,8 @@ import { useStates } from "../utilities/states";
 import { Link } from "react-router-dom";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import React from "react";
+import YouTube from "react-youtube";
 
 export default function Home() {
   // Connect to the main state so we can read the movies
@@ -28,6 +30,11 @@ export default function Home() {
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 1,
+    },
+  };
+  const opts = {
+    playerVars: {
+      autoPlay: 0,
     },
   };
 
@@ -73,6 +80,14 @@ export default function Home() {
             ))}
           </Carousel>
           ;
+        </div>
+
+        <div className="comingSoon">
+          <h1>Kommer snart på bio!</h1>
+          <YouTube className="trailer" videoId="hebWYacbdvc" opts={opts} />
+          <YouTube className="trailer" videoId="hebWYacbdvc" opts={opts} />
+          <YouTube className="trailer" videoId="hebWYacbdvc" opts={opts} />
+          <YouTube className="trailer" videoId="hebWYacbdvc" opts={opts} />
         </div>
       </div>
     </>
