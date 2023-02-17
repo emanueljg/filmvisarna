@@ -4,6 +4,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import React from "react";
 import YouTube from "react-youtube";
+import SlideShow from "./SlideShow";
 
 export default function Home() {
   // Connect to the main state so we can read the movies
@@ -84,10 +85,25 @@ export default function Home() {
 
         <div className="comingSoon">
           <h1>Kommer snart på bio!</h1>
-          <YouTube className="trailer" videoId="hebWYacbdvc" opts={opts} />
-          <YouTube className="trailer" videoId="hebWYacbdvc" opts={opts} />
-          <YouTube className="trailer" videoId="hebWYacbdvc" opts={opts} />
-          <YouTube className="trailer" videoId="hebWYacbdvc" opts={opts} />
+          <SlideShow>
+            {[
+              ...new Array(
+                "hebWYacbdvc",
+                "ZfVYgWYaHmE",
+                "WWWDskI46Js",
+                "32RAq6JzY-w",
+                "QsudEHsuvIg",
+                "AHmCH7iB_IM",
+                "02PPMPArNEQ"
+              ),
+            ].map((x, i) => (
+              <div className="slide">
+                {" "}
+                (
+                <YouTube className="trailer" videoId={x} opts={opts} />
+              </div>
+            ))}
+          </SlideShow>
         </div>
       </div>
     </>
