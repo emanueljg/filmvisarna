@@ -6,6 +6,7 @@
   color: black;
   width: 100%;
   margin: auto;
+  margin-top: 30px;
   border-radius: 8px;
   aspect-ratio: 11 / 16;
   box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
