@@ -48,7 +48,7 @@ export default function MovieDetail() {
         <img src={"/images/" + movie.background[0]} />
       </div>
       <div>
-        <YouTube className="trailer" videoId={movie.trailer[0]} />
+        <YouTube className="detail-trailer" videoId={movie.trailer[0]} />
       </div>
       <h2>{movie.title}</h2>
       <div className="movieDescription">{description}</div>
