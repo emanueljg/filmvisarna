@@ -1,6 +1,7 @@
 import { useStates } from "../utilities/states";
 import { useParams } from "react-router-dom";
 import React from "react";
+import YouTube from "react-youtube";
 
 export default function MovieDetail() {
   const { moviePath } = useParams();
@@ -45,6 +46,9 @@ export default function MovieDetail() {
       <img className="movie-poster" src={"/images/" + movie.images[0]} />
       <div className="movie-background">
         <img src={"/images/" + movie.background[0]} />
+      </div>
+      <div>
+        <YouTube className="trailer" videoId={movie.trailer[0]} />
       </div>
       <h2>{movie.title}</h2>
       <div className="movieDescription">{description}</div>
