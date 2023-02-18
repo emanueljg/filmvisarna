@@ -64,7 +64,7 @@ export default function Home() {
             keyBoardControl={true}
             autoPlay={true}
             autoPlaySpeed={5000}
-            transitionDuration={500}
+            transitionDuration={100}
             infinite={true}
             responsive={responsive}
           >
