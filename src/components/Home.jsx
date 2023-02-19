@@ -33,6 +33,25 @@ export default function Home() {
       items: 1,
     },
   };
+
+  const responsiveNews = {
+    biggerDesktop: {
+      breakpoint: { max: 2048, min: 1024 },
+      items: 3,
+    },
+    desktop: {
+      breakpoint: { max: 1024, min: 800 },
+      items: 2,
+    },
+    tablet: {
+      breakpoint: { max: 800, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
   const opts = {
     playerVars: {
       autoPlay: 0,
@@ -93,7 +112,7 @@ export default function Home() {
           <Carousel
             keyBoardControl={true}
             autoPlay={true}
-            autoPlaySpeed={5000}
+            autoPlaySpeed={8000}
             transitionDuration={500}
             infinite={true}
             responsive={responsive}
@@ -136,6 +155,83 @@ export default function Home() {
               </div>
             ))}
           </SlideShow>
+        </div>
+
+        <div className="news">
+          <h1>Nyheter och kampanjer</h1>
+          <Carousel
+            autoPlay={true}
+            autoPlaySpeed={20000}
+            transitionDuration={500}
+            infinite={true}
+            responsive={responsiveNews}
+          >
+            <div className="news-wrapper">
+              <img
+                className="news-image"
+                src="/images/news-biograf.jpg"
+                alt="batat"
+              />
+              <p className="news-tag">
+                Ironboy Films öppnar sin andra biosalong! Hela världen jublar.
+              </p>
+            </div>
+            <div className="news-wrapper">
+              <img
+                className="news-image"
+                src="/images/news-family.jpg"
+                alt="batat"
+              />
+              <p className="news-tag">
+                Kom ut från hemmet och njut av en film för hela familjen med
+                vårt oslagbara låga familjpaket pris.
+              </p>
+            </div>
+            <div className="news-wrapper">
+              <img
+                className="news-image"
+                src="/images/news-godis.jpg"
+                alt="batat"
+              />
+              <p className="news-tag">
+                Ironboy Films slår tillbaka mot SF. "Vem är ni ens?", säger dom
+                i intervju...
+              </p>
+            </div>
+            <div className="news-wrapper">
+              <img
+                className="news-image"
+                src="/images/news-reklam.jpg"
+                alt="batat"
+              />
+              <p className="news-tag">
+                Gå med i medlemsklubben och ta del av massvis med kampanjer och
+                rabatter.
+              </p>
+            </div>
+            <div className="news-wrapper">
+              <img
+                className="news-image"
+                src="/images/news-restaurang.jpg"
+                alt="batat"
+              />
+              <p className="news-tag">
+                Numera kan man njuta av middag och en god drink innan bion i
+                Ironboy's nya lounge & michelin prisade restaurang.
+              </p>
+            </div>
+            <div className="news-wrapper">
+              <img
+                className="news-image"
+                src="/images/news-tommy.jpg"
+                alt="batat"
+              />
+              <p className="news-tag">
+                Tommy - "Jag ska vrida och vända på varenda sten tills jag
+                blivit bästa vän med Thomas "Ironboy" Frank."
+              </p>
+            </div>
+          </Carousel>
         </div>
       </div>
     </>

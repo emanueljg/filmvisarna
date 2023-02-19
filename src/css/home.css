@@ -184,10 +184,39 @@
   color: white;
   align-items: center;
   margin: auto;
-  margin-top: 10px;
+  margin-top: 50px;
   margin-bottom: 20px;
   width: 50%;
   text-align: center;
+}
+
+.news {
+  width: 90%;
+  margin: auto;
+}
+
+.news-wrapper {
+  z-index: 2;
+  display: inline-block;
+  text-decoration: none;
+  padding: 1px;
+  color: black;
+  width: 90%;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+
+.news-image {
+  border-radius: 8px;
+  border: #772b2b solid 3px;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 11 / 7;
+}
+
+.news-tag {
+  color: white;
 }
 
 @media screen and (max-width: 464px) {
