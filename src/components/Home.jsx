@@ -53,32 +53,64 @@ export default function Home() {
             <h1> The Batman (2022)</h1>
             <span className="feature-movie-span">176min</span>
             <span className="feature-movie-span-rating">PG-13</span>
+            <span className="feature-movie-span-showing">
+              Nästa visning: 5/3 20:45 i Salong 2
+            </span>
           </a>
         </div>
       </div>
 
       <div className="body-movies">
         <div className="showingNow">
-          <h1>På bio nu!</h1>
+          <h1>Aktuellt på bio</h1>
           <Carousel
             keyBoardControl={true}
             autoPlay={true}
             autoPlaySpeed={5000}
-            transitionDuration={100}
+            transitionDuration={500}
             infinite={true}
             responsive={responsive}
           >
-            {s.movies.map(({ path, images, title, length, rated }) => (
-              <Link to={path} className="movie">
-                <img className="movie-image" src={"/images/" + images[0]} />
-                <h2>{title}</h2>
-                <p className="length">{length}</p>
-                <p className="rating">{rated}</p>
-                <p>
-                  <button>Mer info</button>
-                </p>
-              </Link>
-            ))}
+            {s.movies
+              .slice(10)
+              .map(({ path, images, title, length, rated, viewings }) => (
+                <Link to={path} className="movie">
+                  <img className="movie-image" src={"/images/" + images[0]} />
+                  <h2>{title}</h2>
+                  <p className="length">{length}</p>
+                  <p className="rating">{rated}</p>
+                  <p>
+                    <button>Mer info</button>
+                  </p>
+                </Link>
+              ))}
+          </Carousel>
+          ;
+        </div>
+
+        <div className="showingNow">
+          <h1>Toplistan</h1>
+          <Carousel
+            keyBoardControl={true}
+            autoPlay={true}
+            autoPlaySpeed={5000}
+            transitionDuration={500}
+            infinite={true}
+            responsive={responsive}
+          >
+            {s.movies
+              .slice(0, 9)
+              .map(({ path, images, title, length, rated }) => (
+                <Link to={path} className="movie">
+                  <img className="movie-image" src={"/images/" + images[0]} />
+                  <h2>{title}</h2>
+                  <p className="length">{length}</p>
+                  <p className="rating">{rated}</p>
+                  <p>
+                    <button>Mer info</button>
+                  </p>
+                </Link>
+              ))}
           </Carousel>
           ;
         </div>
