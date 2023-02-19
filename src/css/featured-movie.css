@@ -99,6 +99,13 @@
   margin-left: 40px;
 }
 
+.featuredMovieCTA-image h1:hover {
+  text-decoration-line: underline;
+  text-decoration-color: white;
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px;
+}
+
 @media screen and (max-width: 820px) {
   .featuredMovie img {
     width: 100%;

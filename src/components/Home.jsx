@@ -2,6 +2,9 @@ import { useStates } from "../utilities/states";
 import { Link } from "react-router-dom";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import React from "react";
+import YouTube from "react-youtube";
+import SlideShow from "./SlideShow";
 
 export default function Home() {
   // Connect to the main state so we can read the movies
@@ -30,6 +33,11 @@ export default function Home() {
       items: 1,
     },
   };
+  const opts = {
+    playerVars: {
+      autoPlay: 0,
+    },
+  };
 
   return (
     <>
@@ -56,7 +64,7 @@ export default function Home() {
             keyBoardControl={true}
             autoPlay={true}
             autoPlaySpeed={5000}
-            transitionDuration={500}
+            transitionDuration={100}
             infinite={true}
             responsive={responsive}
           >
@@ -73,6 +81,29 @@ export default function Home() {
             ))}
           </Carousel>
           ;
+        </div>
+
+        <div className="comingSoon">
+          <h1>Kommer snart på bio!</h1>
+          <SlideShow>
+            {[
+              ...new Array(
+                "hebWYacbdvc",
+                "ZfVYgWYaHmE",
+                "WWWDskI46Js",
+                "32RAq6JzY-w",
+                "QsudEHsuvIg",
+                "AHmCH7iB_IM",
+                "02PPMPArNEQ"
+              ),
+            ].map((x, i) => (
+              <div className="slide">
+                {" "}
+                (
+                <YouTube className="trailer" videoId={x} opts={opts} />
+              </div>
+            ))}
+          </SlideShow>
         </div>
       </div>
     </>
