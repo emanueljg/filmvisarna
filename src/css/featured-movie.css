@@ -9,6 +9,7 @@
   color: white;
   font-size: 2vw;
   position: relative;
+  font-weight: 200;
 }
 
 .featuredMovieCTA-image button {
@@ -31,7 +32,11 @@
 
 .featuredMovieCTA-image img {
   border-radius: 15px;
-  max-width: 30%;
+  max-width: 100%;
+}
+
+.featuredMovieCTA-image {
+  width: 40%;
 }
 
 .featuredMovie img {
@@ -41,7 +46,7 @@
 .feature-movie-span,
 .feature-movie-span-rating {
   color: white;
-  font-size: 0.85vw;
+  font-size: 1.3vw;
 }
 
 .feature-movie-span::after {
