@@ -19,7 +19,7 @@ const candy = [
   ["Fanta", 20, "kr"],
   ["7-Up", 20, "kr"],
   ["Zingo", 20, "kr"],
-  ["e Olde Water", 20, "kr"]
+  ["Ye Olde Water", 20, "kr"]
 ];
 
 export default function AboutUs() {
