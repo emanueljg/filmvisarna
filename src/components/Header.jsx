@@ -8,8 +8,8 @@ const titleChange = async () => {
   title = resp.ok ? await resp.text() : "Flask backend 404'd ;(";
 };
 
-// uncomment/comment to turn on/off backend test
-// titleChange()
+// uncomment/comment to turn on/off backend test 
+titleChange()
 
 export default function Home() {
   return (

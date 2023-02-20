@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway:wght@400;500&display=swap');
+
+
+@import 'normalize.css';
+
+
+.table2 {
+  font-family: sans-serif;
+  text-align: center;
+  margin-left: 30px;
+  color: rgb(255, 255, 255);
+}
+
+h2.aboutus {
+  margin: 20px;
+}
+
+.popcorn1 {
+  background-image: url('/public/images/popcorn1.png');
+  opacity: 0.4;
+  transition: 5s;
+  background-color: rgba(255, 255, 255, 0.5);
+}

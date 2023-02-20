@@ -3,11 +3,11 @@ import React from "react";
 export default function Footer() {
   return (
     <div>
-      <div className="footer-container">
-        <div className="footer-links">
-          <div className="footer-link-wrapper">
-            <div className="footer-link-items">
-              <h2>Om Oss</h2>
+      <div className='footer-container'>
+        <div className='footer-links'>
+          <div className='footer-link-wrapper'>
+            <div className='footer-link-items'>
+              <h2>Om oss</h2>
               <a>Hur det fungerar</a>
               <a>Rekommendation</a>
               <a>Jobb</a>
@@ -29,8 +29,8 @@ export default function Footer() {
               <a>Byrå</a>
               <a>Influencer</a>
             </div>
-            <div className="footer-link-items">
-              <h2>Social Media</h2>
+            <div className='footer-link-items'>
+              <h2>Sociala medier</h2>
               <a>Instagram</a>
               <a>Facebook</a>
               <a>Youtube</a>
