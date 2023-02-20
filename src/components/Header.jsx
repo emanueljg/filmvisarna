@@ -9,7 +9,7 @@ const titleChange = async () => {
 }
 
 // uncomment/comment to turn on/off backend test 
-// titleChange()
+titleChange()
 
 
 export default function Home() {

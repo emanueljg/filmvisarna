@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway:wght@400;500&display=swap');
 
-
 @import 'normalize.css';
+@import 'grid-system.css';
 @import 'footer.css';
 @import 'header.css';
 @import 'featured-movie.css';
@@ -11,6 +11,7 @@
 @import 'scrollbar.css';
 @import 'movieDetails.css';
 @import 'tickets.css';
+@import 'aboutUs.css';
 
 
 .headerAboutUs {
@@ -103,11 +104,13 @@ main {
   text-align: center;
   display: inline-block;
 }
+
 #button2 {
   margin-left: 200px;
 }
-.menu-item-button{
- margin-left: 70px;
+
+.menu-item-button {
+  margin-left: 70px;
 }
 
 .dropdown-menu {
@@ -122,4 +125,3 @@ main {
 .Tickets-pic {
   width: 50%;
 }
-
