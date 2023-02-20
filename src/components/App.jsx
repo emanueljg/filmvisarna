@@ -1,4 +1,6 @@
 import { useStates } from '../utilities/states';
+import { createCategoryList } from '../utilities/createCategoryList';
+import {createShowingsList} from '../utilities/createShowingsList'
 import { useEffect } from 'react';
 import { kebabify } from '../utilities/kebabify';
 import {
@@ -28,7 +30,10 @@ export default function App() {
     ],
     movies: [],
     sortedMovies: {},
+    categories: [],
+    showing: []
   });
+
 
   useEffect(() => {
     (async () => {
@@ -36,7 +41,9 @@ export default function App() {
       for (let movie of movies) {
         movie.path = '/movie/' + kebabify(movie.title);
       }
-      s.movies = movies;
+      s.categories = createCategoryList(movies)
+      s.showing = createShowingsList(movies)
+      s.sortedMovies = movies;
     })();
   }, []);
 
