@@ -27,14 +27,14 @@ export default function App() {
       { label: 'Biljetter', path: '/tickets', Component: Tickets },
       { label: 'Filmer & trailers', path: '/films-and-trailers', Component: FilmsAndTrailers },
       { label: 'Om oss', path: '/about-us', Component: AboutUs },
-      { path: '/movie/:moviePath', Component: MovieDetail }
-      // { path: '/movie/:moviePath/:showing', Component: Booking }
+      { path: '/movie/:moviePath', Component: MovieDetail },
+      { path: '/movie/:moviePath/:showing', Component: Booking }
     ],
     movies: [],
     sortedMovies: {},
     categories: [],
-    showing: []
-    // theatres:[],
+    showing: [],
+    theatres:[],
   });
 
 
@@ -47,7 +47,7 @@ export default function App() {
       s.categories = createCategoryList(movies)
       s.showing = createShowingsList(movies)
       s.sortedMovies = movies;
-      // let theatres = await (await fetch('/json/theatres.json')).json();
+      let theatres = await (await fetch('/json/theatres.json')).json();
     })();
   }, []);
 

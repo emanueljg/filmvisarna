@@ -1,10 +1,8 @@
 import { useStates } from "../utilities/states";
-import orderConfirmGenerate from './utilities/random-order-confirmation';
+import randomCharacterFromString from '../utilities/random-order-confirmation';
 
-export default function BookingForm() {
+export default function SeatForm() {
   orderForm = {
-    email: '',
-    phoneNumber: '',
     numberOfAdults: 0,
     numberOfSeniors: 0,
     numberOfChildren: 0,
