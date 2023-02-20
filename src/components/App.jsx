@@ -17,9 +17,18 @@ import Footer from './Footer';
 import Header from './Header';
 
 export default function App() {
+  function ScrollToTop({ children }) {
+    let location = useLocation();
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [location]);
+
+    return children;
+  }
 
   // Declare a state "main" that we can use in as many components as we want
-  const s = useStates('main', {
+  const s = useStates("main", {
     // A menu used for the main menu and for routing
     menu: [
       { path: '/', Component: Home },
@@ -37,9 +46,9 @@ export default function App() {
 
   useEffect(() => {
     (async () => {
-      let movies = await (await fetch('/json/movies.json')).json();
+      let movies = await (await fetch("/json/movies.json")).json();
       for (let movie of movies) {
-        movie.path = '/movie/' + kebabify(movie.title);
+        movie.path = "/movie/" + kebabify(movie.title);
       }
       s.categories = createCategoryList(movies)
       s.showing = createShowingsList(movies)

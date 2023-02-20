@@ -13,6 +13,14 @@
 @import 'tickets.css';
 @import 'aboutUs.css';
 
+@import "normalize.css";
+@import "footer.css";
+@import "header.css";
+@import "featured-movie.css";
+@import "home.css";
+@import "scrollbar.css";
+@import "movieDetails.css";
+@import "tickets.css";
 
 .headerAboutUs {
   position: sticky;
@@ -20,17 +28,17 @@
   height: auto;
   text-align: center;
   margin-top: 30px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 
 body {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: 14px;
   background-color: rgba(11, 12, 23, 1);
   height: 1900px;
@@ -43,7 +51,7 @@ main {
 
 .timelink {
   display: block;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 500;
   font-size: 18px;
   color: rgba(255, 255, 255, 1);
@@ -51,9 +59,8 @@ main {
   padding: 20px 35px;
 }
 
-
 .Tickets-h1 {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-size: 28px;
   line-height: 36px;
@@ -73,7 +80,7 @@ main {
 }
 
 .Tickets-h3 {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-size: 20px;
   line-height: 10px;
@@ -83,9 +90,8 @@ main {
   font-weight: 600;
 }
 
-
 .Tickets-h4 {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-size: 15px;
   line-height: 20px;
@@ -103,7 +109,6 @@ main {
 #button2 {
   margin-left: 200px;
 }
-
 .menu-item-button {
   margin-left: 70px;
 }
