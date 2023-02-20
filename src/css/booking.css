@@ -13,3 +13,8 @@
   left: 892px;
   top: 117px;
 }
+
+.seatingGrid{
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+}

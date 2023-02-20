@@ -3,6 +3,10 @@ import randomCharacterFromString from '../utilities/random-order-confirmation';
 
 export default function SeatForm() {
   orderForm = {
+    firstName: "",
+    lastName: "",
+    email: "",
+    phoneNumber: "",
     numberOfAdults: 0,
     numberOfSeniors: 0,
     numberOfChildren: 0,

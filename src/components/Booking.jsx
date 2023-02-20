@@ -1,7 +1,6 @@
 import { useStates } from "../utilities/states"
 import { useParams } from "react-router-dom"
 import SeatForm from "./SeatForm";
-import PaymentForm from "./PaymentForm"
 
 export default function Booking() {
   const { bookingPath } = useParams();
@@ -9,10 +8,9 @@ export default function Booking() {
 
   //deklarera variabler; film, sal, visning(datum och tid)
   const movie = s.movies.find(movie => movie.path === '/movie/' + bookingPath.split("/")[0]);
-  const theatre = s.theatres.find();
   const show = movie.viewings.find(show === '/movie/' + bookingPath.split("/")[1]);
-
-
+  const theatre = show.room; // 1 är stora salen, 2 är lilla, ska förtydligas när det är kopplat ordentligt.
+  
   return <div className="bookingPage">
     <button className="backButton"> Tillbaka </button>
     <div className="chosenMovie">
@@ -24,11 +22,6 @@ export default function Booking() {
         <SeatForm/>
       </div>
     </div>
-    <div className="seatingGrid">
-      
-    </div>
-    <div className="paymentForm">
-      <PaymentForm/>
-    </div>
+    <div className="seatingGrid-large"/>
   </div>
 }
