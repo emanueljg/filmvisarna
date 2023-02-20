@@ -1,0 +1,15 @@
+.bookingPage p {
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 1);
+  margin-left: 40px;
+}
+
+.chosenMovie{
+  position: absolute;
+  width: 513px;
+  height: 638px;
+  left: 892px;
+  top: 117px;
+}
