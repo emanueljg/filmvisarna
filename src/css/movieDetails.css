@@ -1,67 +1,191 @@
-.descriptorTitle {
-    font-family: 'Raleway';
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 20px;
-    margin: 20px 30px;
-    color: rgba(152, 154, 173, 1);
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
-.movieDescription p {
-    font-family: 'Raleway';
-    font-weight: 500;
-    font-size: 18px;
-    color: rgba(255, 255, 255, 1);
-    margin-left: 40px;
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: left;
 }
 
-.movieDetail p {
-    font-family: 'Raleway';
-    font-weight: 500;
-    font-size: 18px;
-    color: rgba(255, 255, 255, 1);
-    margin-left: 40px;
+header {
+  padding: 0px 40px 0px 40px;
 }
 
-.dagvaljare {
-    margin-left: 40px;
+.main {
+  background: #0b0c17;
 }
 
-.valj-dag {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-size: 20px;
-    line-height: 10px;
-    padding-top: 10px;
-    margin-left: 20;
-    color: rgba(255, 255, 255, 1);
-    font-weight: 600;
+.trailer-container {
+  width: 90%;
+  position: relative;
 }
+
+.detail-trailer {
+  display: inline-block;
+  width: 100%;
+  margin: auto;
+}
+
+.detail-trailer iframe {
+  margin: auto;
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 16 / 9 !important;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  transform: translateY(-200px);
+}
+
+.trailer-button {
+  color: white;
+  background-color: transparent;
+  border: white dashed 2px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  opacity: 0.5;
+}
+
+.trailer-button:hover{
+  background-color: rgb(169, 34, 34);
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+.movie-background {
+  padding-bottom: 28rem;
+}
+
+
+@media (max-width: 415px) and (max-height:897px) {
+  .movie-poster-image {
+    max-width: 100%;
+  }
+}
+
+
+.poster-and-title {
+  grid-template-columns: 245px 1fr 150px;
+  grid-template-rows: repeat(3, auto) 1fr;
+  max-width: 1230px;
+  display: grid;
+  padding: 0px 10px 0px;
+  grid-column-gap: 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+}
+
+
+.movie-poster-image {
+  max-width: 90%;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.asd {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+  margin-top: 10px;
+  position: relative;
+  max-width: 1230px;
+  padding-left: 285px;
+}
+
+.movie-glr-wrap {
+  color: white;
+}
+
+.movie-title {
+  font-size: 35px;
+  font-family: 'Poppins';
+  color: white;
+  text-align: left;
+  display: inline;
+  vertical-align: middle;
+  margin-bottom: 0px;
+
+}
+
+.movie-genre,
+.movie-length {
+  padding-bottom: 15px;
+}
+
+ul {
+  margin-top: 15px;
+}
+
+.genreTag {
+  border: 1px solid;
+  background-color: transparent;
+  display: inline-block;
+  border-radius: 2px;
+  padding: 2px 5px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  list-style: none;
+  font-size: 1rem;
+}
+
+
+.movie-poster-wrapper {
+  position: relative;
+  display: inline-block;
+  top: -130px;
+  margin-left: 10%;
+}
+
 
 .movieDescription {
-    width: 600px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-    color: rgba(255, 255, 255, 1);
+  display: grid;
+  color: white;
+  margin-top: 6px;
 }
 
-.movieDetail img {
-    display: block;
-    float: right;
-    margin-top: 50px;
-    max-width: 25%;
-    width: 40%;
-    margin-left: 20px;
-    margin-right: 40px;
+.descriptionP {
+  font-family: "NunitoSans", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  text-align: left;
+  letter-spacing: .5px;
+  margin-bottom: 10px;
 }
 
-.movieDetail h2 {
-    margin-top: 110px;
-    margin-bottom: 20px;
-    margin-left: 30px;
-    color: white;
+.qwerty {
+  display: grid;
+  color: white;
+}
+
+.descriptorTitle {
+  font-size: 16px;
+  letter-spacing: .4px;
+  line-height: 24px;
+  font-weight: lighter;
+  font-family: 'NunitoSans', sans-serif;
+  text-transform: uppercase;
+  opacity: .79;
+  margin-bottom: 2px;
+}
+
+.descriptorP {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  font-weight: 400;
+  margin: 0;
+  text-align: left;
+  font-family: 'NunitoSans', sans-serif;
+  margin-bottom: 10px;
 }

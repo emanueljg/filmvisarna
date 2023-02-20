@@ -28,6 +28,12 @@
     "description": "<p>Miles, Gwen, Peter B. Och fler spindlar måste arbeta sida vid sida för att stoppa Spot, en skurk med portaler på kroppen.</p>",
     "images": [
       "across-the-spider-verse-poster.jpg"
+    ],
+    "background": [
+      "spiderman-bg.jpg"
+    ],
+    "trailer": [
+      "cqGjhVJWtEg"
     ]
   },
   {
@@ -52,6 +58,12 @@
     "description": "<p>En sömnlös kontorsarbetare och en tvåltillverkare bildar en underjordisk kampklubb som utvecklas till mycket mer.</p>",
     "images": [
       "fight-club-poster.jpg"
+    ],
+    "background": [
+      "fight-club-bg.jpg"
+    ],
+    "trailer": [
+      "O1nDozs-LxI"
     ],
     "viewings": [
       {
@@ -140,6 +152,12 @@
     "images": [
       "enter-the-dragon-poster.jpg"
     ],
+    "background": [
+      "enter-the-dragon-bg.jpg"
+    ],
+    "trailer": [
+      "H0b9wvJfO28"
+    ],
     "viewings": [
       {
         "start_date": "2023-01-13T14:30:00",
@@ -218,6 +236,12 @@
     "description": "<p>En Interpol-agent lyckas spåra upp världens mest eftersökta konsttjuv, med hjälp av en rivaliserande tjuv. Men ingenting är som det verkar, eftersom en serie dubbelkorsningar uppstår.</p>",
     "images": [
       "red-notice-poster.jpg"
+    ],
+    "background": [
+      "red-notice-bg.jpg"
+    ],
+    "trailer": [
+      "Pj0wz7zu3Ms"
     ],
     "viewings": [
       {
@@ -300,9 +324,15 @@
       "John Ratzenberger",
       "Christopher Plummer"
     ],
-    "description": "<p>78-årige Carl Fredricksen reser till Paradise Falls i sitt hus utrustat med ballonger och tar oavsiktligt med sig en ung fripassagerare.<p>",
+    "description": "<p>78-årige Carl Fredricksen reser till Paradise Falls i sitt hus utrustat med ballonger och tar oavsiktligt med sig en ung fripassagerare.</p>",
     "images": [
       "up-poster.jpg"
+    ],
+    "background": [
+      "up-bg.jpg"
+    ],
+    "trailer": [
+      "qas5lWp7_R0"
     ],
     "viewings": [
       {
@@ -400,6 +430,12 @@
     "description": "<p>Under familjens flytt till förorten vandrar en surmulen 10-årig flicka in i en värld som styrs av gudar, häxor och andar, och där människor förvandlas till odjur.</p>",
     "images": [
       "spirited-away-poster.jpg"
+    ],
+    "background": [
+      "spirited-away-bg.jpg"
+    ],
+    "trailer": [
+      "ByXuk9QqQkk"
     ],
     "viewings": [
       {
@@ -502,6 +538,12 @@
     "images": [
       "the-batman-poster.jpg"
     ],
+    "background": [
+      "batman-bg.jpg"
+    ],
+    "trailer": [
+      "mqqft2x_Aa4"
+    ],
     "viewings": [
       {
         "start_date": "2023-01-21T11:15:00",
@@ -587,6 +629,12 @@
     "description": "<p>Ett forskarlag i Antarktis jagas av en formskiftande utomjording som antar utseendet som sina offer.</p>",
     "images": [
       "the-thing-poster.jpg"
+    ],
+    "background": [
+      "the-thing-bg.jpg"
+    ],
+    "trailer": [
+      "ySvzHdtCiWE"
     ],
     "viewings": [
       {
@@ -693,6 +741,12 @@
     "images": [
       "soul-poster.jpg"
     ],
+    "background": [
+      "soul-bg.jpg"
+    ],
+    "trailer": [
+      "xOsLIiBStEs"
+    ],
     "viewings": [
       {
         "start_date": "2023-01-09T12:00:00",
@@ -782,6 +836,12 @@
     "images": [
       "the-unbearable-weight-of-massive-talent-poster.jpg"
     ],
+    "background": [
+      "the-unbearable-bg.jpg"
+    ],
+    "trailer": [
+      "x2YHPZMj8r4"
+    ],
     "viewings": [
       {
         "start_date": "2023-02-10T20:30:00",
@@ -859,6 +919,12 @@
     "description": "<p>Livet för två maffiamördare, en boxare, en gangster och hans fru och ett par middagsbanditer flätas samman i fyra berättelser om våld och försoning.</p>",
     "images": [
       "pulp-fiction-poster.jpg"
+    ],
+    "background": [
+      "pulp-fiction-bg.jpg"
+    ],
+    "trailer": [
+      "tGpTpVyI_OQ"
     ],
     "viewings": [
       {
@@ -939,6 +1005,12 @@
     "description": "<p>Doctor Strange slår sig ihop med en mystisk tonårsflicka från sina drömmar som kan resa över multiversum, för att bekämpa flera hot, inklusive andra universums versioner av honom själv, som hotar att utplåna miljoner över multiversum. De söker hjälp från Wanda the Scarlet Witch, Wong och andra.</p>",
     "images": [
       "doctor-strange-in-the-multiverse-of-madness-poster.jpg"
+    ],
+    "background": [
+      "doctor-strange-bg.jpg"
+    ],
+    "trailer": [
+      "aWzlQ2N6qqg"
     ],
     "viewings": [
       {
@@ -1023,6 +1095,12 @@
     "description": "<p>Efter trettio år skjuter Maverick fortfarande på som en toppflygare i sjöfarten, men han måste konfrontera spöken från sitt förflutna när han leder TOP GUNs elitstudenter på ett uppdrag som kräver den ultimata uppoffringen av de som valts ut att flyga den.</p>",
     "images": [
       "top-gun-poster.jpg"
+    ],
+    "background": [
+      "top-gun-bg.jpg"
+    ],
+    "trailer": [
+      "qSqVVswa420"
     ],
     "viewings": [
       {
@@ -1120,6 +1198,12 @@
     "images": [
       "uncharted-poster.jpg"
     ],
+    "background": [
+      "uncharted-bg.jpg"
+    ],
+    "trailer": [
+      "eHp3MbsCbMg"
+    ],
     "viewings": [
       {
         "start_date": "2023-01-06T12:45:00",
@@ -1206,6 +1290,12 @@
     "description": "<p>Fyra år efter förstörelsen av Isla Nublar försöker Biosyn-agenter spåra upp Maisie Lockwood, medan Dr Ellie Sattler undersöker en genetiskt framställd svärm av jätteinsekter.</p>",
     "images": [
       "dominion-poster.jpg"
+    ],
+    "background": [
+      "dominion-bg.jpg"
+    ],
+    "trailer": [
+      "fb5ELWi-ekk"
     ],
     "viewings": [
       {
@@ -1304,6 +1394,12 @@
     "images": [
       "wakanda-poster.jpg"
     ],
+    "background": [
+      "wakanda-bg.jpg"
+    ],
+    "trailer": [
+      "RlOB3UALvrQ"
+    ],
     "viewings": [
       {
         "start_date": "2023-01-05T10:15:00",
@@ -1384,6 +1480,12 @@
     "description": "<p>Mike går upp på scenen igen, efter ett affärsavtal som gick i botten, vilket gjorde honom trasig och tar bartenderspelningar i Florida. Mike åker till London med en rik socialist som lockar honom med ett erbjudande han inte kan tacka nej till.</p>",
     "images": [
       "magic-mike-poster.jpg"
+    ],
+    "background": [
+      "magic-mike-bg.jpg"
+    ],
+    "trailer": [
+      "pBIGdw-BRxw"
     ],
     "viewings": [
       {
@@ -1472,6 +1574,12 @@
     "description": "<p>En berättelse om överdimensionerade ambitioner och upprörande överflöd, den spårar uppgången och fallet för flera karaktärer under en era av otyglad dekadens och fördärv i tidiga Hollywood.</p>",
     "images": [
       "babylon-poster.jpg"
+    ],
+    "background": [
+      "babylon-bg.jpg"
+    ],
+    "trailer": [
+      "5muQK7CuFtY"
     ],
     "viewings": [
       {
@@ -1567,6 +1675,12 @@
     "description": "<p>När Puss in Boots upptäcker att hans passion för äventyr har tagit ut sin rätt och han har bränt genom åtta av sina nio liv, startar han en episk resa för att återställa dem genom att hitta den mytiska Last Wish.</p>",
     "images": [
       "puss-in-boots-poster.jpg"
+    ],
+    "background": [
+      "puss-in-boots-bg.jpg"
+    ],
+    "trailer": [
+      "Y5zqweZAEKI"
     ],
     "viewings": [
       {
@@ -1673,6 +1787,12 @@
     "images": [
       "ant-man-poster.jpg"
     ],
+    "background": [
+      "antman-bg.jpg"
+    ],
+    "trailer": [
+      "ZlNFpri-Y40"
+    ],
     "viewings": [
       {
         "start_date": "2023-02-17T13:00:00",
@@ -1756,6 +1876,12 @@
     "description": "<p>John Wick avslöjar en väg till att besegra The High Table. Men innan han kan förtjäna sin frihet måste Wick möta en ny fiende med mäktiga allianser över hela världen och krafter som förvandlar gamla vänner till fiender.</p>",
     "images": [
       "john-wick-poster.jpg"
+    ],
+    "background": [
+      "john-wick-bg.jpg"
+    ],
+    "trailer": [
+      "Lf4Fs4KxqBU"
     ],
     "viewings": [
       {
@@ -1850,6 +1976,12 @@
     "images": [
       "guardian-poster.jpg"
     ],
+    "background": [
+      "guardian-bg.jpg"
+    ],
+    "trailer": [
+      "u3V5KDHRQvk"
+    ],
     "viewings": []
   },
   {
@@ -1876,6 +2008,12 @@
     "description": "<p>Jake Sully bor med sin nyfunna familj som bildats på den extrasolära månen Pandora. När ett välbekant hot återvänder för att avsluta det som tidigare påbörjades måste Jake samarbeta med Neytiri och Na'vi-rasens armé för att skydda deras hem.</p>",
     "images": [
       "avatar-poster.jpg"
+    ],
+    "background": [
+      "avatar-bg.jpg"
+    ],
+    "trailer": [
+      "d9MyW72ELq0"
     ],
     "viewings": [
       {
@@ -1982,6 +2120,12 @@
     "images": [
       "everything-poster.jpg"
     ],
+    "background": [
+      "everything-bg.jpg"
+    ],
+    "trailer": [
+      "8E_K8agqNso"
+    ],
     "viewings": [
       {
         "start_date": "2023-02-10T22:45:00",
@@ -2064,6 +2208,12 @@
     "description": "<p>En pappas önskan väcker magiskt en träpojke till liv i Italien, vilket ger honom en chans att ta hand om barnet.</p>",
     "images": [
       "pinocchio-poster.jpg"
+    ],
+    "background": [
+      "pinocchio-bg.jpg"
+    ],
+    "trailer": [
+      "Od2NW1sfRdA"
     ],
     "viewings": [
       {
@@ -2168,6 +2318,12 @@
     "images": [
       "pets-poster.jpg"
     ],
+    "background": [
+      "pets-bg.jpg"
+    ],
+    "trailer": [
+      "1jkw2JPCl18"
+    ],
     "viewings": [
       {
         "start_date": "2023-01-14T16:45:00",
@@ -2265,6 +2421,12 @@
     "images": [
       "piff-puff-poster.jpg"
     ],
+    "background": [
+      "piff-puff-bg.jpg"
+    ],
+    "trailer": [
+      "F4Z0GHWHe60"
+    ],
     "viewings": [
       {
         "start_date": "2023-01-20T22:30:00",
@@ -2355,6 +2517,12 @@
     "description": "<p>En sjuttonårig aristokrat blir förälskad i en snäll men fattig konstnär ombord på den lyxiga, olyckliga R.M.S. Titanic.</p>",
     "images": [
       "titanic-poster.jpg"
+    ],
+    "background": [
+      "titanic-bg.jpg"
+    ],
+    "trailer": [
+      "I7c1etV7D7g"
     ],
     "viewings": [
       {
@@ -2450,6 +2618,12 @@
     "description": "<p>Hösten 1963 hävdar en koreansk krigsveteran och brottsling att han är galen och blir inlagd på en mentalanstalt, där han samlar de rädda patienterna mot den tyranniska sjuksköterskan.</p>",
     "images": [
       "gokboet-poster.jpg"
+    ],
+    "background": [
+      "gokboet-bg.jpg"
+    ],
+    "trailer": [
+      "OXrcDonY-B8"
     ],
     "viewings": [
       {
@@ -2548,6 +2722,12 @@
     "images": [
       "interstellar-poster.jpg"
     ],
+    "background": [
+      "interstellar-bg.jpg"
+    ],
+    "trailer": [
+      "zSWdZVtXT7E"
+    ],
     "viewings": [
       {
         "start_date": "2023-01-15T11:15:00",
@@ -2637,6 +2817,12 @@
     "images": [
       "bastards-poster.jpg"
     ],
+    "background": [
+      "bastards-bg.jpg"
+    ],
+    "trailer": [
+      "KnrRy6kSFF0"
+    ],
     "viewings": [
       {
         "start_date": "2023-01-27T22:00:00",
@@ -2722,6 +2908,12 @@
     "description": "<p>Med hjälp av en tysk prisjägare ger sig en frigiven slav ut för att rädda sin fru från en brutal plantageägare i Mississippi.</p>",
     "images": [
       "django-poster.jpg"
+    ],
+    "background": [
+      "django-bg.jpg"
+    ],
+    "trailer": [
+      "_iH0UBYDI4g"
     ],
     "viewings": [
       {
@@ -2814,6 +3006,12 @@
     "description": "<p>Mitt under en vinter i Wyoming hittar en prisjägare och hans fånge skydd i en stuga som för närvarande bebos av en samling skändliga karaktärer.</p>",
     "images": [
       "hateful-poster.jpg"
+    ],
+    "background": [
+      "hateful-bg.jpg"
+    ],
+    "trailer": [
+      "nIOmotayDMY"
     ],
     "viewings": [
       {
@@ -2919,6 +3117,12 @@
     "images": [
       "bill-one-poster.jpg"
     ],
+    "background": [
+      "bill-one-bg.jpg"
+    ],
+    "trailer": [
+      "7kSuas6mRpk"
+    ],
     "viewings": [
       {
         "start_date": "2023-01-20T19:15:00",
@@ -3016,6 +3220,12 @@
     "description": "<p>Bruden fortsätter sin strävan att hämnas mot sin tidigare chef och älskare Bill, den tillbakadragna studsaren Budd och den förrädiska, enögda Elle.</p>",
     "images": [
       "bill-two-poster.jpg"
+    ],
+    "background": [
+      "bill-two-bg.jpg"
+    ],
+    "trailer": [
+      "WTt8cCIvGYI"
     ],
     "viewings": [
       {
