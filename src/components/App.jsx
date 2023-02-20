@@ -37,7 +37,10 @@ export default function App() {
     ],
     movies: [],
     sortedMovies: {},
+    categories: [],
+    showing: []
   });
+
 
   useEffect(() => {
     (async () => {
@@ -45,7 +48,9 @@ export default function App() {
       for (let movie of movies) {
         movie.path = "/movie/" + kebabify(movie.title);
       }
-      s.movies = movies;
+      s.categories = createCategoryList(movies)
+      s.showing = createShowingsList(movies)
+      s.sortedMovies = movies;
     })();
   }, []);
 
