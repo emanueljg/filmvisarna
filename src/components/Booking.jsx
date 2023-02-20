@@ -11,6 +11,9 @@ export default function Booking() {
 
 
   return <div className="bookingPage">
+    <div className="backButton">
+      
+    </div>
     <div className="chosenMovie">
       <img src={'/images/' + movie.images[0]} />
       <h2>{movie.title}</h2>
@@ -19,7 +22,13 @@ export default function Booking() {
       <div className="ticketSelector">
 
       </div>
-      
+
+    </div>
+    <div className="chairGrid">
+
+    </div>
+    <div className="paymentForm">
+
     </div>
   </div>
 }
