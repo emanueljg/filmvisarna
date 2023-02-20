@@ -15,12 +15,26 @@ header {
   padding: 0px 40px 0px 40px;
 }
 
-
-
-
-
 .main {
   background: #0b0c17;
+}
+
+.trailer-container {
+  width: 90%;
+  position: relative;
+}
+
+.detail-trailer {
+  display: inline-block;
+  width: 100%;
+  margin: auto;
+}
+
+.detail-trailer iframe {
+  margin: auto;
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 16 / 9 !important;
 }
 
 .button-container {

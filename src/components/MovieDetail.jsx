@@ -49,7 +49,7 @@ export default function MovieDetail() {
     <section className="main">
       <section className="container">
         <section className="movie-background" style={{ background: `url(${"/images/" + movie.background[0]})  center top / cover no-repeat` }} >
-          {visable && (<YouTube className="detail-trailer" videoId={movie.trailer[0]} />)}
+          {visable && (<div className="trailer-container"><YouTube className="detail-trailer" videoId={movie.trailer[0]} /></div>)}
         </section>
         <section className="button-container">
           <button className="trailer-button" onClick={handleVisable}>{">"}</button>
