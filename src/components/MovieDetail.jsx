@@ -16,15 +16,11 @@ export default function MovieDetail() {
       .map((x) => <p className="movieDescription">{x}</p>); // new p tags as jsx
 
   const shownMovieAttrs = new Map();
-  shownMovieAttrs.set("title", "Originaltitel");
-  shownMovieAttrs.set("release", "Premiär");
-  shownMovieAttrs.set("rated", "Åldersgräns");
-  shownMovieAttrs.set("length", "Speltid");
-  shownMovieAttrs.set("genre", "Genre");
-  shownMovieAttrs.set("language", "Tal");
-  shownMovieAttrs.set("subtitles", "Text");
   shownMovieAttrs.set("director", "Regi");
   shownMovieAttrs.set("actors", "Medverkande");
+  shownMovieAttrs.set("language", "Tal");
+  shownMovieAttrs.set("subtitles", "Text");
+  shownMovieAttrs.set("release", "Premiär");
   for (const kv of Object.entries(movie || {})) {
     const shownAttr = shownMovieAttrs.get(kv[0]);
     // in-place replacement
@@ -42,40 +38,65 @@ export default function MovieDetail() {
   }
 
   return !movie ? null : (
-    <div className="movieDetail">
-      <img className="movie-poster" src={"/images/" + movie.images[0]} />
-      <div className="movie-background">
-        <div className="gradient">
-          <img className="background-image"src={"/images/" + movie.background[0]} />
-          </div>
-      </div>
-      <div>
-        <YouTube className="detail-trailer" videoId={movie.trailer[0]} />
-      </div>
-      <h2>{movie.title}</h2>
-      <div className="movieDescription">{description}</div>
-      {Object.entries(shownMovieAttrs).map(([key, value]) => (
+    <section className="main">
+      <section className="container">
+        <section className="movie-background" style={{ background: `url(${"/images/" + movie.background[0]})  center top / cover no-repeat` }} >
+        </section>
+        <section className="button"><button className="mybtn">Se trailer</button></section>
+        <section className="gradient">
+        </section>
+        <section className="asd">
+          <section className="title-wrapper">
+            <h1 className="movie-title">{movie.title}</h1>
+          </section>
+          </section>
+        <section className="poster-and-title">
+      <section className="movie-poster-wrapper">
+        <img className="movie-poster-image"src={"/images/" + movie.images[0]} />
+          </section>
+            <section className="movieDescription">
+            <p className="descriptionP">{description}</p>
+            <section className="qwerty">
+ {Object.entries(shownMovieAttrs).map(([key, value]) => (
         <>
           {
             <>
               <h4 className="descriptorTitle">{key}</h4>
-              <p>{value instanceof Array ? value.join(", ") : value}</p>
+              <p className="descriptorP">{value instanceof Array ? value.join(", ") : value}</p>
             </>
           }
         </>
       ))}
-      ;
-      <div className="dagvaljare">
+      
+</section>
+          </section>
+
+          <section className="movie-glr-wrap">
+            <ul>
+            {movie.genre.map(genre => (
+                <li className="genreTag">{genre}</li>
+              
+            ))}
+                  </ul>
+                    <h4 className="movie-length">{movie.length}</h4>
+                    <h4 className="movie-rated">{movie.rated}</h4>
+          </section>
+
+             </section>
+        <YouTube className="detail-trailer" videoId={movie.trailer[0]} />
+   
+     
+      <section className="dagvaljare">
         <h2 className="valj-dag">Välj tid</h2>
-        <div className="dagar">
+        <section className="dagar">
           {movie.viewings.map((v) => (
             <a href={"/" + v.start_date.replace(":", "-")} className="timelink">
               {dateRead(v.start_date)} - {dateRead(v.end_date)} (Salong {v.room}
               )
             </a>
           ))}
-        </div>
-      </div>
-    </div>
-  );
+        </section>
+      </section>
+    </section>
+  </section>);
 }
