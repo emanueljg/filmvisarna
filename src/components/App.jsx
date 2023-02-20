@@ -13,6 +13,7 @@ import MovieDetail from './MovieDetail';
 import Tickets from './Tickets';
 import Footer from './Footer';
 import Header from './Header';
+import Booking from './Booking';
 
 export default function App() {
 
@@ -24,7 +25,8 @@ export default function App() {
       { label: 'Biljetter', path: '/tickets', Component: Tickets },
       { label: 'Filmer & trailers', path: '/films-and-trailers', Component: FilmsAndTrailers },
       { label: 'Om oss', path: '/about-us', Component: AboutUs },
-      { path: '/movie/:moviePath', Component: MovieDetail }
+      { path: '/movie/:moviePath', Component: MovieDetail },
+      { path: '/movie/:moviePath/booking', Component: Booking }
     ],
     movies: [],
     sortedMovies: {},
