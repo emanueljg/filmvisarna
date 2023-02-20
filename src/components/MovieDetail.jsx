@@ -1,6 +1,6 @@
 import { useStates } from '../utilities/states';
 import { useParams } from 'react-router-dom';
-import  React from 'react'; 
+import React from 'react';
 
 export default function MovieDetail() {
   const { moviePath } = useParams();
@@ -24,13 +24,13 @@ export default function MovieDetail() {
   for (const kv of Object.entries(movie || {})) {
     const shownAttr = shownMovieAttrs.get(kv[0]);
     // in-place replacement
-    if(shownAttr) shownMovieAttrs[shownMovieAttrs.get(kv[0])] = kv[1];
+    if (shownAttr) shownMovieAttrs[shownMovieAttrs.get(kv[0])] = kv[1];
   }
 
   const [open, setOpen] = React.useState(true);
   const handleOpen = (event) => {
-      setValue(event.target.value);
-     setOpen(!open);
+    setValue(event.target.value);
+    setOpen(!open);
   };
 
   function dateRead(date_str) {
@@ -55,7 +55,7 @@ export default function MovieDetail() {
       <h2 className='valj-dag'>Välj tid</h2>
       <div className='dagar'>
         {
-          movie.viewings.map((v)=>(
+          movie.viewings.map((v) => (
             <a href={"/" + v.start_date.replace(':', '-')} className="timelink">
               {dateRead(v.start_date)} - {dateRead(v.end_date)} (Salong {v.room})
             </a>))
