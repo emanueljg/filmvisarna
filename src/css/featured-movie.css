@@ -1,33 +1,21 @@
 .featuredMovieCTA-container {
   position: absolute;
-  margin-top: -45%;
-  margin-left: 4%;
   z-index: 3;
+  width: 100%; 
+  margin-top: -60px;
+  text-align: center;
+  cursor: pointer;
+}
+
+main {
+  position: relative;
 }
 
 .featuredMovieCTA-image h1 {
   color: white;
-  font-size: 2vw;
+  font-size: 3vw;
   position: relative;
   font-weight: 200;
-}
-
-.featuredMovieCTA-image button {
-  font-size: 1vw;
-  box-sizing: border-box;
-  position: absolute;
-  border: 1px solid #989aad;
-  border-radius: 8px;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  display: flex;
-  padding-left: 5px;
-  padding-right: 5px;
-  align-items: center;
-  background: transparent;
-  color: #989aad;
 }
 
 .featuredMovieCTA-image img {
@@ -36,7 +24,7 @@
 }
 
 .featuredMovieCTA-image {
-  width: 40%;
+  width: 100%;
 }
 
 .featuredMovie img {
@@ -47,7 +35,7 @@
 .feature-movie-span-rating,
 .feature-movie-span-showing {
   color: white;
-  font-size: 1.3vw;
+  font-size: 2vw;
 }
 
 .feature-movie-span::after {

@@ -68,13 +68,8 @@ export default function Home() {
       <div className="featuredMovieCTA-container">
         <div className="featuredMovieCTA-image">
           <a href="/movie/the-batman" style={{ textDecoration: "none" }}>
-            <img src="/images/batman-CTA.png" alt="batat" />
             <h1> The Batman (2022)</h1>
-            <span className="feature-movie-span">176min</span>
-            <span className="feature-movie-span-rating">PG-13</span>
-            <span className="feature-movie-span-showing">
-              Nästa visning: 5/3 20:45 i Salong 2
-            </span>
+            
           </a>
         </div>
       </div>
