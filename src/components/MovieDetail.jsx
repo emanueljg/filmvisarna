@@ -42,7 +42,7 @@ export default function MovieDetail() {
   }
 
   return !movie ? null : (
-    <section className="main">
+    <section className="mainMovieDetail">
       <section className="container">
         <section className="movie-background" style={{ background: `url(${"/images/" + movie.background[0]})  center top / cover no-repeat` }} >
         </section>
