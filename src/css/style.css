@@ -2,22 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway:wght@400;500&display=swap');
 
-
 @import 'normalize.css';
-
-
-*::-webkit-scrollbar {
-  width: 5px;
-}
-
-*::-webkit-scrollbar-track {
-  background: #0b0c17;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: #b8b8b8;
-  border-radius: 10px;
-}
+@import 'grid-system.css';
+@import 'footer.css';
+@import 'header.css';
+@import 'featured-movie.css';
+@import 'home.css';
+@import 'scrollbar.css';
+@import 'movieDetails.css';
+@import 'tickets.css';
+@import 'aboutUs.css';
 
 
 .headerAboutUs {
@@ -47,73 +41,6 @@ main {
   margin: 2rem auto;
 }
 
-
-
-/*.topplistan {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-size: 18px;
-  line-height: 26px;
-  padding-top: 50px;
-  margin-left: 45px;
-  margin-left: 0;
-  color: rgba(255, 255, 255, 1);
-  font-weight: 600;
-} */
-
-.movieLength {
-  margin-left: 0;
-}
-
-/*För frosted glass effekt på headern*/
-@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
-  header {
-    z-index: 100;
-    padding: 10px 40px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    -webkit-backdrop-filter: blur(2em);
-    backdrop-filter: blur(2em);
-  }
-}
-
-header a:nth-child(1) {
-  display: inline-block;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: rgb(161, 0, 0);
-  margin-left: 5px;
-}
-
-header a {
-  display: inline-block;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: rgb(209, 209, 232);
-}
-
-header a:first-of-type {
-  padding-left: 0;
-}
-
-header .active {
-  color: white;
-}
-
-header a:hover {
-  color: rgb(199, 202, 227);
-}
-
-p {
-  font-family: 'Raleway';
-  font-weight: 500;
-  font-size: 18px;
-  color: rgba(255, 255, 255, 1);
-  margin-left: 40px;
-}
-
-
 .timelink {
   display: block;
   font-family: 'Raleway';
@@ -124,83 +51,6 @@ p {
   padding: 20px 35px;
 }
 
-.descriptorTitle {
-  font-family: 'Raleway';
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 20px;
-  margin: 20px 30px;
-  color: rgba(152, 154, 173, 1);
-}
-
-.dagvaljare {
-  margin-left: 40px;
-}
-
-.movie {
-  display: block;
-  padding: 10px 30px 0 0;
-  text-decoration: none;
-  color: black;
-  margin-bottom: 20px;
-  width: 50%;
-  float: left;
-}
-
-.movie h3 {
-  text-align: center;
-}
-
-.wrapper-featuredMovie {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: auto;
-}
-
-.featuredMovieOverlay {
-  z-index: 2;
-  position: absolute;
-  width: 100%;
-  height: 854px;
-  top: 0;
-  background: linear-gradient(180deg, rgba(11, 12, 23, 0) 0%, #0B0C17 100%);
-}
-
-.wrapper-featuredMovieInfo {
-  position: absolute;
-  z-index: 3;
-  margin-left: 5px;
-  top: 475px;
-  font-family: 'Raleway';
-  font-size: 14px;
-  color: #FFFFFF;
-}
-
-.wrapper-featuredMovieInfo button {
-  margin-left: 40px;
-}
-
-.movieDescription {
-  width: 600px;
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-  font-feature-settings: 'pnum' on, 'lnum' on;
-  color: rgba(255, 255, 255, 1);
-}
-
-.movieDetail img {
-  display: block;
-  float: right;
-  margin-top: 50px;
-  max-width: 25%;
-  width: 40%;
-  margin-left: 20px;
-  margin-right: 40px;
-}
 
 .Tickets-h1 {
   font-family: 'Poppins';
@@ -233,16 +83,6 @@ p {
   font-weight: 600;
 }
 
-.valj-dag {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-size: 20px;
-  line-height: 10px;
-  padding-top: 10px;
-  margin-left: 20;
-  color: rgba(255, 255, 255, 1);
-  font-weight: 600;
-}
 
 .Tickets-h4 {
   font-family: 'Poppins';
@@ -259,11 +99,13 @@ p {
   text-align: center;
   display: inline-block;
 }
+
 #button2 {
   margin-left: 200px;
 }
-.menu-item-button{
- margin-left: 70px;
+
+.menu-item-button {
+  margin-left: 70px;
 }
 
 .dropdown-menu {
