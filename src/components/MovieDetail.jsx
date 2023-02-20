@@ -42,7 +42,6 @@ export default function MovieDetail() {
       <section className="container">
         <section className="movie-background" style={{ background: `url(${"/images/" + movie.background[0]})  center top / cover no-repeat` }} >
         </section>
-        <section className="button"><button className="mybtn">Se trailer</button></section>
         <section className="gradient">
         </section>
         <section className="asd">

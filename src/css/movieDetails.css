@@ -11,6 +11,14 @@
     text-align: left;
   }
 
+  header {
+    padding: 0px 40px 0px 40px;
+  }
+
+  .detail-trailer {
+    visibility: hidden;
+  }
+
   .main {
     background: #0b0c17;
   }
@@ -41,22 +49,7 @@
     box-sizing: border-box;
     
   }
-  .button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translatey(-20px);
-  }
-
-  .mybtn {
-    cursor: pointer;
-    color: white;
-    background-color: red;
-    border: none;
-    padding: 2px;
-    border-radius: 4px;
-  }
-
+  
 
 .movie-poster-image {
   max-width: 90%;
