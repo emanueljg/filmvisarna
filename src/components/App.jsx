@@ -37,6 +37,8 @@ export default function App() {
     ],
     movies: [],
     sortedMovies: {},
+    categories: [],
+    showing: []
   });
 
   useEffect(() => {
@@ -46,6 +48,8 @@ export default function App() {
         movie.path = "/movie/" + kebabify(movie.title);
       }
       s.movies = movies;
+      s.categories = createCategoryList(movies);
+      s.showing = createShowingsList(movies);
     })();
   }, []);
 
