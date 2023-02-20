@@ -28,7 +28,7 @@ export default function App() {
       { path: "/", Component: Home },
       { label: "Biljetter", path: "/tickets", Component: Tickets },
       {
-        label: "Filmer & Trailer",
+        label: "Filmer & trailer",
         path: "/films-and-trailers",
         Component: FilmsAndTrailers,
       },
@@ -37,10 +37,7 @@ export default function App() {
     ],
     movies: [],
     sortedMovies: {},
-    categories: [],
-    showing: []
   });
-
 
   useEffect(() => {
     (async () => {
@@ -48,9 +45,7 @@ export default function App() {
       for (let movie of movies) {
         movie.path = "/movie/" + kebabify(movie.title);
       }
-      s.categories = createCategoryList(movies)
-      s.showing = createShowingsList(movies)
-      s.sortedMovies = movies;
+      s.movies = movies;
     })();
   }, []);
 

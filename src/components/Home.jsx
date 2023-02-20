@@ -102,7 +102,7 @@ export default function Home() {
         </div>
 
         <div className="showingNow">
-          <h1>Toplistan</h1>
+          <h1>Topplistan</h1>
           <Carousel
             keyBoardControl={true}
             autoPlay={true}
