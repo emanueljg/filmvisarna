@@ -1,5 +1,6 @@
 import { useStates } from "../utilities/states";
 import { useParams } from "react-router-dom";
+import { useState } from "react";
 import React from "react";
 import YouTube from "react-youtube";
 
@@ -36,6 +37,9 @@ export default function MovieDetail() {
     setValue(event.target.value);
     setOpen(!open);
   };
+  const [visable, setVisable] = React.useState(false);
+  const handleVisable = event => { setVisable(current => !current) };
+
 
   function dateRead(date_str) {
     return new Date(date_str).toLocaleString("sv-SE");
@@ -45,6 +49,10 @@ export default function MovieDetail() {
     <section className="main">
       <section className="container">
         <section className="movie-background" style={{ background: `url(${"/images/" + movie.background[0]})  center top / cover no-repeat` }} >
+          {visable && (<YouTube className="detail-trailer" videoId={movie.trailer[0]} />)}
+        </section>
+        <section className="button-container">
+          <button className="trailer-button" onClick={handleVisable}>{">"}</button>
         </section>
         <section className="gradient">
         </section>
@@ -85,9 +93,7 @@ export default function MovieDetail() {
                     <h4 className="movie-rated">{movie.rated}</h4>
           </section>
 
-             </section>
-        <YouTube className="detail-trailer" videoId={movie.trailer[0]} />
-   
+        </section>
      
       <section className="dagvaljare">
         <h2 className="valj-dag">Välj tid</h2>

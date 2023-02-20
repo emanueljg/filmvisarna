@@ -15,15 +15,38 @@ header {
   padding: 0px 40px 0px 40px;
 }
 
-.detail-trailer {
-  visibility: hidden;
-}
+
+
+
 
 .main {
   background: #0b0c17;
 }
 
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  transform: translateY(-200px);
+}
 
+.trailer-button {
+  color: white;
+  background-color: transparent;
+  border: white dashed 2px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+  opacity: 0.5;
+}
+
+.trailer-button:hover{
+  background-color: rgb(169, 34, 34);
+  transition: all 0.3s ease;
+  opacity: 1;
+}
 
 .movie-background {
   padding-bottom: 28rem;

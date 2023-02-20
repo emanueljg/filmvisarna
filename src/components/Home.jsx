@@ -68,8 +68,7 @@ export default function Home() {
       <div className="featuredMovieCTA-container">
         <div className="featuredMovieCTA-image">
           <a href="/movie/the-batman" style={{ textDecoration: "none" }}>
-            <h1> The Batman (2022)</h1>
-            
+            <h1> The Batman (2022)</h1>          
           </a>
         </div>
       </div>
