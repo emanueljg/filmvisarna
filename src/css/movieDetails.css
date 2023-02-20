@@ -20,8 +20,11 @@ header {
 }
 
 .trailer-container {
-  width: 90%;
-  position: relative;
+  width: 50%;
+  top: 200px;
+  left: 25%;
+  position: absolute;
+  z-index: 10;
 }
 
 .detail-trailer {
