@@ -1,19 +1,194 @@
-.movieList h3 {
-  margin-top: 90px;
-  margin-left: 45px;
-  overflow: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway:wght@400;500&display=swap');
+
+
+
+.main-Tickets {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60.25rem;
 }
 
-.movieList p {
+
+.letter {
+  color: white;
+  font-family: 'Poppins';
+  font-size: 25px;
+}
+
+.letter h3 {
+  margin-bottom: 5px;
+}
+
+
+.movieTitle {
+  font-family: 'Poppins';
+  font-size: 25px;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.length::after {
+  content: none;
+}
+
+.filterInnerWrapper span {
+  font-family: 'Poppins';
+  font-size: 16px;
+}
+
+.filtersList {
+  display: flex;
+  list-style: none;
+  margin-top: 20%;
+  justify-content: space-evenly;
+  color: white;
+  padding: 0;
+}
+
+
+.clear-fix:after {
+  content: "";
+  display: table;
+  clear: both;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #7c0204;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.clear-fix:hover:after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.poster-50-percent {
+  display: block;
+  width: 6.25rem;
+  float: left;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+
+.moviesWrapper {
+  margin-top: 10%;
+}
+
+
+.movieText {
+  margin-top: 2.5%;
+  float: left;
+  width: 50%;
   color: white;
 }
 
-.movieList {
-  display: block;
-  max-width: 20%;
+.movieText h3 {
+  margin-top: 7%;
+  line-height: 90%;
+  margin-left: 4%;
 }
 
-.movieImages img {
-  max-width: 50%;
-  margin-left: 40px;
+.movieText h4 {
+  margin-top: 4%;
+  line-height: 90%;
+  margin-left: 4%;
+  color: rgba(190, 192, 193, 0.525);
 }
+
+
+
+.length:before,
+.rated:before {
+  content: "|";
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+
+.wrapperImages {
+  border-bottom: .0625rem solid #2d2d2d;
+}
+
+
+.search {
+  color: white;
+}
+
+.queryImages {
+  display: flex;
+  flex-direction: column;
+}
+
+.chosenViewing,
+.chosenCategory {
+  width: 150px;
+  text-align: left;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 5px;
+  margin-top: 5px;
+
+}
+
+
+.searchBar {
+  width: 175px;
+  text-align: left;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+
+/* //Queries for the filter list\\ */
+@media (min-width: 320px) and (max-width:500px) {
+  #root {
+    overflow-x: hidden;
+  }
+
+  .moviesWrapper {
+    margin-left: 7px;
+  }
+
+  .movieInfo {
+    width: 100%;
+  }
+
+  .genre,
+  .length,
+  .rated {
+    font-size: 5px;
+
+  }
+
+  .poster-50-percent {
+    width: 20%;
+  }
+
+  .movieTitle {
+    font-size: 15px;
+    width: 100%;
+
+  }
+
+  .chosenCategory,
+  .chosenViewing {
+    width: 120px;
+
+  }
+
+  .searchBar {
+    width: 50px;
+  }
+}
+
+
+/* //Queries for the movie list\\ */
