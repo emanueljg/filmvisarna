@@ -219,3 +219,35 @@ ul {
   font-family: "NunitoSans", sans-serif;
   margin-bottom: 10px;
 }
+
+.valj-dag {
+  color: white;
+}
+
+@media screen and (max-width: 400px) {
+  .movie-background {
+      padding-bottom: 25.75rem;
+    }
+    .movie-poster-image {
+          visibility: hidden;
+        }
+                .movie-glr-wrap {
+                  visibility: hidden;
+                }
+      .movieDescription {
+        display: block;
+        position: absolute;
+        margin-left: 10px;
+      }
+         .asd{
+          padding-left: 25%;
+          margin-top: 0;
+         }   
+         .qwerty{
+          margin-left: 10px;
+          margin-top: 200px;
+         } 
+         .dagvaljare {
+          margin-top: 375px;
+         }
+  }

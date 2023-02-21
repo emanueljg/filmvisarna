@@ -73,7 +73,7 @@ export default function MovieDetail() {
           </button>
         </div>
       )}
-      <section className="container" style={{ opacity }}>
+      <section className="container" style={{ opacity, margin: 0, width:'100%'}}>
         <section
           className="movie-background"
           style={{
