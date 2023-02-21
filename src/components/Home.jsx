@@ -62,7 +62,8 @@ export default function Home() {
     <>
       <div className="featuredMovie">
         {" "}
-        <img src="/images/batman_background.jpg" alt="bat" />
+        <section className="movie-background" style={{ background: `url(${"/images/batman_background.jpg"})  center top / cover no-repeat` }} >
+        </section>
         <div className="gradientFeaturedMovie"> </div>
       </div>
       <div className="featuredMovieCTA-container">

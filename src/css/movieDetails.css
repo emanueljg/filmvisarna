@@ -4,12 +4,7 @@
   box-sizing: border-box;
 }
 
-section {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  text-align: left;
-}
+
 
 header {
   padding: 0px 40px 0px 40px;
