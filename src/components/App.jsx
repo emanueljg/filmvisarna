@@ -29,7 +29,7 @@ export default function App() {
       { path: '/movie/:moviePath', Component: MovieDetail }
     ],
     movies: [],
-    sortedMovies: {},
+    sortedMovies: [],
     categories: [],
     showing: []
   });
