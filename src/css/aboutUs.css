@@ -1,24 +1,163 @@
-@import url('https://fonts.googleapis.com/css2?family=Arima:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway:wght@400;500&display=swap");
 
+@import "normalize.css";
 
-@import 'normalize.css';
-
-
-.table2 {
+.container {
   font-family: sans-serif;
   text-align: center;
   margin-left: 30px;
   color: rgb(255, 255, 255);
 }
 
-h2.aboutus {
-  margin: 20px;
+.info h2 {
+  float: left;
 }
 
-.popcorn1 {
-  background-image: url('/public/images/popcorn1.png');
-  opacity: 0.4;
-  transition: 5s;
-  background-color: rgba(255, 255, 255, 0.5);
+.background {
+  opacity: 0.9;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
+.bg {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.snacks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popcorn {
+  margin-left: 5%;
+  border-radius: 20%;
+  margin-right: 5%;
+}
+
+.about {
+  width: 90%;
+  margin: auto;
+  font-size: 1.2rem;
+  hyphens: calc(25);
+}
+
+.info {
+  display: inline-table;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+
+.info td {
+  text-align: initial;
+  width: 50%;
+  padding: 3px;
+  margin: auto;
+  font-size: 1.1rem;
+}
+
+.biograf {
+  display: inline-block;
+  width: 100%;
+  margin: auto;
+}
+
+.biograf h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.biograf h3 {
+  font-size: 1.3rem;
+}
+
+.biograf p {
+  font-size: 1rem;
+}
+
+.biograf-info {
+  font-size: 1rem;
+}
+
+.salong-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.maximus-title {
+  text-align: left;
+  margin-left: 7%;
+  font-size: 1.3rem;
+}
+
+.maximus-info {
+  margin-right: 50px;
+  font-size: 1.1rem;
+}
+
+.dominus-title {
+  text-align: left;
+  margin-left: 7%;
+  font-size: 1.3rem;
+}
+
+.dominus-info {
+  margin-right: 50px;
+  font-size: 1.1rem;
+}
+
+.salong-img {
+  float: left;
+  width: 400px;
+  border-radius: 10%;
+  margin-bottom: 1%;
+  margin-right: 3%;
+  border: rgba(0, 0, 0, 0.5) solid 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .popcorn {
+    display: none;
+  }
+  .salong-img {
+    display: none;
+  }
+  .biograf h2 {
+    margin-right: 50px;
+  }
+  .biograf h3 {
+    margin-right: 50px;
+  }
+  .biograf p {
+    margin-right: 50px;
+  }
+  .biograf-info {
+    margin-right: 0 !important;
+  }
+  .dominus-info {
+    margin-right: 50px;
+  }
+  .maximus-info {
+    margin-right: 50px;
+  }
+  .about {
+    margin-right: 50px;
+  }
+  .aboutus {
+    margin-right: 50px;
+  }
+}
+@media screen and (min-width: 810px), (max-width: 1100px) {
+  .biograf-info {
+    margin-right: 50px;
+  }
+  .about {
+    margin-right: 50px;
+  }
 }
