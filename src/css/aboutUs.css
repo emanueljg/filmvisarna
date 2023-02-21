@@ -4,8 +4,54 @@
 
 @import 'normalize.css';
 
+.faq {
+  margin-top: 15px;
+  margin-left: 300px;
+  text-align: left;
+}
+
+.snacks3 {
+  margin-left: 400px;
+}
+
+.snacks {
+  margin-left: 95px;
+
+}
+
+.snacks2 {
+  padding: 35px;
+}
+
+.butik {
+  margin: 0;
+  border: solid;
+  display: inline;
+  padding-right: 200px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.salong {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.text {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  overflow: hidden;
+}
 
 .table2 {
+  margin-top: 200px;
   font-family: sans-serif;
   text-align: center;
   margin-left: 30px;
@@ -21,4 +67,10 @@ h2.aboutus {
   opacity: 0.4;
   transition: 5s;
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.aboutus_container {
+  margin-top: 100px;
+  display: flex;
+
 }
