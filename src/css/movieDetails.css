@@ -87,7 +87,7 @@ header {
   padding-bottom: 28rem;
 }
 
-@media (max-width: 415px) and (max-height: 897px) {
+@media screen and (max-width: 800px) {
   .movie-poster-image {
     max-width: 100%;
   }
@@ -101,7 +101,15 @@ header {
     margin-right: 10%;
   }
   .qwerty {
-    padding-right: 10%;
+    padding-right: 20%;
+  }
+  .movie-title {
+    padding-right: 20%;
+    margin-right: 10%;
+  }
+  .title-wrapper {
+    padding-right: 20%;
+    margin-right: 10%;
   }
 }
 
@@ -145,6 +153,7 @@ header {
   display: inline;
   vertical-align: middle;
   margin-bottom: 0px;
+  padding-right: 5%;
 }
 
 .movie-genre,
@@ -185,9 +194,9 @@ ul {
   font-family: "NunitoSans", sans-serif;
   font-size: 1.1rem;
   line-height: 1.4;
-  text-align: left;
   letter-spacing: 0.5px;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 .qwerty {
