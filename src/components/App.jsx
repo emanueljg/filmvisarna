@@ -35,6 +35,7 @@ export default function App() {
         path: "/films-and-trailers",
         Component: FilmsAndTrailers,
       },
+      { label: "Boka biljetter", path: "/boka-biljetter", Component: Booking },
       { label: "Om oss", path: "/about-us", Component: AboutUs },
       { path: "/movie/:moviePath", Component: MovieDetail },
       { path: "/movie/:moviePath/booking", Component: Booking }
