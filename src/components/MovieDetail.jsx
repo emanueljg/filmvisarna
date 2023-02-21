@@ -1,8 +1,9 @@
 import { useStates } from "../utilities/states";
-import { useParams } from "react-router-dom";
+import { Link, useParams, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import React from "react";
 import YouTube from "react-youtube";
+import Booking from "./Booking";
 
 export default function MovieDetail() {
   const { moviePath } = useParams();
@@ -16,6 +17,16 @@ export default function MovieDetail() {
       .map((x) => x.replace(/<\/p>/g, "")) // one array element per p tag
       .map((x) => <p className="movieDescription">{x}</p>); // new p tags as jsx
 
+  
+  const b = useStates({
+    booking: [
+      { path: "/booking", Component: Booking },
+    ]
+  });
+  
+
+  
+  
   const shownMovieAttrs = new Map();
   shownMovieAttrs.set("title", "Originaltitel");
   shownMovieAttrs.set("release", "Premiär");
@@ -27,16 +38,9 @@ export default function MovieDetail() {
     const shownAttr = shownMovieAttrs.get(kv[0]);
     // in-place replacement
     if (shownAttr) shownMovieAttrs[shownMovieAttrs.get(kv[0])] = kv[1];
-    if (shownAttr) shownMovieAttrs[shownMovieAttrs.get(kv[0])] = kv[1];
   }
 
-  const [open, setOpen] = React.useState(true);
-  const handleOpen = (event) => {
-    setValue(event.target.value);
-    setOpen(!open);
-    setValue(event.target.value);
-    setOpen(!open);
-  };
+ 
   const [visable, setVisable] = React.useState(false);
   const handleVisable = (event) => {
     setVisable((current) => !current);
@@ -73,7 +77,7 @@ export default function MovieDetail() {
           </button>
         </div>
       )}
-      <section className="container" style={{ opacity, margin: 0, width:'100%'}}>
+      <section className="container" style={{ opacity, margin: 0, width: '100%' }}>
         <section
           className="movie-background"
           style={{
@@ -81,7 +85,11 @@ export default function MovieDetail() {
               "/images/" + movie.background[0]
             })  center top / cover no-repeat`,
           }}
-        ></section>
+        >
+        <section className="gradient"></section>
+          
+
+          </section>
         <section className="button-container">
           <button
             className="trailer-button"
@@ -93,7 +101,6 @@ export default function MovieDetail() {
             <i class="fa-regular fa-circle-play"></i>
           </button>
         </section>
-        <section className="gradient"></section>
         <section className="asd">
           <section className="title-wrapper">
             <h1 className="movie-title">{movie.title}</h1>
@@ -133,8 +140,24 @@ export default function MovieDetail() {
             </section>
           </section>
         </section>
+                  <Routes>
+            {b.booking.map(({ path, Component }) => (
+              <Route path={movie.path + path} element={<Component />}
+              >
 
+
+
+              </Route>
+            ))}
+          </Routes>
+          {b.booking
+              .map(({path}) => (
+                <Link to={movie.path + path} className="x">
+                    <button>Click me</button>
+                </Link>
+              ))}
         <section className="dagvaljare">
+
           <h2 className="valj-dag">Välj tid</h2>
           <section className="dagar">
             {movie.viewings.map((v) => (

@@ -87,7 +87,7 @@ export default function Home() {
           >
             {s.movies
               .slice(10)
-              .map(({ path, images, title, length, rated, viewings }) => (
+              .map(({ path, images, title, length, rated }) => (
                 <Link to={path} className="movie">
                   <img className="movie-image" src={"/images/" + images[0]} />
                   <h2>{title}</h2>

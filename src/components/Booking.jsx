@@ -1,31 +1,39 @@
 import React from 'react'
+import { useStates } from "../utilities/states";
+
+import { Link, useParams, Routes, Route } from "react-router-dom";
 
 export default function Booking() {
+    const { moviePath } = useParams();
+  const s = useStates("main");
+
+  const movie = s.movies.find((movie) => movie.path === "/movie/" + moviePath);
+  const description =
+    movie &&
+    movie.description
+      .split("<p>")
+      .map((x) => x.replace(/<\/p>/g, "")) // one array element per p tag
+      .map((x) => <p className="movieDescription">{x}</p>); // new p tags as jsx
+
+
+  const shownMovieAttrs = new Map();
+  shownMovieAttrs.set("title", "Originaltitel");
+  shownMovieAttrs.set("release", "Premiär");
+  shownMovieAttrs.set("language", "Tal");
+  shownMovieAttrs.set("subtitles", "Text");
+  shownMovieAttrs.set("director", "Regi");
+  shownMovieAttrs.set("actors", "Medverkande");
+  for (const kv of Object.entries(movie || {})) {
+    const shownAttr = shownMovieAttrs.get(kv[0]);
+    // in-place replacement
+    if (shownAttr) shownMovieAttrs[shownMovieAttrs.get(kv[0])] = kv[1];
+    if (shownAttr) shownMovieAttrs[shownMovieAttrs.get(kv[0])] = kv[1];
+  }
   
 
-
-  return (
-    <>
-      <h2 className="hello">Filmer & Trailers</h2>
-      <div className="easy">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ad
-        ratione ut sed dolorum, illo delectus, impedit nulla architecto corrupti
-        accusantium ab a dolores adipisci fuga officiis, est ullam obcaecati.
-      </p>
-      <p>
-        Deleniti quis cumque repellat voluptate, quibusdam iusto. Sequi voluptas
-        quod a consequuntur iste, totam eos dolor, autem suscipit doloremque
-        maiores ipsum tenetur dolorem explicabo debitis molestiae quia
-        necessitatibus, voluptates aliquam.
-      </p>
-      <p>
-        Ea odit quo optio quis alias fuga suscipit consequatur voluptas dolores
-        molestias ipsam, fugit sequi voluptate sunt nesciunt possimus porro ab
-        eligendi aliquid. Accusantium aliquam obcaecati, ad unde totam
-        perspiciatis.
-        </p>
-        </div>
-    </>
+  return !movie ? null : (
+    <div className="greeting">
+      <h1>Hej Max</h1>
+   </div>
   );
 }

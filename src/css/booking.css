@@ -1,16 +1,8 @@
 
-
-
-.mainBooking{
-  max-width: 100vw;
-  max-height: 100vh;
-}
-
-.hello {
-  font-size: 1000px;
-}
-
-.easy p {
-color: white;
-
+.greeting {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 450px;
+  color: white;
 }
