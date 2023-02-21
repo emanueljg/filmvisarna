@@ -1,11 +1,18 @@
-import React from 'react'
+import React from "react";
 import { useStates } from "../utilities/states";
+import { useState } from "react";
 
 import { Link, useParams, Routes, Route } from "react-router-dom";
 
 export default function Booking() {
-    const { moviePath } = useParams();
+  const { moviePath } = useParams();
   const s = useStates("main");
+  let order = s.orderform;
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    order.error = null;
+  }
 
   const movie = s.movies.find((movie) => movie.path === "/movie/" + moviePath);
   const description =
@@ -14,7 +21,6 @@ export default function Booking() {
       .split("<p>")
       .map((x) => x.replace(/<\/p>/g, "")) // one array element per p tag
       .map((x) => <p className="movieDescription">{x}</p>); // new p tags as jsx
-
 
   const shownMovieAttrs = new Map();
   shownMovieAttrs.set("title", "Originaltitel");
@@ -29,11 +35,13 @@ export default function Booking() {
     if (shownAttr) shownMovieAttrs[shownMovieAttrs.get(kv[0])] = kv[1];
     if (shownAttr) shownMovieAttrs[shownMovieAttrs.get(kv[0])] = kv[1];
   }
-  
 
-  return !movie ? null : (
-    <div className="greeting">
-      <h1>Hej Max</h1>
-   </div>
+  return (
+    <>
+      <div className="biljetter">
+        <h2>Välj antal biljetter</h2>
+        <div></div>
+      </div>
+    </>
   );
 }
