@@ -4,7 +4,7 @@ import { useStates } from "../utilities/states";
 import { Link, useParams, Routes, Route } from "react-router-dom";
 
 export default function Booking() {
-    const { moviePath } = useParams();
+  const { moviePath } = useParams();
   const s = useStates("main");
 
   const movie = s.movies.find((movie) => movie.path === "/movie/" + moviePath);
@@ -29,11 +29,12 @@ export default function Booking() {
     if (shownAttr) shownMovieAttrs[shownMovieAttrs.get(kv[0])] = kv[1];
     if (shownAttr) shownMovieAttrs[shownMovieAttrs.get(kv[0])] = kv[1];
   }
-  
 
-  return !movie ? null : (
-    <div className="greeting">
-      <h1>Hej Max</h1>
-   </div>
+
+  return (
+
+    <div className="seatBooking">
+      <button id="selectbutton"> seat </button>
+    </div>
   );
 }
