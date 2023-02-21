@@ -154,6 +154,64 @@ export default function AboutUs() {
             </p>
           </div>
         </div>
+        <div className="faq">
+          <h2 className="faq-title">FAQ</h2>
+          <p className="question">
+            Får man lov att ta med sig eget godis in på bion?
+          </p>
+          <p className="answer">
+            Svar: Nej det får du inte. Det finns tillgänglighet till allt godis
+            du kan tänka dig i våran godisbutik.
+          </p>
+          <p className="question">Finns det toaletter på biografen?</p>
+          <p className="answer">
+            Svar: Det finns 4 herrtoaletter och 4 damtoaletter och 2 för
+            handikapp.
+          </p>
+          <p className="question">
+            Hur lång tid innan filmen ska man vara på plats?
+          </p>
+          <p className="answer">
+            Svar: Vi rekommenderar att du är på plats inne i salongen vid start
+            tiden. Trailers börjar visas 15minuter innan föreställningen
+            börjar.Det finns ingen fast tid för dig att anlända till filmen.
+            Biljett personal finns på plats under hela filmen och dörren är
+            alltid olåst in till filmen.
+          </p>
+          <p className="question">Får man prata under filmen?</p>
+          <p className="answer">
+            Svar: Det är ingen regel att du inte får lov att prata med din
+            kompis. Men det uppskattas om man kan viska eller hålla en väldigt
+            låg nivå så att man inte stör andra. Skratta uppskattas!
+          </p>
+          <p className="question">
+            Får man lov att ha ljud på sin mobil och ta emot samtal?
+          </p>
+          <p className="answer">
+            Svar: Du ska helst ha stängt av ljudet på din telefon. Men vi kan
+            förstå att det kanske kan vara viktigt att ljudet igång på sin
+            telefon. Tänker du ta emot ett samtal hänvisar vi till att du går ut
+            ifrån salongen innan du börjar prata.
+          </p>
+          <p className="question">
+            Vad händer med min biljett om jag inte hinner till filmen? Får jag
+            tillbaka pengarna?
+          </p>
+          <p className="answer">
+            Svar: Tyvärr får du inte tillbaka pengarna då din plats kunde ha
+            sålts till någon annan istället. MEN vi förstår att saker och ting
+            kan komma emellan. Så fram tills 1 timme innan filmen är det möjligt
+            att returnera din biljett. Efter det är det möjligt att boka om till
+            en annan visning för en mindre summa.
+          </p>
+          <p className="question">
+            Vad kan jag göra om jag inte är nöjd med upplevelsen?
+          </p>
+          <p className="answer">
+            Svar: Tvätta ögonen och ta ur öronpropparna och se en film igen. Är
+            du inte nöjd efter andra gången så är det något fel på dig.
+          </p>
+        </div>
       </div>
     </>
   );

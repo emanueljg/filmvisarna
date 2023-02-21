@@ -90,6 +90,10 @@
   flex-direction: column;
 }
 
+.salong-info h2 {
+  width: 100%;
+}
+
 .maximus-title {
   text-align: left;
   margin-left: 7%;
@@ -121,12 +125,36 @@
   border: rgba(0, 0, 0, 0.5) solid 10px;
 }
 
+.faq {
+  display: inline-block;
+  width: 100%;
+  margin: auto;
+}
+
+.faq h2 {
+  text-align: center;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.question {
+  font-size: 1.1rem;
+}
+.answer {
+  opacity: 0.8;
+  color: lightgray;
+  font-size: 1rem;
+}
+
 @media screen and (max-width: 800px) {
   .popcorn {
     display: none;
   }
   .salong-img {
     display: none;
+  }
+  .salong-info h2 {
+    width: 95%;
   }
   .biograf h2 {
     margin-right: 50px;
@@ -147,10 +175,26 @@
     margin-right: 50px;
   }
   .about {
-    margin-right: 50px;
+    margin-right: 70px;
   }
   .aboutus {
     margin-right: 50px;
+  }
+  .faq {
+    margin-right: 50px;
+  }
+  .question {
+    margin-right: 50px;
+  }
+  .answer {
+    margin-right: 50px;
+  }
+  .container {
+    margin-right: 50px;
+  }
+  .faq h2 {
+    margin-right: 50px;
+    width: 95%;
   }
 }
 @media screen and (min-width: 810px), (max-width: 1100px) {
@@ -158,6 +202,15 @@
     margin-right: 50px;
   }
   .about {
+    margin-right: 70px;
+  }
+  .container {
+    margin-right: 50px;
+  }
+  .faq {
+    margin-right: 50px;
+  }
+  .faq h2 {
     margin-right: 50px;
   }
 }
