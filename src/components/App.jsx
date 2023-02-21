@@ -1,6 +1,8 @@
 import { useStates } from "../utilities/states";
 import { useEffect } from "react";
 import { kebabify } from "../utilities/kebabify";
+import { createCategoryList } from "../utilities/createCategoryList";
+import { createShowingsList } from "../utilities/createShowingsList";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Home from "./Home";
 import FilmsAndTrailers from "./FilmsAndTrailers";
@@ -36,7 +38,6 @@ export default function App() {
       { path: "/movie/:moviePath", Component: MovieDetail },
     ],
     movies: [],
-    sortedMovies: {},
     categories: [],
     showing: []
   });
