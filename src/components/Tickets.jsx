@@ -29,11 +29,13 @@ export default function Tickets() {
     if (l.chosenViewing === 'Alla dagar') { return true }
   }
 
+  
+  const [query, setQuery] = useState('');
+
   function filterByQuery(movie) {
     return query.toLowerCase() === 'Sök..' || movie.title.toLowerCase().includes(query)
   }
 
-  const [query, setQuery] = useState('');
   
   //To remove duplicate letters when grouping movies alphabetically
   let currentLetter = "";
