@@ -10,6 +10,7 @@ import MovieDetail from "./MovieDetail";
 import Tickets from "./Tickets";
 import Footer from "./Footer";
 import Header from "./Header";
+import Booking from "./Booking";
 
 export default function App() {
   function ScrollToTop({ children }) {
@@ -30,6 +31,7 @@ export default function App() {
       { label: "Biljetter", path: "/tickets", Component: Tickets },
       { label: "Om oss", path: "/about-us", Component: AboutUs },
       { path: "/movie/:moviePath", Component: MovieDetail },
+      { path: "/movie/:moviePath/booking", Component: Booking }
     ],
     movies: [],
     categories: [],
@@ -38,7 +40,7 @@ export default function App() {
 
   useEffect(() => {
     (async () => {
-      let movies = await (await fetch("/json/movies.json")).json();
+      let movies = await (await fetch("/api/detailed_movies")).json();
       for (let movie of movies) {
         movie.path = "/movie/" + kebabify(movie.title);
       }
