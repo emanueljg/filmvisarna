@@ -44,7 +44,7 @@ export default function App() {
 
   useEffect(() => {
     (async () => {
-      let movies = await (await fetch("/json/movies.json")).json();
+      let movies = await (await fetch("/api/detailed_movies")).json();
       for (let movie of movies) {
         movie.path = "/movie/" + kebabify(movie.title);
       }
