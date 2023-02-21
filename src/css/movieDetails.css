@@ -91,6 +91,18 @@ header {
   .movie-poster-image {
     max-width: 100%;
   }
+  .movieDescription {
+    width: 100%;
+    padding-right: 10%;
+    text-align: left;
+    text-overflow: ellipsis;
+  }
+  .movieDescription text {
+    margin-right: 10%;
+  }
+  .qwerty {
+    padding-right: 10%;
+  }
 }
 
 .poster-and-title {
@@ -100,7 +112,7 @@ header {
   display: grid;
   padding: 0px 10px 0px;
   grid-column-gap: 30px;
-  margin: 0 auto;
+  margin: auto;
   box-sizing: border-box;
 }
 
@@ -166,7 +178,7 @@ ul {
 .movieDescription {
   display: grid;
   color: white;
-  margin-top: 6px;
+  margin-top: 3px;
 }
 
 .descriptionP {

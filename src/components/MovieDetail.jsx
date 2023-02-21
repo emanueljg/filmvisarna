@@ -43,6 +43,12 @@ export default function MovieDetail() {
   };
   const [opacity, setOpacity] = useState(1);
 
+  const opts = {
+    playerVars: {
+      autoplay: true,
+    },
+  };
+
   function dateRead(date_str) {
     return new Date(date_str).toLocaleString("sv-SE");
   }
@@ -51,7 +57,11 @@ export default function MovieDetail() {
     <section className="main">
       {visable && (
         <div className="trailer-container">
-          <YouTube className="detail-trailer" videoId={movie.trailer[0]} />
+          <YouTube
+            className="detail-trailer"
+            videoId={movie.trailer[0]}
+            opts={opts}
+          />
           <button
             className="close-button"
             onClick={() => {
