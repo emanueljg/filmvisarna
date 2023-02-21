@@ -86,7 +86,7 @@ export default function Tickets() {
       <section className="moviesWrapper">
         {
           l.movies.filter(filterByCategory).filter(filterByViewing).filter(filterByQuery)
-            .map(({ path, title, images, genre, duration, rating }) => <section className="wrapperImages">
+            .map(({ path, title, images, genre, length, rated }) => <section className="wrapperImages">
             <section className="letter">
               <h3 className="currentLetter">
                   {currentLetter !== title[0] && (currentLetter = title[0])}
@@ -100,8 +100,8 @@ export default function Tickets() {
                   <h3 className="movieTitle">{title}</h3>
                   <h4>
                     <span className="genre ">{genre.join(', ')}</span>
-                    <span className="length">{duration}</span>
-                    <span className="rated">{rating}</span>
+                    <span className="length">{length}</span>
+                    <span className="rated">{rated}</span>
                   </h4>
                 </section>
               </section>

@@ -87,12 +87,12 @@ export default function Home() {
           >
             {s.movies
               .slice(10)
-              .map(({ path, images, title, duration, rating, viewings }) => (
+              .map(({ path, images, title, length, rated, viewings }) => (
                 <Link to={path} className="movie">
                   <img className="movie-image" src={"/images/" + images[0]} />
                   <h2>{title}</h2>
-                  <p className="length">{duration}</p>
-                  <p className="rating">{rating}</p>
+                  <p className="length">{length}</p>
+                  <p className="rating">{rated}</p>
                   <p>
                     <button>Mer info</button>
                   </p>
@@ -114,12 +114,12 @@ export default function Home() {
           >
             {s.movies
               .slice(0, 9)
-              .map(({ path, images, title, duration, rating }) => (
+              .map(({ path, images, title, length, rated }) => (
                 <Link to={path} className="movie">
                   <img className="movie-image" src={"/images/" + images[0]} />
                   <h2>{title}</h2>
-                  <p className="length">{duration}</p>
-                  <p className="rating">{rating}</p>
+                  <p className="length">{length}</p>
+                  <p className="rating">{rated}</p>
                   <p>
                     <button>Mer info</button>
                   </p>

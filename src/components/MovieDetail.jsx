@@ -18,10 +18,10 @@ export default function MovieDetail() {
 
   const shownMovieAttrs = new Map();
   shownMovieAttrs.set("title", "Originaltitel");
-  shownMovieAttrs.set("release_year", "Premiär");
-  shownMovieAttrs.set("dialogue", "Tal");
+  shownMovieAttrs.set("release", "Premiär");
+  shownMovieAttrs.set("language", "Tal");
   shownMovieAttrs.set("subtitles", "Text");
-  shownMovieAttrs.set("directors", "Regi");
+  shownMovieAttrs.set("director", "Regi");
   shownMovieAttrs.set("actors", "Medverkande");
   for (const kv of Object.entries(movie || {})) {
     const shownAttr = shownMovieAttrs.get(kv[0]);
@@ -111,8 +111,8 @@ export default function MovieDetail() {
                   <li className="genreTag">{genre}</li>
                 ))}
               </ul>
-              <h4 className="movie-length">Längd: {movie.duration}</h4>
-              <h4 className="movie-rated">Åldersgräns: {movie.rating}</h4>
+              <h4 className="movie-length">Längd: {movie.length}</h4>
+              <h4 className="movie-rated">Åldersgräns: {movie.rated}</h4>
             </section>
           </section>
           <section className="movieDescription">
@@ -143,7 +143,7 @@ export default function MovieDetail() {
                 className="timelink"
               >
                 {dateRead(v.start_date)} - {dateRead(v.end_date)} (Salong{" "}
-                {v.theatre})
+                {v.room})
               </a>
             ))}
           </section>
