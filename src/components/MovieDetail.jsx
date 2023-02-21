@@ -17,26 +17,23 @@ export default function MovieDetail() {
       .map((x) => x.replace(/<\/p>/g, "")) // one array element per p tag
       .map((x) => <p className="movieDescription">{x}</p>); // new p tags as jsx
 
-  
   const b = useStates({
-    booking: [
-      { path: "/booking", Component: Booking },
-    ],
-        chosenViewing: 'Alla dagar',
-
+    booking: [{ path: "/booking", Component: Booking }],
+    chosenViewing: "Alla dagar",
   });
 
-   function filterByViewing(movie) {
-    let startDates = movie.viewings.map(x => x.start_date.slice(0,10));
+  function filterByViewing(movie) {
+    let startDates = movie.viewings.map((x) => x.start_date.slice(0, 10));
     for (let startDate of startDates) {
-      if (b.chosenViewing === startDate) { return  true; }
+      if (b.chosenViewing === startDate) {
+        return true;
+      }
     }
-    if (b.chosenViewing === 'Alla dagar') { return true }
+    if (b.chosenViewing === "Alla dagar") {
+      return true;
+    }
   }
-  
 
-  
-  
   const shownMovieAttrs = new Map();
   shownMovieAttrs.set("title", "Originaltitel");
   shownMovieAttrs.set("release_year", "Premiär");
@@ -50,7 +47,6 @@ export default function MovieDetail() {
     if (shownAttr) shownMovieAttrs[shownMovieAttrs.get(kv[0])] = kv[1];
   }
 
- 
   const [visable, setVisable] = React.useState(false);
   const handleVisable = (event) => {
     setVisable((current) => !current);
@@ -87,7 +83,10 @@ export default function MovieDetail() {
           </button>
         </div>
       )}
-      <section className="container" style={{ opacity, margin: 0, width: '100%' }}>
+      <section
+        className="container"
+        style={{ opacity, margin: 0, width: "100%" }}
+      >
         <section
           className="movie-background"
           style={{
@@ -96,10 +95,8 @@ export default function MovieDetail() {
             })  center top / cover no-repeat`,
           }}
         >
-        <section className="gradient"></section>
-          
-
-          </section>
+          <section className="gradient"></section>
+        </section>
         <section className="button-container">
           <button
             className="trailer-button"
@@ -150,33 +147,28 @@ export default function MovieDetail() {
             </section>
           </section>
         </section>
-                  <Routes>
-            {b.booking.map(({ path, Component }) => (
-              <Route path={movie.path + path} element={<Component />}>
-              </Route>
-            ))}
-          </Routes>
-          {b.booking
-              .map(({path}) => (
-                <Link to={movie.path + path} className="x">
-                    <button>Click me</button>
-                </Link>
-              ))}
+        <Routes>
+          {b.booking.map(({ path, Component }) => (
+            <Route path={movie.path + path} element={<Component />}></Route>
+          ))}
+        </Routes>
+        {b.booking.map(({ path }) => (
+          <Link to={movie.path + path} className="x">
+            <button>Boka biljett</button>
+          </Link>
+        ))}
         <section className="dagvaljare">
-
-                 <li className="filterDay">
-          <span className="pickDay">Välj dag</span>
-          <section className="selectDay">
-            <select className="chosenViewing"{...b.bind('chosenViewing')}>
-              <option>Alla dagar</option>
-              {movie.viewings.map(viewings => <option>
-                {viewings.start_date.slice(0, 10)}
-              </option>)}
-            </select>
-          </section>
+          <li className="filterDay">
+            <span className="pickDay">Välj dag</span>
+            <section className="selectDay">
+              <select className="chosenViewing" {...b.bind("chosenViewing")}>
+                <option>Alla dagar</option>
+                {movie.viewings.map((viewings) => (
+                  <option>{viewings.start_date.slice(0, 10)}</option>
+                ))}
+              </select>
+            </section>
           </li>
-          
-                  
         </section>
       </section>
     </section>
