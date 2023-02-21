@@ -28,7 +28,9 @@
   hyphens: auto;
 }
 
-
+.length::after {
+  content: none;
+}
 
 .filterInnerWrapper span {
   font-family: 'Poppins';
