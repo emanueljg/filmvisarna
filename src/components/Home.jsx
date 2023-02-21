@@ -70,7 +70,6 @@ export default function Home() {
         <div className="featuredMovieCTA-image">
           <a href="/movie/the-batman" style={{ textDecoration: "none" }}>
             <h1> The Batman (2022)</h1>
-            
           </a>
         </div>
       </div>
@@ -104,7 +103,7 @@ export default function Home() {
         </div>
 
         <div className="showingNow">
-          <h1>Toplistan</h1>
+          <h1>Topplistan</h1>
           <Carousel
             keyBoardControl={true}
             autoPlay={true}

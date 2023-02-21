@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="footer-links">
           <div className="footer-link-wrapper">
             <div className="footer-link-items">
-              <h2>Om Oss</h2>
+              <h2>Om oss</h2>
               <a>Hur det fungerar</a>
               <a>Rekommendation</a>
               <a>Jobb</a>
@@ -30,7 +30,7 @@ export default function Footer() {
               <a>Influencer</a>
             </div>
             <div className="footer-link-items">
-              <h2>Social Media</h2>
+              <h2>Social media</h2>
               <a>Instagram</a>
               <a>Facebook</a>
               <a>Youtube</a>

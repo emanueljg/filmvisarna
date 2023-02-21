@@ -1,0 +1,54 @@
+@import 'grid-cols.css';
+@import 'grid-show-breakpoint.css';
+
+/* 
+   css variables 
+*/
+:root {
+  --grid-columns: 12;
+  --gutter-size: 1%;
+  --breakpoint-xs: 0px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1400px;
+}
+
+/* border-box everything
+   - make padding and borders included in widths */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 98%;
+  margin: 1%;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+/* other rules */
+
+.row {
+  margin: calc(var(--gutter-size) / -2);
+}
+
+.row::after {
+  /* clearfix
+    (needed when an element has children that
+     floats to give the parent correct height)
+  */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row [class^="col"] {
+  float: left;
+  padding: calc(var(--gutter-size) / 2);
+}

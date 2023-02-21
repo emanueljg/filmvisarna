@@ -15,10 +15,10 @@ export default function Home() {
   return (
     <nav>
       <Link to="/">
-        <section className="header-logo">
+        <div className="header-logo">
           <i className="fa-solid fa-film"></i>
           {title}
-        </section>
+        </div>
       </Link>
       <Navbar />
     </nav>

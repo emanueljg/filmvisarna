@@ -30,7 +30,7 @@ export default function App() {
       { path: "/", Component: Home },
       { label: "Biljetter", path: "/tickets", Component: Tickets },
       {
-        label: "Filmer & Trailer",
+        label: "Filmer & trailer",
         path: "/films-and-trailers",
         Component: FilmsAndTrailers,
       },
