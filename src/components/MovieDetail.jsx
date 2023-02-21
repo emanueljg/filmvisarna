@@ -19,9 +19,6 @@ export default function MovieDetail() {
   const shownMovieAttrs = new Map();
   shownMovieAttrs.set("title", "Originaltitel");
   shownMovieAttrs.set("release", "Premiär");
-  shownMovieAttrs.set("rated", "Åldersgräns");
-  shownMovieAttrs.set("length", "Speltid");
-  shownMovieAttrs.set("genre", "Genre");
   shownMovieAttrs.set("language", "Tal");
   shownMovieAttrs.set("subtitles", "Text");
   shownMovieAttrs.set("director", "Regi");
@@ -80,7 +77,7 @@ export default function MovieDetail() {
             className="trailer-button"
             onClick={() => {
               handleVisable();
-              setOpacity(0.2);
+              setOpacity(0.1);
             }}
           >
             <i class="fa-regular fa-circle-play"></i>
@@ -92,61 +89,54 @@ export default function MovieDetail() {
             <h1 className="movie-title">{movie.title}</h1>
           </section>
         </section>
-      </section>
-      <section className="poster-and-title">
-        <section className="movie-poster-wrapper">
-          <img
-            className="movie-poster-image"
-            src={"/images/" + movie.images[0]}
-          />
-          <section className="movie-glr-wrap">
-            <ul>
-              {movie.genre.map((genre) => (
-                <li className="genreTag">{genre}</li>
+        <section className="poster-and-title">
+          <section className="movie-poster-wrapper">
+            <img
+              className="movie-poster-image"
+              src={"/images/" + movie.images[0]}
+            />
+            <section className="movie-glr-wrap">
+              <ul>
+                {movie.genre.map((genre) => (
+                  <li className="genreTag">{genre}</li>
+                ))}
+              </ul>
+              <h4 className="movie-length">Längd: {movie.length}</h4>
+              <h4 className="movie-rated">Åldersgräns: {movie.rated}</h4>
+            </section>
+          </section>
+          <section className="movieDescription">
+            <p className="descriptionP">{description}</p>
+            <section className="qwerty">
+              {Object.entries(shownMovieAttrs).map(([key, value]) => (
+                <>
+                  {
+                    <>
+                      <h4 className="descriptorTitle">{key}</h4>
+                      <p className="descriptorP">
+                        {value instanceof Array ? value.join(", ") : value}
+                      </p>
+                    </>
+                  }
+                </>
               ))}
-            </ul>
-            <h4 className="movie-length">{movie.length}</h4>
-            <h4 className="movie-rated">{movie.rated}</h4>
-          </section>
-        </section>
-        <section className="movieDescription">
-          <p className="descriptionP">{description}</p>
-          <section className="qwerty">
-            {Object.entries(shownMovieAttrs).map(([key, value]) => (
-              <>
-                {
-                  <>
-                    <h4 className="descriptorTitle">{key}</h4>
-                    <p className="descriptorP">
-                      {value instanceof Array ? value.join(", ") : value}
-                    </p>
-                  </>
-                }
-              </>
-            ))}
+            </section>
           </section>
         </section>
 
-        <section className="movie-glr-wrap">
-          <ul>
-            {movie.genre.map((genre) => (
-              <li className="genreTag">{genre}</li>
+        <section className="dagvaljare">
+          <h2 className="valj-dag">Välj tid</h2>
+          <section className="dagar">
+            {movie.viewings.map((v) => (
+              <a
+                href={"/" + v.start_date.replace(":", "-")}
+                className="timelink"
+              >
+                {dateRead(v.start_date)} - {dateRead(v.end_date)} (Salong{" "}
+                {v.room})
+              </a>
             ))}
-          </ul>
-          <h4 className="movie-length">{movie.length}</h4>
-          <h4 className="movie-rated">{movie.rated}</h4>
-        </section>
-      </section>
-
-      <section className="dagvaljare">
-        <h2 className="valj-dag">Välj tid</h2>
-        <section className="dagar">
-          {movie.viewings.map((v) => (
-            <a href={"/" + v.start_date.replace(":", "-")} className="timelink">
-              {dateRead(v.start_date)} - {dateRead(v.end_date)} (Salong {v.room}
-              )
-            </a>
-          ))}
+          </section>
         </section>
       </section>
     </section>
