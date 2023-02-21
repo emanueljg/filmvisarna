@@ -21,8 +21,18 @@ export default function MovieDetail() {
   const b = useStates({
     booking: [
       { path: "/booking", Component: Booking },
-    ]
+    ],
+        chosenViewing: 'Alla dagar',
+
   });
+
+   function filterByViewing(movie) {
+    let startDates = movie.viewings.map(x => x.start_date.slice(0,10));
+    for (let startDate of startDates) {
+      if (b.chosenViewing === startDate) { return  true; }
+    }
+    if (b.chosenViewing === 'Alla dagar') { return true }
+  }
   
 
   
@@ -142,11 +152,7 @@ export default function MovieDetail() {
         </section>
                   <Routes>
             {b.booking.map(({ path, Component }) => (
-              <Route path={movie.path + path} element={<Component />}
-              >
-
-
-
+              <Route path={movie.path + path} element={<Component />}>
               </Route>
             ))}
           </Routes>
@@ -158,18 +164,19 @@ export default function MovieDetail() {
               ))}
         <section className="dagvaljare">
 
-          <h2 className="valj-dag">Välj tid</h2>
-          <section className="dagar">
-            {movie.viewings.map((v) => (
-              <a
-                href={"/" + v.start_date.replace(":", "-")}
-                className="timelink"
-              >
-                {dateRead(v.start_date)} - {dateRead(v.end_date)} (Salong{" "}
-                {v.theatre})
-              </a>
-            ))}
+                 <li className="filterDay">
+          <span className="pickDay">Välj dag</span>
+          <section className="selectDay">
+            <select className="chosenViewing"{...b.bind('chosenViewing')}>
+              <option>Alla dagar</option>
+              {movie.viewings.map(viewings => <option>
+                {viewings.start_date.slice(0, 10)}
+              </option>)}
+            </select>
           </section>
+          </li>
+          
+                  
         </section>
       </section>
     </section>
