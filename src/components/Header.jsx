@@ -15,8 +15,8 @@ titleChange()
 export default function Home() {
   return <nav>
     <Link to="/">
-      <a className='header-logo'>
-        <i className='fa-solid fa-film'></i>{title}</a>
+      <div className='header-logo'>
+        <i className='fa-solid fa-film'></i>{title}</div>
     </Link>
     <Navbar />
   </nav>

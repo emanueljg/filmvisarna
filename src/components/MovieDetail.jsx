@@ -56,7 +56,7 @@ export default function MovieDetail() {
       <div className='dagar'>
         {
           movie.viewings.map((v) => (
-            <a href={"/" + v.start_date.replace(':', '-')} className="timelink">
+            <a href={"/" + kebabify(movie.title) + v.start_date.replace(':', '-')} className="timelink">
               {dateRead(v.start_date)} - {dateRead(v.end_date)} (Salong {v.room})
             </a>))
         }

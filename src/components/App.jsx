@@ -28,7 +28,7 @@ export default function App() {
       { label: 'Filmer & trailers', path: '/films-and-trailers', Component: FilmsAndTrailers },
       { label: 'Om oss', path: '/about-us', Component: AboutUs },
       { path: '/movie/:moviePath', Component: MovieDetail },
-      { path: '/movie/:moviePath/:showing', Component: Booking }
+      { path: '/booking', Component: Booking }
     ],
     movies: [],
     sortedMovies: {},
