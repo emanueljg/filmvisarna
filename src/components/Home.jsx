@@ -1,10 +1,12 @@
 import { useStates } from "../utilities/states";
-import { Link } from "react-router-dom";
+import { Link, Routes, Route } from "react-router-dom";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import React from "react";
 import YouTube from "react-youtube";
 import SlideShow from "./SlideShow";
+import Tickets from "./Tickets";
+import AboutUs from "./AboutUs";
 
 export default function Home() {
   // Connect to the main state so we can read the movies
@@ -57,6 +59,12 @@ export default function Home() {
       autoPlay: 0,
     },
   };
+  const e = useStates({
+    tickets: [
+      { path: "/tickets", Component: Tickets }],
+    aboutus:  [{ path: "/about-us", Component: AboutUs }
+    ],
+  });
 
   return (
     <>
@@ -227,6 +235,24 @@ export default function Home() {
               </p>
             </div>
           </Carousel>
+        </div>
+        <div className="mobile-buttons">
+          <Routes>
+          {e.tickets.map(({ path, Component }) => (
+            <Route path={path} element={<Component />}></Route>
+          ))}
+          </Routes>
+    
+        {e.tickets.map(({ path }) => (
+          <Link to={path} className="x">
+            <button className="to-tickets">Biljetter</button>
+          </Link>
+        ))}
+          {e.aboutus.map(({ path }) => (
+            <Link to={path} className="x">
+              <button className="to-aboutus">Om oss</button>
+            </Link>
+          ))}
         </div>
       </div>
     </>
