@@ -146,7 +146,7 @@ header {
   max-width: 90%;
   border-radius: 4px;
   display: inline-block;
-  position: absolute;
+  position: relative;
   z-index: 2;
 }
 
@@ -248,6 +248,79 @@ ul {
 
 .valj-dag {
   color: white;
+}
+
+.maybe{
+  color: white;
+  font-size: 14px;
+  padding: 30px;  
+}
+
+.yesno {
+  margin-left: 25%;
+  
+}
+
+.no {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  justify-content: center;
+}
+
+.viewingsList {
+  display: inline-block;
+  list-style: none;
+  width: 1000px;
+
+  }
+
+
+.dagvaljare{
+  display: flex;  
+  flex-direction:column;
+  margin-top: 10%;  
+
+}
+.startTime {
+  margin-left: 50px;
+}
+
+.startDate {
+  font-family: 'Poppins';
+  font-size: 14px;
+}
+
+.startTime{
+  font-family: 'Poppins';
+}
+.f {
+  list-style: none;
+  margin-left: 19%;
+  padding-bottom: 30px;
+}
+.d{
+  color: white;
+  font-size: 16px;
+}
+
+.salongNumber{
+  font-family: 'NunitoSans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+.info{
+  margin-top: 20px;
+}
+
+.salong {
+  
+  color: white;
+      border-bottom: .0625rem solid #2d2d2d;
+        border-bottom-color: rgb(45, 45, 45);
+        border-bottom-style: solid;
+        border-bottom-width: 0.00625rem;
+        margin-bottom: 25px;
 }
 
 @media screen and (max-width: 400px) {
