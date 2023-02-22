@@ -27,13 +27,6 @@ export default function MovieDetail() {
 
   });
 
-   function filterByViewing(movie) {
-    let startDates = movie.viewings.map(x => x.start_date.slice(0,10));
-    for (let startDate of startDates) {
-      if (b.chosenViewing === startDate) { return  movie.viewings.start_date; }
-    }
-     if (b.chosenViewing === 'Alla dagar') { return movie.viewings.start_date; }
-  }
 
 
   const shownMovieAttrs = new Map();
@@ -158,39 +151,40 @@ export default function MovieDetail() {
      
         <section className="dagvaljare">
 
-          <li className="f">
-            <span className="d">Välj dag</span>
-              <section className="s">
+          <li className="chooseDayList">
+            <span className="chooseDay">Välj dag</span>
+              <section className="chosenDay">
                 <select className="chosenViewing"{...b.bind('chosenViewing')}>
                   <option>Alla dagar</option>
-              {movie.viewings.map(viewings => <option>
+              {movie.viewings.slice(0, 5).map(viewings => <option>
                 {viewings.start_date.slice(0, 10)}
               </option>)}
             </select>
           </section>
           </li>
 
-          <section className="no">
-          { 
-              movie.viewings.slice(0, 5).map(viewings => <ul className="viewingsList">
+          <section className="viewingsListStd">
+            { 
+              movie.viewings.slice(0, 5).filter(x => b.chosenViewing === 'Alla dagar' || b.chosenViewing === x.start_date.slice(0,10)).map(viewings => <ul className="viewingsList">
                 <li className="salong">
+                  <section className="infoContainer clear-fix">
                   <span className="salongNumber">Salong {viewings.theatre}</span>
                   <section className="info">
                     <span className="startDate">{viewings.start_date.slice(0, 10)}</span>
-                    <span className="startTime">{viewings.start_date.slice(11, 18)}</span>
-                    <span></span>
-                    <span>
+                      <span className="startTime">{viewings.start_date.slice(11, 18)}</span>
+                      <span className="endTime"> - {viewings.end_date.slice(11, 18)}</span>
+                    <span className="buttonWrapper">
 
                       {b.booking
                         .map(({ path }) => (
-                          <Link to={movie.path + path} className="x">
-                            <button className="yesno">Köp biljetter</button>
+                          <Link to={movie.path +"/"+viewings.start_date + path} className="link">
+                            <button className="buyTickets">Köp biljetter</button>
                           </Link>
-                        ))}
+                    ))}
                     </span>
                 </section>
                 
-                
+                </section>
                 
                 </li>
            
