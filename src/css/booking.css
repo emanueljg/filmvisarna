@@ -1,9 +1,37 @@
 .bokning {
   color: white;
   display: inline;
-  position: absolute;
+  position: relative;
   transform: translateY(-200px);
-  margin-left: 20px;
+  margin-left: 20%;
+}
+
+label,
+input {
+  display: block;
+}
+
+label {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 50%;
+}
+
+input[type="number"] {
+  width: 30%;
+  text-align: center;
+  display: inline-block;
+}
+
+button[type="submit"] {
+  float: right;
+  margin-top: 20px;
+}
+
+.error {
+  color: rgb(121, 15, 15);
 }
 
 .bokning-klar {

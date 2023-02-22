@@ -50,6 +50,7 @@ export default function Booking() {
   return !order.submitted ? (
     <>
       <div className="bokning">
+        <h2>Boka din biljett</h2>
         <form onSubmit={handleSubmit}>
           <label>
             Epost:
