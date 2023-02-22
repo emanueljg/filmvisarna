@@ -261,6 +261,17 @@ ul {
   margin-bottom: 10px;
 }
 
+.booking-button {
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+.booking-button:hover {
+  background-color: rgb(128, 26, 26, 0.5);
+  transition: all 0.5s ease;
+  color: white;
+}
+
 .valj-dag {
   color: white;
 }

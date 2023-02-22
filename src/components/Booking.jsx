@@ -153,7 +153,9 @@ export default function Booking() {
             </button>
           </label>
           {order.error && <p className="error">{order.error}</p>}
-          <button type="submit">Slutför din bokning</button>
+          <button className="booking-done" type="submit">
+            Slutför din bokning
+          </button>
         </form>
       </div>
     </>

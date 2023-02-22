@@ -1,9 +1,11 @@
 .bokning {
   color: white;
-  display: inline;
-  position: relative;
-  transform: translateY(-200px);
-  margin-left: 20%;
+  display: inline-block;
+  margin-left: 5%;
+  margin-top: 5%;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
 }
 
 label,
@@ -30,6 +32,13 @@ button[type="submit"] {
   margin-top: 20px;
 }
 
+button[type="button"]:hover {
+  cursor: pointer;
+  background-color: rgb(128, 26, 26, 0.5);
+  transition: all 0.5s ease;
+  color: white;
+}
+
 .error {
   color: rgb(121, 15, 15);
 }
@@ -38,4 +47,11 @@ button[type="submit"] {
   color: white;
   margin-left: 50px;
   margin-top: 100px;
+}
+
+.booking-done:hover {
+  cursor: pointer;
+  background-color: rgb(128, 26, 26, 0.5);
+  transition: all 0.5s ease;
+  color: white;
 }

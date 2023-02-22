@@ -154,7 +154,7 @@ export default function MovieDetail() {
         </Routes>
         {b.booking.map(({ path }) => (
           <Link to={movie.path + path} className="x">
-            <button>Boka biljett</button>
+            <button className="booking-button">Boka biljett</button>
           </Link>
         ))}
         <section className="dagvaljare">
