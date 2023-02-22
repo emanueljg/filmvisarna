@@ -143,7 +143,7 @@ export default function MovieDetail() {
         </section>
                   <Routes>
             {b.booking.map(({ path, Component }) => (
-              <Route path={movie.path + path} element={<Component />}>
+              <Route path={path} element={<Component />}>
               </Route>
             ))}
           </Routes>
@@ -176,7 +176,7 @@ export default function MovieDetail() {
 
                       {b.booking
                         .map(({ path }) => (
-                          <Link to={movie.path +"/"+viewings.start_date + path} className="link">
+                          <Link to={movie.path + path} className="link">
                             <button className="buyTickets">Köp biljetter</button>
                           </Link>
                     ))}

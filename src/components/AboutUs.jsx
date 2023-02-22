@@ -33,8 +33,8 @@ const tickets = [
 
 export default function AboutUs() {
   let el = (
-    <table className="info">
-      <tbody className="info">
+    <table className="infoAboutUs">
+      <tbody className="infoAboutUs">
         <h2>
           Biljett Priser <i class="fa-solid fa-ticket"></i>
         </h2>

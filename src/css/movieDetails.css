@@ -228,16 +228,18 @@ ul {
 
 .descriptionP {
   font-family: "NunitoSans", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   line-height: 1.4;
   letter-spacing: 0.5px;
   margin-bottom: 10px;
   width: 100%;
+  text-align: left;
 }
 
 .qwerty {
   display: grid;
   color: white;
+  text-align: left;
 }
 
 .descriptorTitle {
@@ -252,7 +254,7 @@ ul {
 }
 
 .descriptorP {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.4;
   font-weight: 400;
   margin: 0;
@@ -316,6 +318,10 @@ ul {
 line-height: 2.5rem;
   }
 
+  .info{
+    text-align: left;
+  }
+
   .link{
     padding: 75px;
   }
@@ -353,17 +359,21 @@ line-height: 2.5rem;
 .startTime{
   font-family: 'Poppins';
 }
+
 .chooseDayList{
   list-style: none;
   margin-left: 22%;
   padding-bottom: 30px;
   margin-top: 75px;
 }
+
 .chooseDay{
   color: white;
   font-size: 16px;
   font-family: 'Poppins';
 }
+
+
 
 .buttonWrapper{
   display: inline;
@@ -378,13 +388,17 @@ line-height: 2.5rem;
 
 
 .salong {
-  
-  color: white;
-      border-bottom: .0625rem solid #2d2d2d;
+        color: white;
+        border-bottom: .0625rem solid #2d2d2d;
         border-bottom-color: rgb(45, 45, 45);
         border-bottom-style: solid;
         border-bottom-width: 0.00625rem;
         margin-bottom: 25px;
+}
+
+.dagvaljare {
+  text-align: left;
+  font-size: 0.8rem;
 }
 
 @media screen and (max-width: 400px) {
@@ -433,32 +447,5 @@ line-height: 2.5rem;
           display: inline-block;
          }
   }
-  .gradient {
-    height: 412px;
-  }
-  .movie-poster-image {
-    visibility: hidden;
-  }
-  .movie-glr-wrap {
-    visibility: hidden;
-  }
-  .movieDescription {
-    display: block;
-    position: absolute;
-    margin-left: 10px;
-  }
-  .asd {
-    padding-left: 25%;
-    margin-top: 0;
-  }
-  .qwerty {
-    margin-left: 10px;
-    margin-top: 200px;
-  }
-  .dagvaljare {
-    margin-top: 375px;
-  }
-  .button-container {
-    transform: translateY(-200px);
-  }
+
 

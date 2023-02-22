@@ -10,7 +10,7 @@
   color: rgb(255, 255, 255);
 }
 
-.info h2 {
+.infoAboutUs h2 {
   float: left;
 }
 
@@ -45,7 +45,7 @@
   hyphens: calc(25);
 }
 
-.info {
+.infoAboutUs {
   display: inline-table;
   align-items: center;
   text-align: center;
@@ -54,7 +54,7 @@
   margin: auto;
 }
 
-.info td {
+.infoAboutUs td {
   text-align: initial;
   width: 50%;
   padding: 3px;
