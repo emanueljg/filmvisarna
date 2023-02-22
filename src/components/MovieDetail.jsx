@@ -17,7 +17,6 @@ export default function MovieDetail() {
       .map((x) => x.replace(/<\/p>/g, "")) // one array element per p tag
       .map((x) => <p className="movieDescription">{x}</p>); // new p tags as jsx
 
-  
   const b = useStates({
     booking: [
       { path: "/booking", Component: Booking },
@@ -42,7 +41,6 @@ export default function MovieDetail() {
     if (shownAttr) shownMovieAttrs[shownMovieAttrs.get(kv[0])] = kv[1];
   }
 
- 
   const [visable, setVisable] = React.useState(false);
   const handleVisable = (event) => {
     setVisable((current) => !current);
@@ -79,7 +77,10 @@ export default function MovieDetail() {
           </button>
         </div>
       )}
-      <section className="container" style={{ opacity, margin: 0, width: '100%' }}>
+      <section
+        className="container"
+        style={{ opacity, margin: 0, width: "100%" }}
+      >
         <section
           className="movie-background"
           style={{
@@ -88,10 +89,8 @@ export default function MovieDetail() {
             })  center top / cover no-repeat`,
           }}
         >
-        <section className="gradient"></section>
-          
-
-          </section>
+          <section className="gradient"></section>
+        </section>
         <section className="button-container">
           <button
             className="trailer-button"
