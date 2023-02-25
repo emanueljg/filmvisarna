@@ -5,7 +5,6 @@ import { createCategoryList } from "../utilities/createCategoryList";
 import { createShowingsList } from "../utilities/createShowingsList";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Home from "./Home";
-import FilmsAndTrailers from "./FilmsAndTrailers";
 import AboutUs from "./AboutUs";
 import MovieDetail from "./MovieDetail";
 import Tickets from "./Tickets";
@@ -26,22 +25,28 @@ export default function App() {
 
   // Declare a state "main" that we can use in as many components as we want
   const s = useStates("main", {
+    confirmationNumber: "",
+    orderForm: {
+      email: "",
+      phoneNumber: "",
+      numberOfAdults: 0,
+      numberOfSeniors: 0,
+      numberOfChildren: 0,
+      submitted: false,
+      error: null,
+    },
+
     // A menu used for the main menu and for routing
     menu: [
       { path: "/", Component: Home },
       { label: "Biljetter", path: "/tickets", Component: Tickets },
-      {
-        label: "Filmer & trailer",
-        path: "/films-and-trailers",
-        Component: FilmsAndTrailers,
-      },
       { label: "Om oss", path: "/about-us", Component: AboutUs },
       { path: "/movie/:moviePath", Component: MovieDetail },
-      { path: "/movie/:moviePath/booking", Component: Booking }
+      { path: "/movie/:moviePath/booking", Component: Booking },
     ],
     movies: [],
     categories: [],
-    showing: []
+    showing: [],
   });
 
   useEffect(() => {

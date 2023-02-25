@@ -17,16 +17,17 @@ export default function MovieDetail() {
       .map((x) => x.replace(/<\/p>/g, "")) // one array element per p tag
       .map((x) => <p className="movieDescription">{x}</p>); // new p tags as jsx
 
-  
   const b = useStates({
     booking: [
       { path: "/booking", Component: Booking },
-    ]
-  });
-  
+    ],
+    chosenViewing: 'Alla dagar',
+    movies: Array.prototype.slice.call(s.movies),
 
-  
-  
+  });
+
+
+
   const shownMovieAttrs = new Map();
   shownMovieAttrs.set("title", "Originaltitel");
   shownMovieAttrs.set("release_year", "Premiär");
@@ -40,7 +41,6 @@ export default function MovieDetail() {
     if (shownAttr) shownMovieAttrs[shownMovieAttrs.get(kv[0])] = kv[1];
   }
 
- 
   const [visable, setVisable] = React.useState(false);
   const handleVisable = (event) => {
     setVisable((current) => !current);
@@ -77,7 +77,10 @@ export default function MovieDetail() {
           </button>
         </div>
       )}
-      <section className="container" style={{ opacity, margin: 0, width: '100%' }}>
+      <section
+        className="container"
+        style={{ opacity, margin: 0, width: "100%" }}
+      >
         <section
           className="movie-background"
           style={{
@@ -86,10 +89,8 @@ export default function MovieDetail() {
             })  center top / cover no-repeat`,
           }}
         >
-        <section className="gradient"></section>
-          
-
-          </section>
+          <section className="gradient"></section>
+        </section>
         <section className="button-container">
           <button
             className="trailer-button"
@@ -142,34 +143,55 @@ export default function MovieDetail() {
         </section>
                   <Routes>
             {b.booking.map(({ path, Component }) => (
-              <Route path={movie.path + path} element={<Component />}
-              >
-
-
-
+              <Route path={path} element={<Component />}>
               </Route>
             ))}
           </Routes>
-          {b.booking
-              .map(({path}) => (
-                <Link to={movie.path + path} className="x">
-                    <button>Click me</button>
-                </Link>
-              ))}
+     
         <section className="dagvaljare">
 
-          <h2 className="valj-dag">Välj tid</h2>
-          <section className="dagar">
-            {movie.viewings.map((v) => (
-              <a
-                href={"/" + v.start_date.replace(":", "-")}
-                className="timelink"
-              >
-                {dateRead(v.start_date)} - {dateRead(v.end_date)} (Salong{" "}
-                {v.theatre})
-              </a>
-            ))}
+          <li className="chooseDayList">
+            <span className="chooseDay">Välj dag</span>
+              <section className="chosenDay">
+                <select className="chosenViewing"{...b.bind('chosenViewing')}>
+                  <option>Alla dagar</option>
+              {movie.viewings.slice(0, 5).map(viewings => <option>
+                {viewings.start_date.slice(0, 10)}
+              </option>)}
+            </select>
           </section>
+          </li>
+
+          <section className="viewingsListStd">
+            { 
+              movie.viewings.slice(0, 5).filter(x => b.chosenViewing === 'Alla dagar' || b.chosenViewing === x.start_date.slice(0,10)).map(viewings => <ul className="viewingsList">
+                <li className="salong">
+                  <section className="infoContainer clear-fix">
+                  <span className="salongNumber">Salong {viewings.theatre}</span>
+                  <section className="info">
+                    <span className="startDate">{viewings.start_date.slice(0, 10)}</span>
+                      <span className="startTime">{viewings.start_date.slice(11, 18)}</span>
+                      <span className="endTime"> - {viewings.end_date.slice(11, 18)}</span>
+                    <span className="buttonWrapper">
+
+                      {b.booking
+                        .map(({ path }) => (
+                          <Link to={movie.path + path} className="link">
+                            <button className="buyTickets">Köp biljetter</button>
+                          </Link>
+                    ))}
+                    </span>
+                </section>
+                
+                </section>
+                
+                </li>
+           
+              
+              
+              </ul>
+          )}
+  </section>
         </section>
       </section>
     </section>
