@@ -13,6 +13,13 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  header {
+    display: none;
+  }
+  
+}
+
 .header-logo {
   display: inline-flex;
   padding: 10px 20px;

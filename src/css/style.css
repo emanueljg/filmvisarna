@@ -2,17 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Arima:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway:wght@400;500&display=swap");
 
-@import 'normalize.css';
-@import 'grid-system.css';
-@import 'footer.css';
-@import 'header.css';
-@import 'featured-movie.css';
-@import 'home.css';
-@import 'scrollbar.css';
-@import 'movieDetails.css';
-@import 'tickets.css';
-@import 'aboutUs.css';
-@import 'booking.css';
+@import "normalize.css";
+@import "grid-system.css";
+@import "footer.css";
+@import "header.css";
+@import "featured-movie.css";
+@import "home.css";
+@import "scrollbar.css";
+@import "movieDetails.css";
+@import "tickets.css";
+@import "aboutUs.css";
+@import "booking.css";
 
 .headerAboutUs {
   position: sticky;
@@ -28,7 +28,6 @@
   color: #ffffff;
 }
 
-
 body {
   font-family: "Raleway";
   font-size: 14px;
@@ -38,64 +37,7 @@ body {
 
 main {
   max-width: 750;
-  margin: 0 auto;
-}
-
-.timelink {
-  display: block;
-  font-family: "Raleway";
-  font-weight: 500;
-  font-size: 18px;
-  color: rgba(255, 255, 255, 1);
-  margin-left: 40px;
-  padding: 20px 35px;
-}
-
-.Tickets-h1 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-size: 28px;
-  line-height: 36px;
-  padding-top: 30px;
-  padding-left: 20px;
-  margin-left: 0;
-  color: rgba(255, 255, 255, 1);
-  font-weight: 600;
-}
-
-.Tickets-pic {
-  padding-left: 30px;
-}
-
-.Tickets-text {
-  padding-left: 50px;
-}
-
-.Tickets-h3 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-size: 20px;
-  line-height: 10px;
-  padding-top: 10px;
-  margin-left: 20;
-  color: rgba(255, 255, 255, 1);
-  font-weight: 600;
-}
-
-.Tickets-h4 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-size: 15px;
-  line-height: 20px;
-  padding-top: 20px;
-  margin-left: 20;
-  color: rgba(255, 255, 255, 1);
-  font-weight: 600;
-}
-
-.wrapper {
-  text-align: center;
-  display: inline-block;
+  margin: 2rem auto;
 }
 
 #button2 {
@@ -104,17 +46,4 @@ main {
 
 .menu-item-button {
   margin-left: 70px;
-}
-
-.dropdown-menu {
-  top: 100px;
-  right: 20px;
-  background-color: rgba(11, 12, 23, 1);
-  border-radius: var(--border-radius);
-  padding: 20px 30px;
-  width: 300px;
-}
-
-.Tickets-pic {
-  width: 50%;
 }

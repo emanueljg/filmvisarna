@@ -100,6 +100,41 @@
   aspect-ratio: 16 / 9 !important;
 }
 
+.to-tickets {
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  border: white solid 1px;
+  border-radius: 50%;
+  height: 60px;
+}
+
+.to-tickets:hover {
+  background-color: #772b2b;
+  transition: all 0.5s ease;
+}
+
+.to-aboutus {
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  border: white solid 1px;
+  border-radius: 50%;
+  margin-left: 20px;
+  height: 60px;
+}
+
+.to-aboutus:hover {
+  background-color: #772b2b;
+  transition: all 0.5s ease;
+}
+
+.mobile-buttons {
+  display: inline-block;
+  margin-top: 50px;
+  margin-left: 7%;
+}
+
 /* SLIDE SHOW TRAILERS */
 
 /* set as you want */

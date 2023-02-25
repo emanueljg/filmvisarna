@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway:wght@400;500&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway:wght@400;500&display=swap");
 
 .main-Tickets {
   position: relative;
@@ -9,10 +7,9 @@
   max-width: 60.25rem;
 }
 
-
 .letter {
   color: white;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 25px;
 }
 
@@ -20,9 +17,8 @@
   margin-bottom: 5px;
 }
 
-
 .movieTitle {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 25px;
   -webkit-hyphens: auto;
   hyphens: auto;
@@ -33,7 +29,7 @@
 }
 
 .filterInnerWrapper span {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 16px;
 }
 
@@ -46,7 +42,6 @@
   padding: 0;
 }
 
-
 .clear-fix:after {
   content: "";
   display: table;
@@ -57,7 +52,7 @@
   background-color: #7c0204;
   transform-origin: right;
   transform: scaleX(0);
-  transition: transform .3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .clear-fix:hover:after {
@@ -75,8 +70,8 @@
 
 .moviesWrapper {
   margin-top: 10%;
+  margin-left: 30px;
 }
-
 
 .movieText {
   margin-top: 2.5%;
@@ -98,8 +93,6 @@
   color: rgba(190, 192, 193, 0.525);
 }
 
-
-
 .length:before,
 .rated:before {
   content: "|";
@@ -107,11 +100,9 @@
   margin-right: 0.5rem;
 }
 
-
 .wrapperImages {
-  border-bottom: .0625rem solid #2d2d2d;
+  border-bottom: 0.0625rem solid #2d2d2d;
 }
-
 
 .search {
   color: white;
@@ -132,9 +123,7 @@
   font-size: 16px;
   padding: 5px;
   margin-top: 5px;
-
 }
-
 
 .searchBar {
   width: 175px;
@@ -147,15 +136,14 @@
   margin-top: 5px;
 }
 
-
 /* //Queries for the filter list\\ */
-@media (min-width: 320px) and (max-width:500px) {
+@media (min-width: 320px) and (max-width: 500px) {
   #root {
     overflow-x: hidden;
   }
 
   .moviesWrapper {
-    margin-left: 7px;
+    margin-left: 50px;
   }
 
   .movieInfo {
@@ -166,7 +154,6 @@
   .length,
   .rated {
     font-size: 5px;
-
   }
 
   .poster-50-percent {
@@ -176,13 +163,11 @@
   .movieTitle {
     font-size: 15px;
     width: 100%;
-
   }
 
   .chosenCategory,
   .chosenViewing {
     width: 120px;
-
   }
 
   .searchBar {
@@ -190,5 +175,16 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .moviesWrapper {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .moviesWrapper {
+    margin-left: 30px;
+  }
+}
 
 /* //Queries for the movie list\\ */
