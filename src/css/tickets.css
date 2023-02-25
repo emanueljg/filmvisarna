@@ -2,7 +2,7 @@
 
 
 
-.main {
+.main-Tickets {
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -28,7 +28,9 @@
   hyphens: auto;
 }
 
-
+.length::after {
+  content: none;
+}
 
 .filterInnerWrapper span {
   font-family: 'Poppins';
@@ -49,18 +51,18 @@
   content: "";
   display: table;
   clear: both;
-    width: 100%;
-    height: 2px;
-    border-radius: 4px;
-    background-color: #7c0204;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .3s ease-in-out;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #7c0204;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
 }
 
-.clear-fix:hover:after{
-    transform-origin: left;
-      transform: scaleX(1);
+.clear-fix:hover:after {
+  transform-origin: left;
+  transform: scaleX(1);
 }
 
 .poster-50-percent {
@@ -98,7 +100,8 @@
 
 
 
-.length:before, .rated:before {
+.length:before,
+.rated:before {
   content: "|";
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -111,15 +114,16 @@
 
 
 .search {
-  color:white;
+  color: white;
 }
 
-.queryImages{
+.queryImages {
   display: flex;
   flex-direction: column;
 }
 
-.chosenViewing, .chosenCategory {
+.chosenViewing,
+.chosenCategory {
   width: 150px;
   text-align: left;
   background-color: white;
@@ -146,37 +150,44 @@
 
 /* //Queries for the filter list\\ */
 @media (min-width: 320px) and (max-width:500px) {
-#root {
-  overflow-x: hidden;
-}
-.moviesWrapper{
-  margin-left: 7px;
-}
+  #root {
+    overflow-x: hidden;
+  }
 
-.movieInfo {
-  width: 100%;
-}
-.genre, .length, .rated {
-  font-size: 5px;
+  .moviesWrapper {
+    margin-left: 7px;
+  }
 
-}
+  .movieInfo {
+    width: 100%;
+  }
 
-.poster-50-percent{
-  width: 20%;
-}
-.movieTitle {
-  font-size: 15px;
-  width: 100%;
+  .genre,
+  .length,
+  .rated {
+    font-size: 5px;
 
-}
+  }
+
+  .poster-50-percent {
+    width: 20%;
+  }
+
+  .movieTitle {
+    font-size: 15px;
+    width: 100%;
+
+  }
+
   .chosenCategory,
   .chosenViewing {
     width: 120px;
-  
+
   }
+
   .searchBar {
-      width: 50px;
-    }
+    width: 50px;
+  }
 }
 
 

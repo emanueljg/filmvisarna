@@ -9,17 +9,13 @@ export default function Tickets() {
   const date = `${current.getDate()}/${current.getMonth() + 1} - ${" " + ('idag')}`;
 
   const s = useStates('main')
-  let movies = s.sortedMovies;
   let todayISO = new Date().toISOString().slice(0,10);
 
   const l = useStates({
     chosenCategory: 'Alla genrer',
-    chosenViewing: todayISO,
-    movies: Array.prototype.slice.call(s.sortedMovies),
+    chosenViewing: 'Alla dagar',
+    movies: Array.prototype.slice.call(s.movies),
   });
-
-  
-
 
   function filterByCategory(movie) {
     return l.chosenCategory === 'Alla genrer' || movie.genre.includes(l.chosenCategory);
@@ -28,16 +24,18 @@ export default function Tickets() {
   function filterByViewing(movie) {
     let startDates = movie.viewings.map(x => x.start_date.slice(0,10));
     for (let startDate of startDates) {
-      if (l.chosenViewing === startDate) { return true; }
+      if (l.chosenViewing === startDate) { return  true; }
     }
-    return false;
+    if (l.chosenViewing === 'Alla dagar') { return true }
   }
+
+  
+  const [query, setQuery] = useState('');
 
   function filterByQuery(movie) {
     return query.toLowerCase() === 'Sök..' || movie.title.toLowerCase().includes(query)
   }
 
-  const [query, setQuery] = useState('');
   
   //To remove duplicate letters when grouping movies alphabetically
   let currentLetter = "";
@@ -52,16 +50,14 @@ export default function Tickets() {
   }
 
 
-
-
-  return <section className="main">
+  return <section className="main-Tickets">
     <section className="filterInnerWrapper">
       <ul className="filtersList">
         <li className="filterDay">
           <span className="pickDay">Välj dag</span>
           <section className="selectDay">
             <select className="chosenViewing"{...l.bind('chosenViewing')}>
-              <option value={todayISO}>{date}</option>
+              <option>Alla dagar</option>
               {s.showing.map(viewings => <option>
                 {viewings.start_date.slice(0, 10)}
               </option>)}
@@ -90,10 +86,10 @@ export default function Tickets() {
       <section className="moviesWrapper">
         {
           l.movies.filter(filterByCategory).filter(filterByViewing).filter(filterByQuery)
-            .map(({ path, title, images, genre, length, rated }) => <section className="wrapperImages">
+            .map(({ path, title, images, genre, duration, rating }) => <section className="wrapperImages">
             <section className="letter">
               <h3 className="currentLetter">
-                {currentLetter !== title[0] && (currentLetter = title[0])}
+                  {currentLetter !== title[0] && (currentLetter = title[0])}
                 {removeDuplicateLetters(currentLetter)}</h3>
             </section>
             <Link to={path} style={{ textDecoration: 'none' }}>
@@ -104,8 +100,8 @@ export default function Tickets() {
                   <h3 className="movieTitle">{title}</h3>
                   <h4>
                     <span className="genre ">{genre.join(', ')}</span>
-                    <span className="length">{length}</span>
-                    <span className="rated">{rated}</span>
+                    <span className="length">{duration}</span>
+                    <span className="rated">{rating}</span>
                   </h4>
                 </section>
               </section>

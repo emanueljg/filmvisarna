@@ -1,6 +1,6 @@
 /* change to your own choice of fonts */
-@import url('https://fonts.googleapis.com/css2?family=Arima:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway:wght@400;500&display=swap");
 
 @import 'normalize.css';
 @import 'grid-system.css';
@@ -14,24 +14,23 @@
 @import 'aboutUs.css';
 @import 'booking.css';
 
-
 .headerAboutUs {
   position: sticky;
   max-width: 100%;
   height: auto;
   text-align: center;
   margin-top: 30px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 
 body {
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: 14px;
   background-color: rgba(11, 12, 23, 1);
   height: 1900px;
@@ -39,12 +38,12 @@ body {
 
 main {
   max-width: 750;
-  margin: 2rem auto;
+  margin: 0 auto;
 }
 
 .timelink {
   display: block;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 500;
   font-size: 18px;
   color: rgba(255, 255, 255, 1);
@@ -52,9 +51,8 @@ main {
   padding: 20px 35px;
 }
 
-
 .Tickets-h1 {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-size: 28px;
   line-height: 36px;
@@ -74,7 +72,7 @@ main {
 }
 
 .Tickets-h3 {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-size: 20px;
   line-height: 10px;
@@ -84,9 +82,8 @@ main {
   font-weight: 600;
 }
 
-
 .Tickets-h4 {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-size: 15px;
   line-height: 20px;
@@ -120,364 +117,4 @@ main {
 
 .Tickets-pic {
   width: 50%;
-}
-
-
-/*
- - BODY SECTION -
-                  */
-/*.movie-container {
-  display: flex;
-  padding-left: 20px;
-  width: 100%;
-  margin-top: 100px;
-} */
-
-.featuredMovieCTA-container {
-  position: absolute;
-  margin-top: -50%;
-  margin-left: 4%;
-  z-index: 3;
-}
-
-.featuredMovieCTA-image h1{
-  color: white;
-  font-size: 2vw;
-  position: relative;
-}
-
-.featuredMovieCTA-image button{
-  font-size: 1vw;
-  box-sizing: border-box;
-  position: absolute;
-  border: 1px solid #989AAD;
-  border-radius: 8px;
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  display: flex;
-  padding-left: 5px;
-  padding-right: 5px;
-  align-items: center;
-  background: transparent;
-  color: #989AAD;
-}
-
-.featuredMovieCTA-image img{
-  border-radius: 15px;
-  max-width: 30%;
-}
-
-.featuredMovie img{
-  max-width: 100%;
-}
-
-.gradientFeaturedMovie {
-  position: absolute;
-  transform: translate(-0%, -100%);
-  z-index: 1;
-  width: 100%;
-  height: 1500px;
-  background: linear-gradient(180deg, rgba(11, 12, 23, 0) 0%, #0B0C17 100%);
-
-}
-
-.showingNow {
-  margin: auto;
-}
-
-.comingSoon {
-  margin-top: 450px; 
-}
-
-.body-movies h1 {
-  margin-top: 75px;
-  z-index: 1;
-  color: white;
-  font-size: 1.8vw;
-  margin-left: 1.5rem;
-  margin-bottom: 20px;
-}
-
-.movie {
-  z-index: 2;
-  transform:scale(1);
-  display: inline-block;
-  text-decoration: none;
-  align-items: center;
-  padding: 10px;
-  margin-left: 0.8rem;
-  color: black;
-  width: 13%;
-  justify-content: space-between;
-  grid-column: auto;
-  border-radius: 8px;
-
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
-  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
-}
-
-.movie div:nth-of-type(1) {
-  position: absolute;
-  padding: 16px;
-  width: 100%;
-  opacity: 0;
-  top: 0;
-  color: #f9d3b4;
-}
-
-.movie:hover {
-  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
-  transform: scale(0.95, 0.95);
-}
-
-.movie div:nth-of-type(2) {
-  width: 100%;
-  height: 100%;
-}
-
-.movie div:nth-of-type(2) {
-  height: 100%;
-  width: 100%;
-}
-
-.movie div:nth-of-type(3) {
-  z-index: 5;
-  background-color: #343739;
-  padding: 16px 24px 24px 24px;
-
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
-
-.movie div:nth-of-type(3) span {
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 2px;
-  font-weight: 500;
-  color: #f0f0f0;
-}
-
-.movie div:nth-of-type(3) h3 {
-  margin-top: 5px;
-  font-family: inherit;
-  color: #f9d3b4;
-}
-
-.movie:hover div:nth-of-type(2) {
-  height: 100%;
-  opacity: 0.3;
-}
-
-.movie:hover div:nth-of-type(3) {
-  background-color: transparent;
-}
-
-.movie:hover div:nth-of-type(1) {
-  opacity: 1;
-}
-
-.movie img {
-  border-radius: 10px;
-  width: 100%;
-  height: 100%;
-
-}
-
-.movie h3 {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  font-weight: 500;
-  font-size: 1.3vw;
-  line-height: 26px;
-  color: #FFFFFF;
-}
-
-.movie h4 {
-  font-size: 0.85vw;
-  font-weight: 100;
-  color: white;
-  display: block;
-  gap: 5px 15px;
-  align-items: right;
-  text-align: center;
-  width: fit-content;
-}
-
-
-
-
-
-
-
-/*
-  - FOOTER SECTION -
-                     */
-
-.footer-container {
-  background-color: rgba(11, 12, 23, 1);
-  ;
-  padding: 1rem 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 0;
-  margin-top: 300px;
-}
-.salong{
-  color: #fff;
-}
-
-.footer-logo {
-  color: #fff;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
-
-.footer-logo :hover {
-  cursor: pointer;
-  color: #e7a6a6;
-  transition: 0.3s ease-in-out;
-}
-
-.footer-links {
-  width: 100%;
-  max-width: 1000px;
-  display: flex;
-  justify-content: center;
-}
-
-.footer-link-wrapper {
-  display: flex;
-}
-
-.footer-link-items {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 16px;
-  text-align: left;
-  width: 160px;
-  box-sizing: border-box;
-}
-
-.footer-link-items h2 {
-  margin-bottom: 16px;
-}
-
-.footer-link-items>h2 {
-  color: #fff;
-}
-
-.footer-link-items a {
-  color: #fff;
-  text-decoration: none;
-  margin-bottom: 0.5rem;
-  cursor: pointer;
-}
-
-.footer-link-items a:hover {
-  color: #e7a6a6;
-  transition: 0.3s ease-in-out;
-}
-
-.social-icon-link {
-  color: #fff;
-  font-size: 24px;
-}
-
-.social-media {
-  max-width: 1000px;
-  width: 100%;
-}
-
-.social-media-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  max-width: 1000px;
-  margin: 40px auto 0 auto;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 240px;
-  cursor: pointer;
-}
-
-.social-icons :hover {
-  color: #e7a6a6;
-  transition: 0.3s ease-in-out;
-}
-
-.social-logo {
-  color: #fff;
-  justify-self: flex-start;
-  margin-left: 20px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-}
-
-.website-rights {
-  color: #fff;
-}
-
-.movieList h3 {
-  color: white;
-}
-
-.ticketsPage p {
-  color: white;
-}
-
-@media screen and (max-width: 820px) {
-  .footer-links {
-    padding-left: 2rem;
-  }
-
-  .footer-logo {
-    margin-bottom: 2rem;
-  }
-
-  .website-rights {
-    margin-bottom: 2rem;
-  }
-
-  .footer-link-wrapper {
-    flex-direction: column;
-  }
-
-  .social-media-wrap {
-    flex-direction: column;
-  }
-
-  .movie {
-    flex-direction: column;
-  }
-
-}
-
-@media screen and (max-width: 480px) {
-  .footer-link-items {
-    margin: 0;
-    padding: 10px;
-    width: 100%;
-  }
 }

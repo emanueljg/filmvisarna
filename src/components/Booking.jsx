@@ -1,28 +1,39 @@
-import { useStates } from "../utilities/states"
-import { useParams } from "react-router-dom"
-import SeatForm from "./SeatForm";
+import React from 'react'
+import { useStates } from "../utilities/states";
+
+import { Link, useParams, Routes, Route } from "react-router-dom";
 
 export default function Booking() {
-  const { bookingPath } = useParams();
-  const s = useStates('main');
+    const { moviePath } = useParams();
+  const s = useStates("main");
 
-  //deklarera variabler; film, sal, visning(datum och tid)
-  //const movie = s.movies.find(movie => movie.path === '/movie/' + bookingPath.split("/")[0]);
-  //const show = movie.viewings.find(show === '/movie/' + bookingPath.split("/")[1]);
-  //const theatre = show.room; // 1 är stora salen, 2 är lilla, ska förtydligas när det är kopplat ordentligt.
+  const movie = s.movies.find((movie) => movie.path === "/movie/" + moviePath);
+  const description =
+    movie &&
+    movie.description
+      .split("<p>")
+      .map((x) => x.replace(/<\/p>/g, "")) // one array element per p tag
+      .map((x) => <p className="movieDescription">{x}</p>); // new p tags as jsx
+
+
+  const shownMovieAttrs = new Map();
+  shownMovieAttrs.set("title", "Originaltitel");
+  shownMovieAttrs.set("release", "Premiär");
+  shownMovieAttrs.set("language", "Tal");
+  shownMovieAttrs.set("subtitles", "Text");
+  shownMovieAttrs.set("director", "Regi");
+  shownMovieAttrs.set("actors", "Medverkande");
+  for (const kv of Object.entries(movie || {})) {
+    const shownAttr = shownMovieAttrs.get(kv[0]);
+    // in-place replacement
+    if (shownAttr) shownMovieAttrs[shownMovieAttrs.get(kv[0])] = kv[1];
+    if (shownAttr) shownMovieAttrs[shownMovieAttrs.get(kv[0])] = kv[1];
+  }
   
-  return <div className="bookingPage">
-    <button className="backButton">
-      Tillbaka
-    </button>
-    <div className="chosenMovie">
-      <img/>
-      <h2>Film</h2>
-      <p>Sal</p>
-      <p>visning</p>
-      <div className="ticketSelector">
-      </div>
-    </div>
-    <div className="seatingGrid-large"/>
-  </div>
+
+  return !movie ? null : (
+    <div className="greeting">
+      <h1>Hej Max</h1>
+   </div>
+  );
 }

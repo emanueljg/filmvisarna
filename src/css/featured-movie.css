@@ -1,41 +1,62 @@
 .featuredMovieCTA-container {
   position: absolute;
-  margin-top: -50%;
-  margin-left: 4%;
   z-index: 3;
+  width: 100%;
+  margin-top: -60px;
+  text-align: center;
+  cursor: pointer;
+}
+
+main {
+  position: relative;
 }
 
 .featuredMovieCTA-image h1 {
   color: white;
-  font-size: 2vw;
+  font-size: 4vw;
   position: relative;
-}
-
-.featuredMovieCTA-image button {
-  font-size: 1vw;
-  box-sizing: border-box;
-  position: absolute;
-  border: 1px solid #989AAD;
-  border-radius: 8px;
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  display: flex;
-  padding-left: 5px;
-  padding-right: 5px;
-  align-items: center;
-  background: transparent;
-  color: #989AAD;
 }
 
 .featuredMovieCTA-image img {
   border-radius: 15px;
-  max-width: 30%;
+  max-width: 100%;
+}
+
+.featuredMovieCTA-image {
+  width: 100%;
 }
 
 .featuredMovie img {
   max-width: 100%;
+}
+
+.feature-movie-span,
+.feature-movie-span-rating,
+.feature-movie-span-showing {
+  color: white;
+  font-size: 2vw;
+}
+
+.feature-movie-span::after {
+  content: "|";
+  margin-left: 7px;
+  color: lightgray;
+}
+
+.feature-movie-span-showing::before {
+  content: "|";
+  margin-left: 7px;
+  padding-right: 7px;
+}
+
+.feature-movie-span-rating {
+  color: lightgray;
+  border: lightgray solid 1px;
+  margin-left: 7px;
+  border-radius: 3px;
+  text-align: center;
+  padding: 2px;
+  opacity: 0.7;
 }
 
 .gradientFeaturedMovie {
@@ -43,9 +64,8 @@
   transform: translate(-0%, -100%);
   z-index: 1;
   width: 100%;
-  height: 1500px;
-  background: linear-gradient(180deg, rgba(11, 12, 23, 0) 0%, #0B0C17 100%);
-
+  height: 500px;
+  background: linear-gradient(180deg, rgba(11, 12, 23, 0) 0%, #0b0c17 100%);
 }
 
 .wrapper-featuredMovie {
@@ -61,7 +81,7 @@
   width: 100%;
   height: 854px;
   top: 0;
-  background: linear-gradient(180deg, rgba(11, 12, 23, 0) 0%, #0B0C17 100%);
+  background: linear-gradient(180deg, rgba(11, 12, 23, 0) 0%, #0b0c17 100%);
 }
 
 .wrapper-featuredMovieInfo {
@@ -69,11 +89,38 @@
   z-index: 3;
   margin-left: 5px;
   top: 475px;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-size: 14px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .wrapper-featuredMovieInfo button {
   margin-left: 40px;
+}
+
+.featuredMovieCTA-image h1:hover {
+  text-decoration-line: underline;
+  text-decoration-color: white;
+  text-decoration-style: solid;
+  text-decoration-thickness: 1.75px;
+}
+
+@media screen and (max-width: 464px) {
+  .featuredMovie img {
+    width: 100%;
+  }
+  .featuredMovieCTA-image h1 {
+    color: white;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .featuredMovie img {
+    width: 100%;
+  }
+  .featuredMovieCTA-image h1 {
+    color: white;
+    position: relative;
+  }
 }
