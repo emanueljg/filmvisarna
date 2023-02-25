@@ -13,6 +13,7 @@
 @import "tickets.css";
 @import "aboutUs.css";
 @import "booking.css";
+@import "seat-grid.css";
 
 .headerAboutUs {
   position: sticky;

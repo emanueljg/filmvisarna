@@ -3,6 +3,7 @@ import { useStates } from "../utilities/states";
 import { useState } from "react";
 import orderConfirmGenerate from "../utilities/random-order-confirmation";
 import Home from "./Home";
+import SeatingGrid from "./SeatingGrid";
 
 import { Link, useParams, Routes, Route } from "react-router-dom";
 
@@ -53,6 +54,10 @@ export default function Booking() {
 
   return !order.submitted ? (
     <>
+      <div>
+        <SeatingGrid name="Stora Salongen" />
+      </div>
+      
       <div className="bokning">
         
         {d.home.map(({ path }) => (
@@ -200,10 +205,10 @@ export default function Booking() {
           <br />
           {order.numberOfSeniors}
         </p>
-        <h3>Boknings bekräftelse</h3>
-        <h2>{moviePath}</h2>
+        <h3>Bokningsbekräftelse</h3>
+        <h2>{movie.title}</h2>
         <p>Glöm inte att ta med detta bokningsnummer till föreställningen:</p>
-        <p>{s.confirmationNumber}</p>
+        <h1>{s.confirmationNumber}</h1>
       </div>
     </>
   );

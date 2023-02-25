@@ -35,6 +35,7 @@ export default function App() {
       submitted: false,
       error: null,
     },
+  
 
     // A menu used for the main menu and for routing
     menu: [
@@ -47,6 +48,7 @@ export default function App() {
     movies: [],
     categories: [],
     showing: [],
+    theatres: [],
   });
 
   useEffect(() => {
@@ -58,6 +60,9 @@ export default function App() {
       s.movies = movies;
       s.categories = createCategoryList(movies);
       s.showing = createShowingsList(movies);
+    })();
+    (async () => {
+      s.theatres = await (await fetch('/json/theatres.json')).json();
     })();
   }, []);
 
