@@ -1,0 +1,52 @@
+/* change to your own choice of fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@400;700&display=swap');
+
+@import 'normalize.css';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arima';
+    font-size: 20px;
+    background-color: black;
+}
+
+.auditorium {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.auditorium .screen {
+    width: 50%;
+    aspect-ratio: 25 / 9;
+    background-color: white;
+    margin: 0 auto 3%;
+}
+
+.auditorium .row {
+    text-align: center;
+}
+
+.auditorium .seat {
+    display: inline-block;
+    background-color: rgb(121, 34, 34);
+    width: 4%;
+    aspect-ratio: 1 / 1;
+    margin: 1% 0.5%;
+    text-align: center;
+    color: white;
+    padding-top: 3px;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .auditorium .seat {
+        font-size: 70%;
+    }
+}
