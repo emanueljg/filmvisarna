@@ -54,10 +54,6 @@ export default function Booking() {
 
   return !order.submitted ? (
     <>
-      <div>
-        <SeatingGrid name="Stora Salongen" />
-      </div>
-      
       <div className="bokning">
         
         {d.home.map(({ path }) => (
@@ -65,6 +61,9 @@ export default function Booking() {
             <button className="to-home">Tillbaka</button>
           </Link>
         ))}
+        <div>
+          <SeatingGrid name={"Stora Salongen"} />
+        </div>
         <h2>Boka din biljett</h2>
         <form onSubmit={handleSubmit}>
           <label>

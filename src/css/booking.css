@@ -34,7 +34,7 @@ button[type="submit"] {
 
 button[type="button"]:hover {
   cursor: pointer;
-  background-color: rgb(128, 26, 26, 0.5);
+  background-color: rgb(200, 200, 200, 0.5);
   transition: all 0.5s ease;
   color: white;
 }
@@ -51,7 +51,7 @@ button[type="button"]:hover {
 
 .booking-done:hover {
   cursor: pointer;
-  background-color: rgb(128, 26, 26, 0.5);
+  background-color: rgba(200, 200, 200, 0.5);
   transition: all 0.5s ease;
   color: white;
 }
